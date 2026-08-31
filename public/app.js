@@ -494,11 +494,44 @@ function updateSessionStrip() {
   `;
 }
 
+async function renderNextAction() {
+  if (!SID) return;
+  try {
+    const action = await api("/api/session/" + SID + "/next-action");
+    if (!action) return;
+    const strip = $("#sessionStatusStrip");
+    if (!strip) return;
+
+    let banner = $("#nextActionBanner");
+    if (!banner) {
+      banner = document.createElement("div");
+      banner.id = "nextActionBanner";
+      banner.className = "card";
+      banner.style.cssText = "margin:10px 0 16px;border:2px solid var(--blue);background:#fff;padding:14px 18px;";
+      if (strip.parentNode) strip.parentNode.insertBefore(banner, strip.nextSibling);
+    }
+
+    const pBadge = action.priority === "critical" ? "badge-red" : action.priority === "high" ? "badge-amber" : "badge-blue";
+    banner.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+        <span class="badge ${pBadge}">⚡ NEXT BEST ACTION (${action.priority.toUpperCase()})</span>
+        <span style="font-size:12px;color:var(--muted);">⏱ ~${action.estimatedMinutes} mins estimated</span>
+      </div>
+      <div style="font-weight:700;font-size:15.5px;color:var(--ink);">${action.title}</div>
+      <div style="font-size:12.5px;color:var(--muted);margin-top:4px;">${action.reason}</div>
+      <div style="margin-top:10px;display:flex;gap:8px;">
+        <button class="btn primary" style="padding:5px 12px;font-size:12px;" onclick="startQuiz('${action.topicId}')">🎯 Take Assessment Quiz →</button>
+      </div>
+    `;
+  } catch (e) {}
+}
+
 function syncPreview() {
   if (!LAST_RESULT) return;
 
   drawPreview(LAST_RESULT.path);
   updateSessionStrip();
+  renderNextAction();
 
   const prof = $("#preview-profile");
   if (prof) prof.innerHTML = renderProfileMini();
@@ -618,6 +651,17 @@ function openTopicInspector(topicId) {
             `).join("")}
           </div>
         </div>` : ""}
+
+        <div>
+          <h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px;">5. Adaptive Recommender Feedback</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;" id="feedbackBtnGroup">
+            <button class="btn ghost feedback-btn" data-fb-type="too_difficult" style="padding:4px 8px;font-size:12px;">👎 Too Difficult</button>
+            <button class="btn ghost feedback-btn" data-fb-type="not_relevant" style="padding:4px 8px;font-size:12px;">❌ Not Relevant</button>
+            <button class="btn ghost feedback-btn" data-fb-type="already_know" style="padding:4px 8px;font-size:12px;">✓ Already Know</button>
+            <button class="btn ghost feedback-btn" data-fb-type="liked" style="padding:4px 8px;font-size:12px;">❤️ Liked</button>
+          </div>
+          <div id="feedbackToast" style="font-size:11.5px;color:var(--emerald);margin-top:4px;display:none;">✓ Feedback recorded! Adaptive recommendations updated.</div>
+        </div>
       </div>
     </div>
   `;
@@ -631,6 +675,30 @@ function openTopicInspector(topicId) {
     }
   };
   document.addEventListener("keydown", onModalKey);
+
+  modal.querySelectorAll(".feedback-btn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      if (!SID) return;
+      try {
+        const type = btn.dataset.fbType;
+        await api("/api/session/" + SID + "/feedback", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ topicId, type })
+        });
+        const toast = modal.querySelector("#feedbackToast");
+        if (toast) toast.style.display = "block";
+        const full = await api("/api/session/" + SID);
+        if (full && full.profile) {
+          LAST_RESULT = full;
+          window.LAST_RESULT = full;
+          syncPreview();
+        }
+      } catch (err) {
+        console.warn("Feedback error:", err);
+      }
+    });
+  });
 }
 
 function renderPathMini() {
@@ -805,11 +873,31 @@ async function startQuiz(topicId) {
           <button class="btn primary" id="doneQuizBtn" style="margin-top:10px;width:100%;">Continue Learning (Enter) →</button>
         `;
 
-        $("#doneQuizBtn")?.addEventListener("click", () => {
+        $("#doneQuizBtn")?.addEventListener("click", async () => {
           quizBox.remove();
+          if (SID) {
+            try {
+              const full = await api("/api/session/" + SID);
+              if (full && full.profile) {
+                LAST_RESULT = full;
+                window.LAST_RESULT = full;
+                syncPreview();
+              }
+            } catch (e) {}
+          }
           renderMastery();
         });
 
+        if (SID) {
+          try {
+            const full = await api("/api/session/" + SID);
+            if (full && full.profile) {
+              LAST_RESULT = full;
+              window.LAST_RESULT = full;
+              syncPreview();
+            }
+          } catch (e) {}
+        }
         renderMastery();
       } catch (err) {
         console.warn("Quiz submit failed:", err);
