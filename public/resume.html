@@ -213,7 +213,13 @@
 
   <!-- RIGHT: live preview -->
   <div class="preview-shell">
-    <div class="preview-toolbar"><span>▦ LIVE PREVIEW</span><span style="text-transform:none;letter-spacing:0">Dashed lines = page breaks (not in PDF)</span></div>
+    <div class="preview-toolbar" style="display:flex;justify-content:space-between;align-items:center;">
+      <span>▦ LIVE PREVIEW (A4 Architecture)</span>
+      <div id="matchedSkillsSummary" style="font-size:11px;font-family:var(--font-mono);color:var(--ink2);">
+        <span class="badge badge-stone" id="matchedCountBadge">0 Recognized Competencies</span>
+      </div>
+    </div>
+    <div id="matchedSkillsTags" style="display:flex;gap:5px;flex-wrap:wrap;margin:4px 0 10px;min-height:22px;"></div>
     <div class="paper-wrap"><div id="resumePaper" class="resume-paper"></div></div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
       <button class="btn ghost" id="btnLoadML" data-sample-resume="ml"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Load Python/ML sample</button>
@@ -340,6 +346,38 @@ function renderPreview(){
   const legacy = $r("#resumeInput");
   if(legacy) legacy.value = [d.summary, d.coursework, d.languages, d.tech, d.exps.map(e=>e.title+" "+e.company+" "+e.bullets.join(" ")).join(" "), d.edus.map(e=>e.school+" "+e.degree).join(" "), d.projs.map(p=>p.name+" "+p.stack).join(" ")].join("\n");
   try{ localStorage.setItem("pathlight_resume_draft", JSON.stringify({...d, _ts: Date.now()})); }catch{}
+
+  // detect ontology skills in real-time
+  const fullText = [d.summary, d.coursework, d.languages, d.tech, d.exps.map(e=>e.title+" "+e.bullets.join(" ")).join(" "), d.projs.map(p=>p.name+" "+p.stack+" "+p.desc).join(" ")].join(" ").toLowerCase();
+  const KNOWN_ONTOLOGY = [
+    { id: "python", name: "Python" },
+    { id: "javascript", name: "JavaScript" },
+    { id: "typescript", name: "TypeScript" },
+    { id: "sql", name: "SQL" },
+    { id: "pytorch", name: "PyTorch" },
+    { id: "linear_algebra", name: "Linear Algebra" },
+    { id: "data_structures", name: "Data Structures" },
+    { id: "algorithms", name: "Algorithms" },
+    { id: "system_design", name: "System Design" },
+    { id: "docker", name: "Docker" },
+    { id: "react", name: "React" },
+    { id: "node", name: "Node.js" },
+    { id: "cloud", name: "Cloud Architecture" },
+    { id: "statistics", name: "Statistics" },
+    { id: "machine_learning", name: "Machine Learning" }
+  ];
+  const matched = KNOWN_ONTOLOGY.filter(k => fullText.includes(k.name.toLowerCase()) || fullText.includes(k.id.replace(/_/g, " ")));
+  const tagsHost = $r("#matchedSkillsTags");
+  const countBadge = $r("#matchedCountBadge");
+  if (countBadge) {
+    countBadge.textContent = `${matched.length} Recognized Competencies`;
+    countBadge.className = matched.length ? "badge badge-green" : "badge badge-stone";
+  }
+  if (tagsHost) {
+    tagsHost.innerHTML = matched.length
+      ? matched.map(m => `<span class="badge badge-blue" style="font-size:11px;padding:3px 8px;">✓ ${m.name}</span>`).join("")
+      : `<span style="font-size:11.5px;color:var(--muted);font-style:italic;">Type skills, languages, or coursework to see recognized prerequisite matches bloom.</span>`;
+  }
 }
 
 function addExp(data={}){

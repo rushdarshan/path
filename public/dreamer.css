@@ -3,21 +3,21 @@
    v4 — Full audit pass, all CSS conflicts resolved
    ═══════════════════════════════════════════════════ */
 
-/* ── Tokens (match global --blue, --ink2, etc.) ───── */
+/* ── Tokens mapped to master design system in styles.css ───── */
 :root {
-  --g-blue: #1B6EF3;      /* matches --blue in styles.css  */
-  --g-blue-h: #0B59D6;
-  --g-blue-tint: #E8F0FE;
-  --g-green: #2BD773;
-  --g-green-tint: #E6FDF0;
-  --g-border: #E4E7ED;    /* matches --line in styles.css  */
-  --g-bg: #F8FAFD;
-  --g-card: #FFFFFF;
-  --g-dark: #1F2836;      /* matches --ink2 in styles.css  */
-  --g-muted: #5f6368;
-  --g-shadow-sm: 0 1px 3px rgba(32,33,36,.10), 0 1px 2px rgba(32,33,36,.06);
-  --g-shadow-md: 0 4px 16px rgba(32,33,36,.10);
-  --g-shadow-lg: 0 12px 36px rgba(32,33,36,.16);
+  --g-blue: var(--blue, #1B6EF3);
+  --g-blue-h: var(--blueH, #0B59D6);
+  --g-blue-tint: var(--blue-tint, #E8F0FE);
+  --g-green: var(--emerald, #059669);
+  --g-green-tint: var(--emerald-tint, #E6FDF0);
+  --g-border: var(--line, #E4E7ED);
+  --g-bg: var(--surface-subtle, #F8FAFD);
+  --g-card: var(--white, #FFFFFF);
+  --g-dark: var(--ink2, #1F2836);
+  --g-muted: var(--muted, #555E6D);
+  --g-shadow-sm: var(--shadow-sm);
+  --g-shadow-md: var(--shadow);
+  --g-shadow-lg: var(--shadow-lg);
 }
 
 /* ── Shell ─────────────────────────────────────────── */
@@ -34,7 +34,7 @@
   border-bottom: 1px solid var(--g-border);
 }
 .dreamer-topbar-inner {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 20px 24px 16px;
   display: flex;
@@ -79,25 +79,29 @@
 @keyframes auroraFlow { 0%{background-position:100% center} 100%{background-position:0 center} }
 
 /* ── Tab nav ───────────────────────────────────────── */
-.dreamer-tabs {
-  display: flex;
+.dreamer-tabs-bar {
   background: #fff;
   border-bottom: 1px solid var(--g-border);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.dreamer-tabs {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 0 24px;
+  display: flex;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  /* Fix: ensure tabs sit above any stray z-index */
-  position: relative;
-  z-index: 2;
 }
 .dreamer-tabs::-webkit-scrollbar { display: none; }
 .dtab {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 14px 18px 12px;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 600;
   color: var(--g-muted);
   background: none;
@@ -155,9 +159,10 @@
   margin: 0;
 }
 .dreamer-shell .stageTop {
-  height: 5px;
+  height: 4px;
   background: linear-gradient(90deg, var(--g-blue) 0%, var(--g-green) 16.67%);
-  transition: background 600ms ease;
+  /* Emil: JS updates background via inline style on step change */
+  transition: background 250ms var(--ease-out);
 }
 /* FIX: Override styles.css #dreamerStage .stageHead padding (18px 20px) */
 .dreamer-shell #dreamerStage .stageHead { padding: 22px 24px 12px !important; }
@@ -1313,7 +1318,9 @@
   .constellation-stage { height: 60vw; min-height: 320px; }
 }
 @media (max-width: 768px) {
-  .dreamer-topbar-right  { display: none; }
+  .dreamer-topbar-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .dreamer-topbar-right { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+  .dreamer-aurora-bar { display: none; }
   .dtab { padding: 12px 12px 10px; font-size: 12px; gap: 4px; }
   .dtab-icon { font-size: 14px; }
   .identity-wrap { padding: 14px 14px 32px; gap: 14px; }

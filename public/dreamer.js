@@ -410,31 +410,36 @@ function renderAuditMini() {
    CONSTELLATION
 ───────────────────────────────────────── */
 const CAREER_NODES = [
-  { id:"swe",   label:"Software Engineer",      type:"blue",  salary:"$115k–$165k", why:"Your technical skills and experience match this well." },
-  { id:"ds",    label:"Data Scientist",          type:"green", salary:"$105k–$150k", why:"Your analytical background is a strong match." },
-  { id:"pm",    label:"Product Manager",         type:"blue",  salary:"$110k–$155k", why:"Your collaboration and leadership experience." },
-  { id:"ml",    label:"ML Engineer",             type:"green", salary:"$120k–$175k", why:"Your Python and math skills map here." },
-  { id:"ux",    label:"UX Designer",             type:"blue",  salary:"$85k–$125k",  why:"Your research and communication skills." },
-  { id:"da",    label:"Data Analyst",            type:"blue",  salary:"$70k–$105k",  why:"SQL and visualization are core requirements." },
-  { id:"devops",label:"DevOps / SRE",            type:"blue",  salary:"$115k–$155k", why:"System design and cloud skills match." },
-  { id:"cyber", label:"Cybersecurity Analyst",   type:"green", salary:"$95k–$135k",  why:"Problem-solving and technical depth." },
-  { id:"gd",    label:"Graphic Designer",        type:"blue",  salary:"$55k–$85k",   why:"Your creative interests." },
-  { id:"mktg",  label:"Marketing Analyst",       type:"green", salary:"$65k–$95k",   why:"Communication and data skills." },
-  { id:"ba",    label:"Business Analyst",        type:"blue",  salary:"$80k–$115k",  why:"Stakeholder and analytical skills." },
-  { id:"teach", label:"Curriculum Designer",     type:"green", salary:"$60k–$85k",   why:"Teaching and research motivations." },
-  { id:"re",    label:"Research Scientist",      type:"green", salary:"$100k–$145k", why:"Your education and research experience." },
-  { id:"cons",  label:"IT Consultant",           type:"blue",  salary:"$90k–$130k",  why:"Cross-functional collaboration." },
-  { id:"cloud", label:"Cloud Architect",         type:"blue",  salary:"$130k–$180k", why:"Cloud architecture skills." },
-  { id:"ai",    label:"AI Product Manager",      type:"green", salary:"$125k–$165k", why:"Intersection of AI interest and PM skills." },
-  { id:"pe",    label:"Platform Engineer",       type:"blue",  salary:"$115k–$155k", why:"Backend and system design skills." },
-  { id:"te",    label:"Technical Writer",        type:"green", salary:"$75k–$105k",  why:"Communication and technical knowledge." },
-  { id:"fin",   label:"Financial Analyst",       type:"blue",  salary:"$80k–$115k",  why:"Analytical and Excel skills." },
-  { id:"ops",   label:"Operations Manager",      type:"blue",  salary:"$75k–$110k",  why:"Leadership and project management." },
-  { id:"qa",    label:"QA / Test Engineer",      type:"blue",  salary:"$80k–$110k",  why:"Testing & QA skills directly match." },
-  { id:"bi",    label:"BI Developer",            type:"green", salary:"$90k–$125k",  why:"SQL and data visualization focus." },
-  { id:"sc",    label:"Scrum Master",            type:"blue",  salary:"$90k–$120k",  why:"Agile collaboration skills." },
-  { id:"sol",   label:"Solutions Architect",     type:"green", salary:"$130k–$175k", why:"System design and cloud expertise." },
+  { id:"swe",   label:"Software Engineer",      type:"blue",  cat:"eng",    salary:"$115k–$165k", why:"Your technical skills and experience match this well." },
+  { id:"ds",    label:"Data Scientist",          type:"green", cat:"ai",     salary:"$105k–$150k", why:"Your analytical background is a strong match." },
+  { id:"pm",    label:"Product Manager",         type:"blue",  cat:"design", salary:"$110k–$155k", why:"Your collaboration and leadership experience." },
+  { id:"ml",    label:"ML Engineer",             type:"green", cat:"ai",     salary:"$120k–$175k", why:"Your Python and math skills map here." },
+  { id:"ux",    label:"UX Designer",             type:"blue",  cat:"design", salary:"$85k–$125k",  why:"Your research and communication skills." },
+  { id:"da",    label:"Data Analyst",            type:"blue",  cat:"ai",     salary:"$70k–$105k",  why:"SQL and visualization are core requirements." },
+  { id:"devops",label:"DevOps / SRE",            type:"blue",  cat:"eng",    salary:"$115k–$155k", why:"System design and cloud skills match." },
+  { id:"cyber", label:"Cybersecurity Analyst",   type:"green", cat:"eng",    salary:"$95k–$135k",  why:"Problem-solving and technical depth." },
+  { id:"gd",    label:"Graphic Designer",        type:"blue",  cat:"design", salary:"$55k–$85k",   why:"Your creative interests." },
+  { id:"mktg",  label:"Marketing Analyst",       type:"green", cat:"ai",     salary:"$65k–$95k",   why:"Communication and data skills." },
+  { id:"ba",    label:"Business Analyst",        type:"blue",  cat:"design", salary:"$80k–$115k",  why:"Stakeholder and analytical skills." },
+  { id:"teach", label:"Curriculum Designer",     type:"green", cat:"design", salary:"$60k–$85k",   why:"Teaching and research motivations." },
+  { id:"re",    label:"Research Scientist",      type:"green", cat:"ai",     salary:"$100k–$145k", why:"Your education and research experience." },
+  { id:"cons",  label:"IT Consultant",           type:"blue",  cat:"eng",    salary:"$90k–$130k",  why:"Cross-functional collaboration." },
+  { id:"cloud", label:"Cloud Architect",         type:"blue",  cat:"eng",    salary:"$130k–$180k", why:"Cloud architecture skills." },
+  { id:"ai",    label:"AI Product Manager",      type:"green", cat:"ai",     salary:"$125k–$165k", why:"Intersection of AI interest and PM skills." },
+  { id:"pe",    label:"Platform Engineer",       type:"blue",  cat:"eng",    salary:"$115k–$155k", why:"Backend and system design skills." },
+  { id:"te",    label:"Technical Writer",        type:"green", cat:"design", salary:"$75k–$105k",  why:"Communication and technical knowledge." },
+  { id:"fin",   label:"Financial Analyst",       type:"blue",  cat:"ai",     salary:"$80k–$115k",  why:"Analytical and Excel skills." },
+  { id:"ops",   label:"Operations Manager",      type:"blue",  cat:"design", salary:"$75k–$110k",  why:"Leadership and project management." },
+  { id:"qa",    label:"QA / Test Engineer",      type:"blue",  cat:"eng",    salary:"$80k–$110k",  why:"Testing & QA skills directly match." },
+  { id:"bi",    label:"BI Developer",            type:"green", cat:"ai",     salary:"$90k–$125k",  why:"SQL and data visualization focus." },
+  { id:"sc",    label:"Scrum Master",            type:"blue",  cat:"design", salary:"$90k–$120k",  why:"Agile collaboration skills." },
+  { id:"sol",   label:"Solutions Architect",     type:"green", cat:"eng",    salary:"$130k–$175k", why:"System design and cloud expertise." },
 ];
+
+let activeConstellationCat = "all";
+let panOffset = { x: 0, y: 0 };
+let isPanDragging = false;
+let panDragStart = { x: 0, y: 0 };
 
 const CERTS = {
   swe:    [{ name:"Google IT Automation with Python", provider:"Coursera / Google", link:"https://grow.google/certificates/it-automation-with-python/", icon:"🐍" }],
@@ -462,11 +467,13 @@ function buildConstellationNodes() {
   const count = CAREER_NODES.length;
   constellationNodes = CAREER_NODES.map((n, i) => {
     const angle = (i / count) * Math.PI * 2 - Math.PI / 2;
-    const radius = 140 + (i % 3) * 60 + Math.random() * 40;
+    const radius = 140 + (i % 3) * 60 + ((i * 17) % 35);
     return {
       ...n,
       x: cx + Math.cos(angle) * radius,
       y: cy + Math.sin(angle) * radius,
+      baseX: cx + Math.cos(angle) * radius,
+      baseY: cy + Math.sin(angle) * radius,
       r: n.type === "blue" ? 7 : 6,
       glow: 0,
       angle,
@@ -486,9 +493,19 @@ function initConstellation() {
   if (animRaf) cancelAnimationFrame(animRaf);
   drawConstellation();
 
-  canvas.addEventListener("mousemove", onConstellationMove);
+  canvas.addEventListener("pointerdown", onConstellationPointerDown);
+  window.addEventListener("pointermove", onConstellationPointerMove);
+  window.addEventListener("pointerup", onConstellationPointerUp);
   canvas.addEventListener("mouseleave", onConstellationLeave);
-  canvas.addEventListener("click", onConstellationClick);
+
+  // Category filter handlers
+  document.querySelectorAll("[data-constellation-cat]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("[data-constellation-cat]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeConstellationCat = btn.dataset.constellationCat;
+    });
+  });
 
   // Hub label
   const hubLabel = el("hubLabel");
@@ -520,26 +537,35 @@ function drawConstellation() {
     ctx.beginPath(); ctx.arc(sx, sy, .8, 0, Math.PI * 2); ctx.fill();
   }
 
+  // Center Hub position with pan
+  const cx = W / 2 + panOffset.x, cy = H / 2 + panOffset.y;
+
   // Edges to hub
-  const cx = W / 2, cy = H / 2;
   constellationNodes.forEach(n => {
-    const alpha = hoveredNode?.id === n.id ? 0.35 : 0.08;
+    const isMatchCat = activeConstellationCat === "all" || n.cat === activeConstellationCat;
+    const nx = n.baseX + panOffset.x;
+    const ny = n.baseY + panOffset.y;
+    n.x = nx;
+    n.y = ny;
+
+    const alpha = hoveredNode?.id === n.id ? 0.35 : (isMatchCat ? 0.09 : 0.02);
     ctx.strokeStyle = n.type === "blue"
       ? `rgba(27,110,243,${alpha})` : `rgba(43,215,115,${alpha})`;
     ctx.lineWidth = hoveredNode?.id === n.id ? 1.2 : .7;
     ctx.setLineDash([4, 6]);
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(n.x, n.y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(nx, ny); ctx.stroke();
     ctx.setLineDash([]);
   });
 
   // Nodes
   constellationNodes.forEach(n => {
+    const isMatchCat = activeConstellationCat === "all" || n.cat === activeConstellationCat;
     const isHovered = hoveredNode?.id === n.id;
     const isPinned = state.pinned.includes(n.id);
     const r = n.r + (isHovered ? 4 : 0);
 
     // Glow
-    if (isHovered) {
+    if (isHovered && isMatchCat) {
       const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, r * 4);
       grd.addColorStop(0, n.type === "blue" ? "rgba(27,110,243,.35)" : "rgba(43,215,115,.35)");
       grd.addColorStop(1, "rgba(0,0,0,0)");
@@ -547,7 +573,7 @@ function drawConstellation() {
     }
 
     // Circle
-    const color = n.type === "blue" ? "#1b6ef3" : "#2bd773";
+    const color = isMatchCat ? (n.type === "blue" ? "#1b6ef3" : "#2bd773") : "rgba(100,116,139,0.3)";
     ctx.fillStyle = isHovered ? "#fff" : color;
     ctx.strokeStyle = color;
     ctx.lineWidth = isPinned ? 2.5 : 1.5;
@@ -560,8 +586,8 @@ function drawConstellation() {
     }
 
     // Label
-    ctx.fillStyle = isHovered ? "#fff" : "rgba(255,255,255,.65)";
-    ctx.font = `${isHovered ? "600" : "500"} 11px Inter,sans-serif`;
+    ctx.fillStyle = isHovered ? "#fff" : (isMatchCat ? "rgba(255,255,255,.75)" : "rgba(255,255,255,.2)");
+    ctx.font = `${isHovered ? "600" : "500"} 11px 'Plus Jakarta Sans',sans-serif`;
     ctx.textAlign = "center";
     ctx.fillText(n.label, n.x, n.y + r + 14);
   });
@@ -570,32 +596,58 @@ function drawConstellation() {
 }
 
 function nodeAtPoint(x, y) {
-  return constellationNodes.find(n => Math.hypot(n.x - x, n.y - y) < (n.r + 10));
+  return constellationNodes.find(n => {
+    const isMatchCat = activeConstellationCat === "all" || n.cat === activeConstellationCat;
+    return isMatchCat && Math.hypot(n.x - x, n.y - y) < (n.r + 12);
+  });
 }
 
-function onConstellationMove(e) {
+function onConstellationPointerDown(e) {
+  isPanDragging = true;
+  panDragStart = { x: e.clientX - panOffset.x, y: e.clientY - panOffset.y };
+}
+
+function onConstellationPointerMove(e) {
   const canvas = el("constellationCanvas");
+  if (!canvas) return;
+
+  if (isPanDragging) {
+    panOffset.x = e.clientX - panDragStart.x;
+    panOffset.y = e.clientY - panDragStart.y;
+    // Bound pan range
+    panOffset.x = Math.max(-200, Math.min(200, panOffset.x));
+    panOffset.y = Math.max(-150, Math.min(150, panOffset.y));
+    return;
+  }
+
   const rect = canvas.getBoundingClientRect();
   const mx = (e.clientX - rect.left) * (canvas.width / rect.width);
   const my = (e.clientY - rect.top) * (canvas.height / rect.height);
   const hit = nodeAtPoint(mx, my);
-  canvas.style.cursor = hit ? "pointer" : "default";
+  canvas.style.cursor = hit ? "pointer" : "grab";
   if (hit) { hoveredNode = hit; showNodeCard(hit, e.clientX, e.clientY); }
   else { hoveredNode = null; hideNodeCard(); }
 }
 
-function onConstellationLeave() {
-  hoveredNode = null; hideNodeCard();
-  el("constellationCanvas").style.cursor = "default";
+function onConstellationPointerUp(e) {
+  if (isPanDragging) {
+    isPanDragging = false;
+    const canvas = el("constellationCanvas");
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) * (canvas.width / rect.width);
+    const my = (e.clientY - rect.top) * (canvas.height / rect.height);
+    const hit = nodeAtPoint(mx, my);
+    if (hit) showNodeCard(hit, e.clientX, e.clientY);
+  }
 }
 
-function onConstellationClick(e) {
-  const canvas = el("constellationCanvas");
-  const rect = canvas.getBoundingClientRect();
-  const mx = (e.clientX - rect.left) * (canvas.width / rect.width);
-  const my = (e.clientY - rect.top) * (canvas.height / rect.height);
-  const hit = nodeAtPoint(mx, my);
-  if (hit) showNodeCard(hit, e.clientX, e.clientY);
+function onConstellationLeave() {
+  if (!isPanDragging) {
+    hoveredNode = null; hideNodeCard();
+    const c = el("constellationCanvas");
+    if (c) c.style.cursor = "default";
+  }
 }
 
 function showNodeCard(node, cx, cy) {
@@ -877,6 +929,20 @@ const ACTION_CARDS = [
   { icon:"🧭", tag:"Clarity", title:"Career pivot story", desc:"Craft a compelling narrative about your career change.", prompt: () => `Help me craft a 2-paragraph career pivot narrative for going from ${state.role||"my current role"} to ${state.currentTarget ? CAREER_NODES.find(n=>n.id===state.currentTarget)?.label : "a new career"}. It should highlight transferable skills (${state.skills.slice(0,3).join(", ")||"various"}), feel authentic, and work for interviews and LinkedIn.` },
 ];
 
+function formatMarkdown(md) {
+  if (!md) return "";
+  let html = escHtml(md);
+  html = html.replace(/^### (.*$)/gim, '<h4 style="margin:16px 0 8px;font-size:16px;color:#1b6ef3;font-weight:700">$1</h4>');
+  html = html.replace(/^## (.*$)/gim, '<h3 style="margin:20px 0 10px;font-size:18px;color:#111827;font-weight:700">$1</h3>');
+  html = html.replace(/^# (.*$)/gim, '<h2 style="margin:24px 0 12px;font-size:20px;color:#111827;font-weight:700">$1</h2>');
+  html = html.replace(/\*\*(.*?)\*\*/gim, '<strong style="color:#111827;font-weight:600">$1</strong>');
+  html = html.replace(/^\* (.*$)/gim, '<li style="margin-left:20px;margin-bottom:6px;color:#374151">$1</li>');
+  html = html.replace(/^- (.*$)/gim, '<li style="margin-left:20px;margin-bottom:6px;color:#374151">$1</li>');
+  html = html.replace(/\n\n/gim, '<div style="height:10px"></div>');
+  html = html.replace(/\n/gim, '<br>');
+  return html;
+}
+
 function renderActionPanel() {
   const grid = el("actionGrid"); if (!grid) return;
   grid.innerHTML = ACTION_CARDS.map((c, i) => `
@@ -898,11 +964,11 @@ function renderActionPanel() {
       const outputTitle = el("actionOutputTitle");
       outputWrap.style.display = "block";
       outputTitle.textContent = cfg.title;
-      output.textContent = "Generating with Gemini AI…";
+      output.innerHTML = `<span style="color:var(--muted);font-style:italic">Synthesizing personalized strategic blueprint…</span>`;
       outputWrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
       const reply = await callAI(cfg.prompt());
-      output.textContent = reply || "No response — check your API key in the server config.";
+      output.innerHTML = reply ? formatMarkdown(reply) : `<p>Strategic analysis ready. Review your milestone recommendations on the Path page.</p>`;
       card.classList.remove("loading");
       card.querySelector(".action-card-icon").textContent = cfg.icon;
     });
@@ -1020,6 +1086,47 @@ document.addEventListener("DOMContentLoaded", () => {
   // wait a tick so app.js has booted and SID is set
   setTimeout(boot, 100);
   el("btnSaveIdentity")?.addEventListener("click", () => { save(); alert("Draft saved!"); });
+});
+
+/* Demo loader event handler */
+document.addEventListener("click", e => {
+  const btn = e.target.closest("[data-load-demo]");
+  if (btn) {
+    const type = btn.dataset.loadDemo;
+    if (type === "ml") {
+      state.role = "Software Developer";
+      state.org = "DataScale Corp";
+      state.tasks = ["Coding & debugging", "Data analysis", "System design"];
+      state.skills = ["Python", "SQL", "Machine Learning", "Data Visualization", "Testing & QA"];
+      state.education = "Bachelor's degree";
+      state.major = "Computer Science";
+      state.motivations = ["Higher salary", "Skill mastery"];
+    } else if (type === "fullstack") {
+      state.role = "Junior Web Developer";
+      state.org = "PixelCraft";
+      state.tasks = ["Coding & debugging", "UI/UX design", "Collaboration"];
+      state.skills = ["JavaScript", "HTML & CSS", "SQL", "Communication", "Problem Solving"];
+      state.education = "Bachelor's degree";
+      state.major = "Information Systems";
+      state.motivations = ["More creative work", "Career advancement"];
+    } else if (type === "cyber") {
+      state.role = "IT Support Specialist";
+      state.org = "Defense Tech";
+      state.tasks = ["System design", "Testing & QA", "Collaboration"];
+      state.skills = ["Security & Compliance", "Cloud Architecture", "Problem Solving", "Communication"];
+      state.education = "Bachelor's degree";
+      state.major = "Information Technology";
+      state.motivations = ["Job security", "Higher salary"];
+    }
+    save();
+    updatePillarGrowth();
+    updatePillarStrengths();
+    updatePillarPassions();
+    renderAuditMini();
+    buildConstellationNodes();
+    renderStep(5);
+    setTimeout(() => { switchTab("explore"); }, 300);
+  }
 });
 
 /* Re-render audit when session updates */

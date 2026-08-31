@@ -165,8 +165,14 @@
 
       <!-- Constellation canvas -->
       <div class="constellation-col">
-        <div class="constellation-toolbar">
-          <span class="constellation-legend">
+        <div class="constellation-toolbar" style="flex-wrap:wrap;gap:8px;">
+          <div class="constellation-filters" id="constellationFilters" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+            <button class="ghost-pill active" data-constellation-cat="all">All (24)</button>
+            <button class="ghost-pill" data-constellation-cat="eng">Engineering</button>
+            <button class="ghost-pill" data-constellation-cat="ai">AI & Data</button>
+            <button class="ghost-pill" data-constellation-cat="design">Design & Product</button>
+          </div>
+          <span class="constellation-legend" style="margin-left:auto;">
             <span class="legend-dot blue"></span> Database match &nbsp;
             <span class="legend-dot green"></span> AI suggestion
           </span>
