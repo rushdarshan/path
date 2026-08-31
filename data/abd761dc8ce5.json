@@ -1,0 +1,1897 @@
+{
+  "id": "abd761dc8ce5",
+  "createdAt": "2026-08-30T16:36:58.680Z",
+  "updatedAt": "2026-08-30T17:45:07.000Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "Interests: Python",
+      "at": "2026-08-30T16:37:25.506Z"
+    },
+    {
+      "role": "user",
+      "text": "Motivations: Career switch",
+      "at": "2026-08-30T16:38:42.577Z"
+    },
+    {
+      "role": "user",
+      "text": "Skills: Python, JavaScript, Debugging",
+      "at": "2026-08-30T16:39:24.572Z"
+    },
+    {
+      "role": "user",
+      "text": "Experience: None",
+      "at": "2026-08-30T16:39:53.889Z"
+    },
+    {
+      "role": "user",
+      "text": "Education: Bachelor's degree in Computer Science. I can study 8 hours per week.",
+      "at": "2026-08-30T16:40:18.880Z"
+    },
+    {
+      "role": "user",
+      "text": "Education: Bachelor's degree in Computer Science. I can study 8 hours per week.",
+      "at": "2026-08-30T16:41:16.637Z"
+    },
+    {
+      "role": "user",
+      "text": "My current/most recent role: Software Engineer.",
+      "at": "2026-08-30T17:25:56.119Z"
+    },
+    {
+      "role": "user",
+      "text": "Tasks I've performed: Collaborate with cross-functional teams, Manage projects and timelines.",
+      "at": "2026-08-30T17:25:59.738Z"
+    },
+    {
+      "role": "user",
+      "text": "Skills I have: Testing & QA, Excel / Sheets, Collaboration.",
+      "at": "2026-08-30T17:26:04.050Z"
+    },
+    {
+      "role": "user",
+      "text": "Education: Bachelor's degree. I can study 8 hours per week.",
+      "at": "2026-08-30T17:26:08.116Z"
+    },
+    {
+      "role": "user",
+      "text": "Motivations: Career switch.",
+      "at": "2026-08-30T17:26:10.802Z"
+    },
+    {
+      "role": "user",
+      "text": "My current/most recent role: Data Scientist at Google.",
+      "at": "2026-08-30T17:45:00.948Z"
+    },
+    {
+      "role": "user",
+      "text": "Tasks I've performed: Collaborate with cross-functional teams, Manage projects and timelines.",
+      "at": "2026-08-30T17:45:03.235Z"
+    },
+    {
+      "role": "user",
+      "text": "Skills I have: Testing & QA, Excel / Sheets, Collaboration.",
+      "at": "2026-08-30T17:45:04.136Z"
+    },
+    {
+      "role": "user",
+      "text": "Education: Bachelor's degree. I can study 8 hours per week.",
+      "at": "2026-08-30T17:45:06.092Z"
+    },
+    {
+      "role": "user",
+      "text": "Motivations: Career switch.",
+      "at": "2026-08-30T17:45:07.000Z"
+    }
+  ],
+  "answers": {
+    "goal": "Interests: Python",
+    "interests": "Motivations: Career switch python python",
+    "baseline": "Skills: Python, JavaScript, Debugging",
+    "learningPattern": "Experience: None",
+    "timeBudget": "Education: Bachelor's degree. I can study 8 hours per week.",
+    "hoursPerWeek": 8
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "career_transition",
+        "confidence": 0.65,
+        "evidence": "switch"
+      },
+      {
+        "goal": "academic",
+        "confidence": 0.65,
+        "evidence": "degree"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "javascript-core",
+        "confidence": 0.8,
+        "evidence": "javascript",
+        "kind": "explicit_keyword"
+      }
+    ],
+    "needs": [
+      {
+        "need": "control-flow depth",
+        "concept": "control-flow",
+        "topicId": "programming-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Programming Basics"
+      },
+      {
+        "need": "data-cleaning depth",
+        "concept": "data-cleaning",
+        "topicId": "python-for-data",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Python for Data Analysis"
+      },
+      {
+        "need": "arrays-objects depth",
+        "concept": "arrays-objects",
+        "topicId": "javascript-core",
+        "confidence": 0.45,
+        "evidence": "basic exposure to JavaScript Core"
+      }
+    ],
+    "style": {
+      "visual": 0.4,
+      "reading": 0.4,
+      "hands": 0.7,
+      "auditory": 0.2
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    "baseline": {
+      "level": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    "resume": null,
+    "profilerEvidence": {
+      "style": {},
+      "goals": [
+        "switch",
+        "degree"
+      ],
+      "interests": [
+        "python",
+        "python",
+        "javascript"
+      ],
+      "baseline": "assumed from response"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.683,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.378,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "domain": "web",
+        "level": 1,
+        "estHours": 45,
+        "total": 0.629,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.41200000000000003,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "style",
+            "score": 0.41,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.622,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.22000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-30T17:45:06.096Z"
+  },
+  "path": {
+    "id": "path-mtg3nsxd",
+    "totalHours": 125,
+    "estimatedWeeks": 16,
+    "hoursPerWeek": 8,
+    "order": [
+      "programming-basics",
+      "javascript-core",
+      "python-for-data"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "javascript-core"
+        ],
+        "totalHours": 85
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "python-for-data"
+        ],
+        "totalHours": 40
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "javascript-core",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: variables."
+      },
+      {
+        "week": 2,
+        "start": "2026-09-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: data-types."
+      },
+      {
+        "week": 3,
+        "start": "2026-09-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: control-flow."
+      },
+      {
+        "week": 4,
+        "start": "2026-09-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: functions."
+      },
+      {
+        "week": 5,
+        "start": "2026-09-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: debugging."
+      },
+      {
+        "week": 6,
+        "start": "2026-10-04",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: syntax-and-types."
+      },
+      {
+        "week": 7,
+        "start": "2026-10-11",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: functions-scope-closures."
+      },
+      {
+        "week": 8,
+        "start": "2026-10-18",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: arrays-objects."
+      },
+      {
+        "week": 9,
+        "start": "2026-10-25",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: asynchronous-js."
+      },
+      {
+        "week": 10,
+        "start": "2026-11-01",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: dom-manipulation."
+      },
+      {
+        "week": 11,
+        "start": "2026-11-08",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 5,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 5h. Consolidation: review + practice JavaScript Core."
+      },
+      {
+        "week": 12,
+        "start": "2026-11-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: pandas-dataframes."
+      },
+      {
+        "week": 13,
+        "start": "2026-11-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: numpy-arrays."
+      },
+      {
+        "week": 14,
+        "start": "2026-11-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: data-cleaning."
+      },
+      {
+        "week": 15,
+        "start": "2026-12-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: data-visualization."
+      },
+      {
+        "week": 16,
+        "start": "2026-12-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: eda-reporting."
+      }
+    ],
+    "definitions": {
+      "programming-basics": {
+        "name": "Programming Basics",
+        "estHours": 40,
+        "level": 1
+      },
+      "javascript-core": {
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "level": 1
+      },
+      "python-for-data": {
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "level": 2
+      }
+    },
+    "createdAt": "2026-08-30T17:45:06.097Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a some baseline learner who wants to career transition — 125 hours across 16 weeks, tuned to 8h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "estHours": 40,
+        "score": 0.683,
+        "summary": "Programming Basics is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.80): advances \"career transition\" goal your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "score": 0.629,
+        "summary": "JavaScript Core is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.80): advances \"career transition\" goal your learning style (score 0.41): resources match how you learn",
+        "profiledBacking": "javascript",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your learning style (score 0.41): resources match how you learn"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive",
+            "minutes": 800,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Odin Project",
+            "url": "https://www.theodinproject.com/paths/foundations",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "score": 0.622,
+        "summary": "Python for Data Analysis is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, JavaScript Core.",
+        "topics": [
+          "Programming Basics",
+          "JavaScript Core"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Python for Data Analysis.",
+        "topics": [
+          "Python for Data Analysis"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 16 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-30",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 1: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-06",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 2: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-13",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 3: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-20",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 4: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-27",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 5: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-04",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 6: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-11",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 7: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-18",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 8: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-25",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 9: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 10,
+          "start": "2026-11-01",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 10: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-08",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 11: 5h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-15",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 12: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-22",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 13: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-29",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 14: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-06",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 15: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-13",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 16: 8h on Core Skills — Python for Data Analysis"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 0.4,
+      "reading": 0.4,
+      "hands": 0.7,
+      "auditory": 0.2
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "control-flow": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "functions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "javascript-core": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "syntax-and-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "functions-scope-closures": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "arrays-objects": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "asynchronous-js": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "dom-manipulation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    }
+  },
+  "nextQuiz": null,
+  "status": "ready",
+  "audit": [
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "career_transition",
+      "confidence": 0.65,
+      "evidence": "switch"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "academic",
+      "confidence": 0.65,
+      "evidence": "degree"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "javascript-core",
+      "confidence": 0.8,
+      "evidence": "javascript"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "timeBudget",
+      "value": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "baseline",
+      "value": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 0.7,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:40:18.889Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0.2,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "career_transition",
+      "confidence": 0.65,
+      "evidence": "switch"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "academic",
+      "confidence": 0.65,
+      "evidence": "degree"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "javascript-core",
+      "confidence": 0.8,
+      "evidence": "javascript"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "timeBudget",
+      "value": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "baseline",
+      "value": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 0.7,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:41:16.640Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0.2,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "goal",
+      "value": "career_transition",
+      "confidence": 0.65,
+      "evidence": "switch"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "goal",
+      "value": "academic",
+      "confidence": 0.65,
+      "evidence": "degree"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "javascript-core",
+      "confidence": 0.8,
+      "evidence": "javascript"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "databases-sql",
+      "confidence": 0.8,
+      "evidence": "data"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "data-structures-algorithms",
+      "confidence": 0.8,
+      "evidence": "data"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "interest",
+      "value": "business-analytics",
+      "confidence": 0.8,
+      "evidence": "dashboards"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "timeBudget",
+      "value": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "baseline",
+      "value": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 1,
+      "evidence": "visualization"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 1,
+      "evidence": "build"
+    },
+    {
+      "at": "2026-08-30T16:43:41.140Z",
+      "source": "resume",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "career_transition",
+      "confidence": 0.65,
+      "evidence": "switch"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "academic",
+      "confidence": 0.65,
+      "evidence": "degree"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "javascript-core",
+      "confidence": 0.8,
+      "evidence": "javascript"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "timeBudget",
+      "value": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "baseline",
+      "value": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 0.7,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:26:08.135Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0.2,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "career_transition",
+      "confidence": 0.65,
+      "evidence": "switch"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "academic",
+      "confidence": 0.65,
+      "evidence": "degree"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "javascript-core",
+      "confidence": 0.8,
+      "evidence": "javascript"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "timeBudget",
+      "value": 8,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "baseline",
+      "value": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0.4,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 0.7,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T17:45:06.096Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0.2,
+      "evidence": "inferred"
+    }
+  ],
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true,
+  "gapReport": {
+    "overallCoverage": 0.19869281045751633,
+    "topics": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "coverage": 0.196078431372549,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "data-types",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-types",
+              "sequence": 2,
+              "afterShare": 0.196078431372549,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 1 of 16: study block 2 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "variables",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "variables",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 1 of 16: study block 1 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "control-flow",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "control-flow",
+              "sequence": 3,
+              "afterShare": 0.392156862745098,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 1 of 16: study block 3 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "functions",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions",
+              "sequence": 4,
+              "afterShare": 0.588235294117647,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 1 of 16: study block 4 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "debugging",
+            "weight": 0.9,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "debugging",
+              "sequence": 5,
+              "afterShare": 0.8235294117647058,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 1 of 16: study block 5 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "variables",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive"
+          },
+          "estMinutes": 60,
+          "paceNote": "Week 1 of 16: study block 1 of 5 — opens \"Python.org Beginner Tutorial\" (Programming Basics)."
+        },
+        "note": "You already have 1 of 5 concepts in Programming Basics; the gap is variables, control-flow, functions, debugging."
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "syntax-and-types",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "syntax-and-types",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 135,
+              "paceNote": "Week 6 of 16: study block 1 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "functions-scope-closures",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions-scope-closures",
+              "sequence": 2,
+              "afterShare": 0.1694915254237288,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 175,
+              "paceNote": "Week 6 of 16: study block 2 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "arrays-objects",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "arrays-objects",
+              "sequence": 3,
+              "afterShare": 0.38983050847457623,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 150,
+              "paceNote": "Week 6 of 16: study block 3 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "asynchronous-js",
+            "weight": 1.4,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "asynchronous-js",
+              "sequence": 4,
+              "afterShare": 0.5762711864406779,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 190,
+              "paceNote": "Week 6 of 16: study block 4 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "dom-manipulation",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dom-manipulation",
+              "sequence": 5,
+              "afterShare": 0.8135593220338982,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 150,
+              "paceNote": "Week 6 of 16: study block 5 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "syntax-and-types",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive"
+          },
+          "estMinutes": 135,
+          "paceNote": "Week 6 of 16: study block 1 of 5 — opens \"JavaScript.info\" (JavaScript Core)."
+        },
+        "note": "No evidence you already know JavaScript Core — start from the foundation."
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "coverage": 0.4,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "data-cleaning",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-cleaning",
+              "sequence": 3,
+              "afterShare": 0.41818181818181815,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 85,
+              "paceNote": "Week 12 of 16: study block 3 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "data-visualization",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-visualization",
+              "sequence": 4,
+              "afterShare": 0.6363636363636364,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Week 12 of 16: study block 4 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "pandas-dataframes",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "pandas-dataframes",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 95,
+              "paceNote": "Week 12 of 16: study block 1 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "numpy-arrays",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "numpy-arrays",
+              "sequence": 2,
+              "afterShare": 0.23636363636363636,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Week 12 of 16: study block 2 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "eda-reporting",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "eda-reporting",
+              "sequence": 5,
+              "afterShare": 0.8181818181818182,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Week 12 of 16: study block 5 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "pandas-dataframes",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course"
+          },
+          "estMinutes": 95,
+          "paceNote": "Week 12 of 16: study block 1 of 5 — opens \"Kaggle Learn Python + Pandas\" (Python for Data Analysis)."
+        },
+        "note": "You already have 2 of 5 concepts in Python for Data Analysis; the gap is pandas-dataframes, numpy-arrays, eda-reporting."
+      }
+    ],
+    "summary": "Most of the path is new — 80% of required concepts are not yet evidenced in your background."
+  }
+}

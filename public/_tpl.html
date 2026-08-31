@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pathlight — A map, not a maze</title>
+<meta name="description" content="Pathlight turns what you've done — interests, skills, experience and education — into a prerequisite-aware learning path with a real weekly plan. One question at a time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<!-- Dreamer wash kept for builder island -->
+<link rel="stylesheet" href="/dreamer.css">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<!-- Sticky nav — glass, editorial -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#" aria-label="Pathlight home"><span class="brand-mark">◎</span><span class="brand-word">Pathlight</span><span class="brand-dot">·</span><span class="brand-sub">Cartography of Prerequisites</span></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#builder">Live demo</a>
+      <a href="#proof">Proof</a>
+      <a class="nav-cta" href="#builder" id="navCta">Start exploring →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#how">How it works</a>
+    <a href="#builder">Live demo</a>
+    <a href="#proof">Proof</a>
+    <a href="#builder" class="primary">Start exploring</a>
+  </div>
+</header>
+
+<!-- HERO — strongest authored moment -->
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Deterministic · Prerequisite-aware · Audit-trailed</p>
+      <h1 id="heroTitle" class="hero-title" data-split>
+        <span class="hero-line">A map,</span>
+        <span class="hero-line accent">not a maze.</span>
+      </h1>
+      <p class="hero-sub">Pathlight turns interests, skills, experience and education into a <em>dependency-ordered</em> path with a real weekly plan — one honest question at a time. No 40-field form. No Topmate redirect.</p>
+      <div class="hero-ctas">
+        <a href="#builder" class="btn primary" id="heroStartBtn">Start exploring — Dreamer →</a>
+        <a href="#how" class="btn ghost">See how it works</a>
+      </div>
+      <p class="hero-trust">Early-stage experiment · Your audit trail stays local · Same engine that powers Profile / Path / Why</p>
+      <div class="session-pill" id="sessionPill"><span class="dotLive" aria-hidden="true"></span> Session <code id="sessionId">…</code></div>
+    </div>
+    <div class="hero-scene" aria-hidden="true">
+      <canvas id="dagCanvas" width="640" height="420" role="img" aria-label="Topographic prerequisite map"></canvas>
+      <!-- static poster fallback -->
+      <svg class="hero-poster" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="640" height="420" rx="16" fill="#FBF9F3" stroke="#E4E7ED"/>
+        <g fill="none" stroke="#E4E7ED" stroke-width="1"><path d="M40 120 C180 60 320 180 600 100"/><path d="M40 200 C180 140 320 260 600 180"/><path d="M40 280 C160 220 340 340 600 260"/></g>
+        <g fill="#1F2836"><circle cx="120" cy="120" r="8"/><circle cx="340" cy="170" r="10"/><circle cx="520" cy="110" r="8"/><circle cx="200" cy="260" r="7"/></g>
+      </svg>
+      <div class="scene-caption"><span>Live DAG · Pointer-responsive · Canvas 2D, no WebGL tax</span></div>
+    </div>
+  </div>
+  <div class="aurora" aria-hidden="true"></div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <div class="section-inner">
+    <p class="kicker">Manifesto</p>
+    <h2 class="section-title">Ambitious but <em>overwhelmed.</em><br>We draw the next chapter, not the whole atlas.</h2>
+    <div class="manifesto-grid">
+      <p>Inspired by Google Career Dreamer’s playful one-by-one playground — but wired to a deterministic ontology, BKT mastery and a weekly scheduler. Blue dots are verified occupations · Green dots are AI ideas. Every card keeps its <em>Why am I seeing this?</em></p>
+      <ul class="checklist">
+        <li><span class="icon" data-icon="check"></span> Prerequisite graph, not vibes</li>
+        <li><span class="icon" data-icon="check"></span> Gap-aware + time-budgeted</li>
+        <li><span class="icon" data-icon="check"></span> Audit trail survives refresh</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS — editorial, numbered, no glass-everywhere -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="kicker">How it works</p>
+      <h2>One honest question at a time —<br>until the map draws itself.</h2>
+    </div>
+    <ol class="how-grid">
+      <li class="how-card">
+        <span class="step-num">01</span>
+        <h3>Shape your story</h3>
+        <p>Interests → motivations → skills → experience → education. Each chip is a fact the engine keeps.</p>
+        <span class="meta">Placeholder cycles 14 career prompts · 3s</span>
+      </li>
+      <li class="how-card">
+        <span class="step-num">02</span>
+        <h3>Map to prerequisites</h3>
+        <p>Ontology turns your story into a dependency-ordered path — gap diagnosis and weekly slots before you start.</p>
+        <span class="meta">BKT + timeBudget guard · Whoa there ≥3 skills + ≥1 exp/edu</span>
+      </li>
+      <li class="how-card">
+        <span class="step-num">03</span>
+        <h3>Explore paths</h3>
+        <p>Topographic preview + weekly plan + concept mastery — with thumbs to reshape the next run.</p>
+        <span class="meta">Art-directed DAG, not a generic bento</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVE BUILDER — Dreamer-in-Converse as aurora island + live preview -->
+<section class="builder" id="builder">
+  <div class="section-inner">
+    <div class="builder-head">
+      <p class="kicker">Live demo — Dreamer inside Converse</p>
+      <h2>Answer here. Watch the map answer back.</h2>
+      <p class="subtle">Same SID, same history, same audit trail — this <em>is</em> the Converse.</p>
+    </div>
+
+    <div class="builder-grid">
+      <!-- LEFT: staged workshop (inherited) -->
+      <div class="builder-stage-col">
+        <div class="stage" id="dreamerStage" aria-live="polite">
+          <div class="stageTop" id="stageTop"></div>
+          <div class="stageHead">
+            <div class="progress" id="progressDots"></div>
+            <div class="stepLabel" id="stepLabel"></div>
+            <h3 id="stageTitle"></h3>
+            <p class="instr" id="stageInstr"></p>
+          </div>
+          <div class="stageBody" id="stageBody"></div>
+          <div id="stageError"></div>
+          <div class="stageFoot">
+            <button class="ghostBtn" id="btnBack">Back</button>
+            <span style="flex:1"></span>
+            <button class="primary" id="btnNext">Next →</button>
+          </div>
+        </div>
+        <div class="chat-legacy" id="chatLegacy">
+          <div class="chat-window" id="chatWindow" aria-live="polite"></div>
+          <div class="chat-input-row">
+            <textarea id="chatInput" rows="2" placeholder="Or type free-form if you prefer to chat…"></textarea>
+            <button id="sendBtn" class="btn primary">Send</button>
+          </div>
+          <p class="hint" id="chatHint">Dreamer steps drive the same Converse session — free-form chat works too. <kbd>Enter</kbd> to send.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: live path preview — the cartography -->
+      <aside class="builder-preview" aria-labelledby="previewTitle">
+        <div class="preview-head">
+          <h3 id="previewTitle">Your map — live</h3>
+          <span class="live-badge"><span class="pulse"></span> Updates on every answer</span>
+        </div>
+        <div class="preview-card">
+          <canvas id="previewCanvas" width="360" height="260" aria-label="Live prerequisite graph preview"></canvas>
+          <svg class="preview-poster" viewBox="0 0 360 260" aria-hidden="true"><rect width="360" height="260" rx="12" fill="#fff" stroke="#E4E7ED"/><g fill="none" stroke="#E4E7ED"><path d="M20 60 C100 30 180 90 340 50"/><path d="M20 140 C100 110 180 180 340 130"/></g></svg>
+          <div class="preview-meta" id="previewMeta">Answer step 1 to see prerequisites bloom.</div>
+        </div>
+        <div class="preview-tabs" role="tablist" aria-label="Preview sections">
+          <button role="tab" aria-selected="true" data-preview="profile">Profile</button>
+          <button role="tab" aria-selected="false" data-preview="path">Path</button>
+          <button role="tab" aria-selected="false" data-preview="audit">Audit</button>
+        </div>
+        <div class="preview-panels">
+          <div class="preview-panel active" id="preview-profile"></div>
+          <div class="preview-panel" id="preview-path"></div>
+          <div class="preview-panel" id="preview-audit"></div>
+        </div>
+        <div class="gate mini" id="gate"><div><b>Continue to full Pathlight</b><div style="font-size:13px;opacity:.9">Opens Profile · Path · Why · Mastery</div></div><button class="ctaWhite" id="gateContinue">See full path →</button></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF — replaces scattered tabs with authored pause -->
+<section class="proof" id="proof">
+  <div class="section-inner">
+    <div class="proof-intro">
+      <p class="kicker">Proof — not promise</p>
+      <h2>Every tile keeps its reason.</h2>
+    </div>
+    <div class="proof-grid">
+      <article class="proof-card"><h3><span class="icon" data-icon="audit"></span> Audit trail</h3><p>Factor → value → confidence → evidence, per field. Survives refresh via <code>data/*.json</code>.</p><div class="proof-panel" id="proof-audit"></div></article>
+      <article class="proof-card"><h3><span class="icon" data-icon="weekly"></span> Weekly plan</h3><p>Prerequisite-ordered, time-budgeted slots — not a dump of links.</p><div class="proof-panel" id="proof-weekly"></div></article>
+      <article class="proof-card"><h3><span class="icon" data-icon="mastery"></span> Mastery map</h3><p>BKT-backed quizzes + concept graph. Resume upload reshapes weak concepts live.</p><div class="proof-panel" id="proof-mastery"></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME — honest add-on, not gallery theater -->
+<section class="resume-strip" id="resume">
+  <div class="section-inner">
+    <h2>Already have a resume? Drop it in.</h2>
+    <p class="subtle">Gap card + weekly re-targeting — no gallery, just mirror.</p>
+    <div class="resume-row">
+      <textarea id="resumeInput" rows="4" placeholder="Paste plaintext resume…"></textarea>
+      <button class="btn primary" id="resumeBtn">Analyze & reshape weak concepts</button>
+    </div>
+    <div id="resumeResult" class="resume-result"></div>
+    <div id="filterBarHost" style="margin-top:16px"></div>
+    <div id="templateGridHost"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA — aurora gate -->
+<section class="final" id="final">
+  <div class="final-card">
+    <h2>Dream big. Start small.<br>One question is enough.</h2>
+    <p>Pathlight keeps the rest — audit, graph, schedule, mastery.</p>
+    <a href="#builder" class="btn primary">Back to live demo →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography of Prerequisites · Early-stage experiment</span></div>
+    <div class="footer-links"><a href="#how">How it works</a><a href="#builder">Live demo</a><a href="#proof">Proof</a></div>
+    <p class="legal">Content, copy and map are original to this build. Career Dreamer referenced only as interaction inspiration — no Google identity, screenshot trace, or copied copy. Photos via Unsplash; icons via Iconify Solar.</p>
+  </div>
+</footer>
+
+<!-- Hidden tabs shim — keeps legacy app.js panel JS harmless if it queries tabs (it hides nothing now) -->
+<div hidden aria-hidden="true"><nav class="tabs" id="tabs"><button class="tab active" data-tab="chat">Converse</button></nav><section class="panel active" id="panel-chat"></section><section class="panel" id="panel-profile"></section><section class="panel" id="panel-path"></section><section class="panel" id="panel-explain"></section><section class="panel" id="panel-mastery"></section><section class="panel" id="panel-resume"></section></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="/app.js"></script>
+<script src="/dreamer.js"></script>
+</body>
+</html>

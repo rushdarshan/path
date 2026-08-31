@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dreamer — Pathlight</title>
+  <meta name="description" content="AI-powered career exploration: shape your identity, explore paths on a live constellation, and take action with Gemini AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dreamer.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">◎</span>
+      <span class="brand-word">Pathlight</span>
+      <span class="brand-dot">·</span>
+      <span class="brand-sub">Dreamer</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/dreamer.html" aria-current="page">Dreamer</a>
+      <a href="/profile.html">Profile</a>
+      <a href="/path.html">Path</a>
+      <a href="/audit.html">Why</a>
+      <a href="/mastery.html">Mastery</a>
+      <a href="/resume.html">Resume</a>
+      <a class="nav-cta" href="/profile.html">See your map →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="/dreamer.html" aria-current="page">Dreamer</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/path.html">Path</a>
+    <a href="/audit.html">Why</a>
+    <a href="/mastery.html">Mastery</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/profile.html" class="primary">See your map</a>
+  </div>
+</header>
+
+<!-- ═══ DREAMER SHELL ═══ -->
+<div class="dreamer-shell" id="dreamerShell">
+
+  <!-- TOP BAR -->
+  <div class="dreamer-topbar">
+    <div class="dreamer-topbar-inner">
+      <div class="dreamer-topbar-left">
+        <p class="dreamer-eyebrow">Career Dreamer · Live demo</p>
+        <h1 class="dreamer-title">What do you want to <em>become?</em></h1>
+      </div>
+      <div class="dreamer-topbar-right">
+        <span class="session-pill">
+          <span class="dotLive"></span>
+          Session <code id="sessionId">…</code>
+        </span>
+        <div class="dreamer-aurora-bar" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB NAV -->
+  <nav class="dreamer-tabs" role="tablist" aria-label="Dreamer sections" id="dreamerTabs">
+    <button class="dtab active" role="tab" aria-selected="true"  data-tab="identity"  id="dtab-identity">
+      <span class="dtab-icon">🌱</span> Career Identity
+    </button>
+    <button class="dtab" role="tab" aria-selected="false" data-tab="explore"   id="dtab-explore">
+      <span class="dtab-icon">🕸️</span> Explore Paths
+      <span class="dtab-badge" id="exploreBadge" hidden>0</span>
+    </button>
+    <button class="dtab" role="tab" aria-selected="false" data-tab="action"    id="dtab-action">
+      <span class="dtab-icon">⚡</span> Take Action
+    </button>
+    <button class="dtab" role="tab" aria-selected="false" data-tab="chat"      id="dtab-chat">
+      <span class="dtab-icon">💬</span> Free Chat
+    </button>
+    <button class="dtab" role="tab" aria-selected="false" data-tab="pinned"    id="dtab-pinned">
+      <span class="dtab-icon">📌</span> Pinned
+      <span class="dtab-badge" id="pinnedBadge" hidden>0</span>
+    </button>
+  </nav>
+
+  <!-- ═══ PANEL: CAREER IDENTITY ═══ -->
+  <section class="dpanel active" id="panel-identity" role="tabpanel" aria-labelledby="dtab-identity">
+    <div class="identity-wrap">
+
+      <!-- LEFT: Stage card -->
+      <div class="identity-stage-col">
+        <div class="stage" id="dreamerStage" aria-live="polite">
+          <div class="stageTop" id="stageTop"></div>
+          <div class="stageHead">
+            <div class="progress" id="progressDots" role="list"></div>
+            <p class="stepLabel" id="stepLabel">Step 1 of 6</p>
+            <h2 id="stageTitle">What's your current or most recent role?</h2>
+            <p class="instr" id="stageInstr">This anchors every suggestion. Military occupations welcome — we'll help translate your MOS/AFSC.</p>
+          </div>
+          <div class="stageBody" id="stageBody"></div>
+          <div class="stageError" id="stageError" role="alert"></div>
+          <div class="stageFoot">
+            <button class="ghostBtn" id="btnBack">← Back</button>
+            <span style="flex:1"></span>
+            <button class="btn primary stagePrimary" id="btnNext">Next →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Identity card (builds as you answer) -->
+      <aside class="identity-preview-col" aria-label="Your emerging identity">
+        <div class="identity-card" id="identityCard">
+          <div class="identity-card-head">
+            <span class="identity-card-eyebrow">Your career identity</span>
+            <span class="identity-live-badge"><span class="dreamer-pulse"></span> Building…</span>
+          </div>
+          <div class="identity-pillars" id="identityPillars">
+            <div class="pillar" id="pillar-growth">
+              <span class="pillar-icon">🌱</span>
+              <div class="pillar-body">
+                <p class="pillar-label">Growth</p>
+                <p class="pillar-val" id="pillar-growth-val">Answer step 1</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-strengths">
+              <span class="pillar-icon">💪</span>
+              <div class="pillar-body">
+                <p class="pillar-label">Strengths</p>
+                <p class="pillar-val" id="pillar-strengths-val">—</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-passions">
+              <span class="pillar-icon">🎯</span>
+              <div class="pillar-body">
+                <p class="pillar-label">Passions</p>
+                <p class="pillar-val" id="pillar-passions-val">—</p>
+              </div>
+            </div>
+          </div>
+          <div class="identity-statement" id="identityStatement">
+            <p class="identity-stmt-text" id="identityStmtText">Complete the steps to generate your AI career identity statement.</p>
+          </div>
+          <div class="identity-card-actions" id="identityCardActions" style="display:none">
+            <button class="btn primary" id="btnExplore">Explore paths →</button>
+            <button class="btn ghost" id="btnSaveIdentity">Save draft</button>
+          </div>
+        </div>
+
+        <!-- Proof / audit trail -->
+        <div class="audit-mini" id="auditMini">
+          <p class="audit-mini-head">Audit trail — every inference is kept</p>
+          <div id="auditMiniList"><p class="audit-mini-empty">Inferences appear as you answer.</p></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ═══ PANEL: EXPLORE PATHS ═══ -->
+  <section class="dpanel" id="panel-explore" role="tabpanel" aria-labelledby="dtab-explore">
+    <div class="explore-wrap">
+
+      <!-- Constellation canvas -->
+      <div class="constellation-col">
+        <div class="constellation-toolbar">
+          <span class="constellation-legend">
+            <span class="legend-dot blue"></span> Database match &nbsp;
+            <span class="legend-dot green"></span> AI suggestion
+          </span>
+          <button class="ghost-pill" id="btnRemix">↺ Remix</button>
+          <button class="ghost-pill" id="btnWhyModal">Why these? ↗</button>
+        </div>
+        <div class="constellation-stage" id="constellationStage">
+          <canvas id="constellationCanvas" aria-label="Career paths constellation"></canvas>
+          <div class="constellation-hub" id="constellationHub">
+            <div class="hub-ring"></div>
+            <div class="hub-core">
+              <p class="hub-label" id="hubLabel">Explore paths based on…</p>
+              <p class="hub-pills" id="hubPills">🌱 &nbsp; 💪</p>
+            </div>
+          </div>
+          <!-- Hover card (positioned by JS) -->
+          <div class="node-card" id="nodeCard" hidden>
+            <div class="node-card-head">
+              <span class="node-card-dot blue" id="nodeCardDot"></span>
+              <strong id="nodeCardTitle">Role</strong>
+              <button class="node-card-pin" id="nodeCardPin" aria-label="Pin this role">📌</button>
+            </div>
+            <p class="node-card-salary" id="nodeCardSalary"></p>
+            <p class="node-card-why" id="nodeCardWhy"></p>
+            <div class="node-card-actions">
+              <button class="btn primary node-card-btn" id="nodeCardDeep">Deep dive →</button>
+              <button class="btn ghost node-card-btn" id="nodeCardPath">Set as target</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: pinned / details placeholder -->
+      <aside class="explore-aside">
+        <div class="explore-aside-card">
+          <p class="explore-aside-head">📌 Pinned paths</p>
+          <div id="explorePinnedList"><p class="explore-aside-empty">Pin roles from the constellation to compare them here.</p></div>
+        </div>
+        <div class="explore-aside-card" id="exploreDetailCard" style="display:none">
+          <p class="explore-aside-head" id="exploreDetailHead">Role overview</p>
+          <div id="exploreDetailBody"></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ═══ PANEL: TAKE ACTION ═══ -->
+  <section class="dpanel" id="panel-action" role="tabpanel" aria-labelledby="dtab-action">
+    <div class="action-wrap">
+      <div class="action-hero">
+        <h2 class="action-title">Take Action with AI</h2>
+        <p class="action-sub">One-click Gemini prompts tailored to your identity. Each response wires directly into your Pathlight session.</p>
+      </div>
+      <div class="action-grid" id="actionGrid">
+        <!-- Filled by JS -->
+      </div>
+      <div class="action-output-wrap" id="actionOutputWrap" style="display:none">
+        <div class="action-output-head">
+          <strong id="actionOutputTitle">Output</strong>
+          <button class="ghost-pill" id="btnActionClose">✕ Close</button>
+        </div>
+        <div class="action-output" id="actionOutput"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PANEL: FREE CHAT ═══ -->
+  <section class="dpanel" id="panel-chat" role="tabpanel" aria-labelledby="dtab-chat">
+    <div class="chat-wrap">
+      <div class="chat-window" id="chatWindow" aria-live="polite" aria-label="Conversation history"></div>
+      <div class="chat-foot">
+        <textarea id="chatInput" rows="2" placeholder="Ask anything about your path, skills, or next step…" aria-label="Chat input"></textarea>
+        <button id="sendBtn" class="btn primary">Send</button>
+      </div>
+      <p class="chat-hint">Same session as Career Identity — every answer feeds your map. <kbd>Enter</kbd> to send.</p>
+    </div>
+  </section>
+
+  <!-- ═══ PANEL: PINNED ═══ -->
+  <section class="dpanel" id="panel-pinned" role="tabpanel" aria-labelledby="dtab-pinned">
+    <div class="pinned-wrap">
+      <h2 class="pinned-title">Pinned Careers</h2>
+      <p class="pinned-sub">Roles you've saved for comparison. Set one as your Pathlight target to generate a full roadmap.</p>
+      <div class="pinned-grid" id="pinnedGrid">
+        <div class="pinned-empty" id="pinnedEmpty">
+          <span class="pinned-empty-icon">📌</span>
+          <p>No roles pinned yet — explore the constellation and pin what excites you.</p>
+          <button class="btn primary" id="btnGoExplore">Open constellation →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /dreamer-shell -->
+
+<!-- ═══ DEEP DIVE MODAL ═══ -->
+<div class="modal-overlay" id="deepDiveOverlay" hidden aria-modal="true" role="dialog" aria-labelledby="modalRoleTitle">
+  <div class="modal" id="deepDiveModal">
+    <div class="modal-header">
+      <div>
+        <h2 class="modal-role-title" id="modalRoleTitle">Role</h2>
+        <span class="modal-salary" id="modalSalary"></span>
+      </div>
+      <div class="modal-header-actions">
+        <button class="ghost-pill modal-pin-btn" id="modalPinBtn">📌 Pin</button>
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      </div>
+    </div>
+    <!-- Slide nav -->
+    <nav class="modal-slides-nav" role="tablist">
+      <button class="mstab active" data-slide="0" role="tab">Overview</button>
+      <button class="mstab" data-slide="1" role="tab">💪 Sweet spots</button>
+      <button class="mstab" data-slide="2" role="tab">📋 Day in the life</button>
+      <button class="mstab" data-slide="3" role="tab">⬆️ Growth areas</button>
+      <button class="mstab" data-slide="4" role="tab">🎓 Certificates</button>
+    </nav>
+    <div class="modal-body" id="modalBody"><!-- filled by JS --></div>
+    <div class="modal-footer">
+      <button class="btn ghost" id="modalPrev">← Prev</button>
+      <span class="modal-slide-counter" id="modalSlideCounter">1 / 5</span>
+      <button class="btn ghost" id="modalNext">Next →</button>
+      <button class="btn primary" id="modalSetTarget">Set as my Pathlight target →</button>
+    </div>
+  </div>
+</div>
+
+<!-- WHY modal -->
+<div class="modal-overlay" id="whyOverlay" hidden aria-modal="true" role="dialog" aria-label="Why these results?">
+  <div class="modal modal-why">
+    <div class="modal-header">
+      <h2>Why am I seeing these results?</h2>
+      <button class="modal-close" id="whyClose" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body" id="whyBody"></div>
+  </div>
+</div>
+
+<!-- Legacy shim (keeps app.js tabs shim silent) -->
+<div hidden aria-hidden="true">
+  <nav class="tabs" id="tabs"><button class="tab active" data-tab="chat">Converse</button></nav>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography · Early-stage</span></div>
+    <div class="footer-links">
+      <a href="/">Home</a><a href="/profile.html">Profile</a><a href="/path.html">Path</a>
+      <a href="/audit.html">Why</a><a href="/mastery.html">Mastery</a><a href="/resume.html">Resume</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="/app.js"></script>
+<script src="/dreamer.js"></script>
+</body>
+</html>

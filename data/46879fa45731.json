@@ -1,0 +1,64 @@
+{
+  "id": "46879fa45731",
+  "createdAt": "2026-08-29T18:36:04.849Z",
+  "updatedAt": "2026-08-29T18:36:05.047Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:04.862Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:04.891Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:04.923Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:04.954Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:04.969Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:05.000Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:05.031Z"
+    },
+    {
+      "role": "user",
+      "text": "some answer",
+      "at": "2026-08-29T18:36:05.047Z"
+    }
+  ],
+  "answers": {
+    "goal": "some answer",
+    "interests": "some answer",
+    "baseline": "some answer",
+    "learningPattern": "some answer"
+  },
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

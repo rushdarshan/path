@@ -1,0 +1,3146 @@
+{
+  "id": "0d8db51beaf4",
+  "createdAt": "2026-08-29T19:11:00.755Z",
+  "updatedAt": "2026-08-29T19:11:00.755Z",
+  "convoStep": "goal",
+  "convoHistory": [],
+  "answers": {
+    "interests": " python python sql tableau react react"
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "start_learning",
+        "confidence": 0.4,
+        "evidence": "short or generic answer"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "databases-sql",
+        "confidence": 0.8,
+        "evidence": "sql",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "business-analytics",
+        "confidence": 0.8,
+        "evidence": "tableau",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "react-frontend",
+        "confidence": 0.8,
+        "evidence": "react",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "react-native-mobile",
+        "confidence": 0.8,
+        "evidence": "react",
+        "kind": "explicit_keyword"
+      }
+    ],
+    "needs": [
+      {
+        "need": "control-flow depth",
+        "concept": "control-flow",
+        "topicId": "programming-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Programming Basics"
+      },
+      {
+        "need": "data-cleaning depth",
+        "concept": "data-cleaning",
+        "topicId": "python-for-data",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Python for Data Analysis"
+      },
+      {
+        "need": "aggregations depth",
+        "concept": "aggregations",
+        "topicId": "databases-sql",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Databases & SQL"
+      },
+      {
+        "need": "sql-for-reporting depth",
+        "concept": "sql-for-reporting",
+        "topicId": "business-analytics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Business Analytics & Dashboards"
+      },
+      {
+        "need": "effects-and-lifecycle depth",
+        "concept": "effects-and-lifecycle",
+        "topicId": "react-frontend",
+        "confidence": 0.45,
+        "evidence": "basic exposure to React Frontend Development"
+      },
+      {
+        "need": "state-and-async depth",
+        "concept": "state-and-async",
+        "topicId": "react-native-mobile",
+        "confidence": 0.45,
+        "evidence": "basic exposure to React Native / Mobile Apps"
+      }
+    ],
+    "style": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 0,
+      "auditory": 0
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 8,
+      "confidence": 0.3,
+      "evidence": "no explicit budget"
+    },
+    "baseline": {
+      "level": "some",
+      "confidence": 0.5,
+      "evidence": "assumed from response"
+    },
+    "resume": {
+      "raw": "Data analyst Python pandas SQL Tableau. Familiar with React Native mobile apps and Flutter.",
+      "tokens": [
+        "python",
+        "pandas",
+        "sql",
+        "tableau",
+        "react",
+        "flutter"
+      ],
+      "topicHits": [
+        {
+          "topicId": "programming-basics",
+          "confidence": 0.6,
+          "evidence": "python",
+          "kind": "resume_token"
+        },
+        {
+          "topicId": "python-for-data",
+          "confidence": 0.6,
+          "evidence": "python",
+          "kind": "resume_token"
+        },
+        {
+          "topicId": "databases-sql",
+          "confidence": 0.6,
+          "evidence": "sql",
+          "kind": "resume_token"
+        },
+        {
+          "topicId": "business-analytics",
+          "confidence": 0.6,
+          "evidence": "tableau",
+          "kind": "resume_token"
+        },
+        {
+          "topicId": "react-frontend",
+          "confidence": 0.6,
+          "evidence": "react",
+          "kind": "resume_token"
+        },
+        {
+          "topicId": "react-native-mobile",
+          "confidence": 0.6,
+          "evidence": "react",
+          "kind": "resume_token"
+        }
+      ],
+      "roleHits": [
+        "analyst"
+      ],
+      "wordCount": 14
+    },
+    "profilerEvidence": {
+      "style": {},
+      "goals": [
+        "short or generic answer"
+      ],
+      "interests": [
+        "python",
+        "python",
+        "sql",
+        "tableau",
+        "react",
+        "react"
+      ],
+      "baseline": "assumed from response"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.646,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.646,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "domain": "web",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.601,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "domain": "web",
+        "level": 2,
+        "estHours": 55,
+        "total": 0.57,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires JavaScript Core, HTML & CSS Foundations first"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.57,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "business-analytics",
+        "name": "Business Analytics & Dashboards",
+        "domain": "data",
+        "level": 2,
+        "estHours": 35,
+        "total": 0.57,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Databases & SQL first"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "react-native-mobile",
+        "name": "React Native / Mobile Apps",
+        "domain": "mobile",
+        "level": 2,
+        "estHours": 50,
+        "total": 0.57,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires JavaScript Core first"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "domain": "web",
+        "level": 1,
+        "estHours": 45,
+        "total": 0.542,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-29T19:11:00.789Z"
+  },
+  "path": {
+    "id": "path-mterafna",
+    "totalHours": 325,
+    "estimatedWeeks": 43,
+    "hoursPerWeek": 8,
+    "order": [
+      "programming-basics",
+      "databases-sql",
+      "html-css",
+      "javascript-core",
+      "python-for-data",
+      "business-analytics",
+      "react-frontend",
+      "react-native-mobile"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "html-css",
+          "javascript-core"
+        ],
+        "totalHours": 145
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "python-for-data",
+          "business-analytics",
+          "react-frontend",
+          "react-native-mobile"
+        ],
+        "totalHours": 180
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "javascript-core",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      },
+      {
+        "from": "databases-sql",
+        "to": "business-analytics",
+        "prerequisite": true
+      },
+      {
+        "from": "javascript-core",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "html-css",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "javascript-core",
+        "to": "react-native-mobile",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: variables."
+      },
+      {
+        "week": 2,
+        "start": "2026-09-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: data-types."
+      },
+      {
+        "week": 3,
+        "start": "2026-09-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: control-flow."
+      },
+      {
+        "week": 4,
+        "start": "2026-09-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: functions."
+      },
+      {
+        "week": 5,
+        "start": "2026-09-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 8,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 8h. Focus: debugging."
+      },
+      {
+        "week": 6,
+        "start": "2026-10-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 8,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 8h. Focus: sql-queries."
+      },
+      {
+        "week": 7,
+        "start": "2026-10-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 8,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 8h. Focus: joins."
+      },
+      {
+        "week": 8,
+        "start": "2026-10-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 8,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 8h. Focus: aggregations."
+      },
+      {
+        "week": 9,
+        "start": "2026-10-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 6,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 6h. Focus: schema-design-normalization."
+      },
+      {
+        "week": 10,
+        "start": "2026-10-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 8,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 8h. Focus: html-semantics."
+      },
+      {
+        "week": 11,
+        "start": "2026-11-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 8,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 8h. Focus: css-selectors."
+      },
+      {
+        "week": 12,
+        "start": "2026-11-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 8,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 8h. Focus: box-model-layout."
+      },
+      {
+        "week": 13,
+        "start": "2026-11-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 6,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 6h. Focus: flexbox-grid."
+      },
+      {
+        "week": 14,
+        "start": "2026-11-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: syntax-and-types."
+      },
+      {
+        "week": 15,
+        "start": "2026-12-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: functions-scope-closures."
+      },
+      {
+        "week": 16,
+        "start": "2026-12-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: arrays-objects."
+      },
+      {
+        "week": 17,
+        "start": "2026-12-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: asynchronous-js."
+      },
+      {
+        "week": 18,
+        "start": "2026-12-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 8,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 8h. Focus: dom-manipulation."
+      },
+      {
+        "week": 19,
+        "start": "2027-01-02",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 5,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 5h. Consolidation: review + practice JavaScript Core."
+      },
+      {
+        "week": 20,
+        "start": "2027-01-09",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: pandas-dataframes."
+      },
+      {
+        "week": 21,
+        "start": "2027-01-16",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: numpy-arrays."
+      },
+      {
+        "week": 22,
+        "start": "2027-01-23",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: data-cleaning."
+      },
+      {
+        "week": 23,
+        "start": "2027-01-30",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: data-visualization."
+      },
+      {
+        "week": 24,
+        "start": "2027-02-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 8,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 8h. Focus: eda-reporting."
+      },
+      {
+        "week": 25,
+        "start": "2027-02-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "business-analytics",
+        "topic": "Business Analytics & Dashboards",
+        "hours": 8,
+        "topics": [
+          "business-analytics"
+        ],
+        "action": "Business Analytics & Dashboards (Core Skills) — 8h. Focus: kpi-definition."
+      },
+      {
+        "week": 26,
+        "start": "2027-02-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "business-analytics",
+        "topic": "Business Analytics & Dashboards",
+        "hours": 8,
+        "topics": [
+          "business-analytics"
+        ],
+        "action": "Business Analytics & Dashboards (Core Skills) — 8h. Focus: visual-dashboards."
+      },
+      {
+        "week": 27,
+        "start": "2027-02-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "business-analytics",
+        "topic": "Business Analytics & Dashboards",
+        "hours": 8,
+        "topics": [
+          "business-analytics"
+        ],
+        "action": "Business Analytics & Dashboards (Core Skills) — 8h. Focus: sql-for-reporting."
+      },
+      {
+        "week": 28,
+        "start": "2027-03-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "business-analytics",
+        "topic": "Business Analytics & Dashboards",
+        "hours": 8,
+        "topics": [
+          "business-analytics"
+        ],
+        "action": "Business Analytics & Dashboards (Core Skills) — 8h. Focus: storytelling-with-data."
+      },
+      {
+        "week": 29,
+        "start": "2027-03-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "business-analytics",
+        "topic": "Business Analytics & Dashboards",
+        "hours": 3,
+        "topics": [
+          "business-analytics"
+        ],
+        "action": "Business Analytics & Dashboards (Core Skills) — 3h. Consolidation: review + practice Business Analytics & Dashboards."
+      },
+      {
+        "week": 30,
+        "start": "2027-03-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: components-and-props."
+      },
+      {
+        "week": 31,
+        "start": "2027-03-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: state-and-hooks."
+      },
+      {
+        "week": 32,
+        "start": "2027-04-03",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: effects-and-lifecycle."
+      },
+      {
+        "week": 33,
+        "start": "2027-04-10",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: routing."
+      },
+      {
+        "week": 34,
+        "start": "2027-04-17",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: api-integration."
+      },
+      {
+        "week": 35,
+        "start": "2027-04-24",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 8,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 8h. Focus: state-management."
+      },
+      {
+        "week": 36,
+        "start": "2027-05-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Consolidation: review + practice React Frontend Development."
+      },
+      {
+        "week": 37,
+        "start": "2027-05-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Focus: native-components."
+      },
+      {
+        "week": 38,
+        "start": "2027-05-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Focus: navigation."
+      },
+      {
+        "week": 39,
+        "start": "2027-05-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Focus: state-and-async."
+      },
+      {
+        "week": 40,
+        "start": "2027-05-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Focus: device-apis."
+      },
+      {
+        "week": 41,
+        "start": "2027-06-05",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Focus: app-store-release."
+      },
+      {
+        "week": 42,
+        "start": "2027-06-12",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 8,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 8h. Consolidation: review + practice React Native / Mobile Apps."
+      },
+      {
+        "week": 43,
+        "start": "2027-06-19",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-native-mobile",
+        "topic": "React Native / Mobile Apps",
+        "hours": 2,
+        "topics": [
+          "react-native-mobile"
+        ],
+        "action": "React Native / Mobile Apps (Core Skills) — 2h. Consolidation: review + practice React Native / Mobile Apps."
+      }
+    ],
+    "definitions": {
+      "programming-basics": {
+        "name": "Programming Basics",
+        "estHours": 40,
+        "level": 1
+      },
+      "databases-sql": {
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "level": 1
+      },
+      "html-css": {
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "javascript-core": {
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "level": 1
+      },
+      "python-for-data": {
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "level": 2
+      },
+      "business-analytics": {
+        "name": "Business Analytics & Dashboards",
+        "estHours": 35,
+        "level": 2
+      },
+      "react-frontend": {
+        "name": "React Frontend Development",
+        "estHours": 55,
+        "level": 2
+      },
+      "react-native-mobile": {
+        "name": "React Native / Mobile Apps",
+        "estHours": 50,
+        "level": 2
+      }
+    },
+    "createdAt": "2026-08-29T19:11:00.790Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a some baseline learner who wants to grow — 325 hours across 43 weeks, tuned to 8h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "estHours": 40,
+        "score": 0.646,
+        "summary": "Programming Basics is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.90): beginner-friendly ramp your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "score": 0.646,
+        "summary": "Databases & SQL is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.90): beginner-friendly ramp your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "sql",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "PostgreSQL Tutorial",
+            "url": "https://www.postgresqltutorial.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Stanford DB Course",
+            "url": "https://www.coursera.org/learn/database-sql",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "score": 0.601,
+        "summary": "HTML & CSS Foundations is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your interests (score 0.85): prerequisite for React Frontend Development (your stated interest) your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest)",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "freeCodeCamp Responsive Web Design",
+            "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Flexbox Froggy",
+            "url": "https://flexboxfroggy.com/",
+            "kind": "interactive",
+            "minutes": 45,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "score": 0.542,
+        "summary": "JavaScript Core is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your interests (score 0.85): prerequisite for React Frontend Development (your stated interest) your current level (score 0.34): level 1 vs your some baseline",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest)",
+          "your current level (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive",
+            "minutes": 800,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Odin Project",
+            "url": "https://www.theodinproject.com/paths/foundations",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "score": 0.57,
+        "summary": "Python for Data Analysis is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.40): beginner-friendly ramp",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "business-analytics",
+        "name": "Business Analytics & Dashboards",
+        "estHours": 35,
+        "score": 0.57,
+        "summary": "Business Analytics & Dashboards is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.40): beginner-friendly ramp",
+        "profiledBacking": "tableau",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": [
+          "Databases & SQL"
+        ],
+        "prereqSummary": "Prerequisites required first: Databases & SQL.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "Tableau Starter",
+            "url": "https://www.tableau.com/learn",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Mode SQL Analytics",
+            "url": "https://mode.com/sql-tutorial/",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "estHours": 55,
+        "score": 0.57,
+        "summary": "React Frontend Development is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.40): beginner-friendly ramp",
+        "profiledBacking": "react",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": [
+          "JavaScript Core",
+          "HTML & CSS Foundations"
+        ],
+        "prereqSummary": "Prerequisites required first: JavaScript Core, HTML & CSS Foundations.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "React official docs",
+            "url": "https://react.dev/learn",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Epic React (Kent C. Dodds)",
+            "url": "https://www.epicreact.dev/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scrimba Learn React",
+            "url": "https://scrimba.com/learn/learnreact",
+            "kind": "interactive",
+            "minutes": 400,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "react-native-mobile",
+        "name": "React Native / Mobile Apps",
+        "estHours": 50,
+        "score": 0.57,
+        "summary": "React Native / Mobile Apps is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.40): beginner-friendly ramp",
+        "profiledBacking": "react",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": [
+          "JavaScript Core"
+        ],
+        "prereqSummary": "Prerequisites required first: JavaScript Core.",
+        "styleMatch": "Resources are a balanced mix for your style.",
+        "resources": [
+          {
+            "title": "React Native official docs",
+            "url": "https://reactnative.dev/docs/getting-started",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Expo docs",
+            "url": "https://docs.expo.dev/",
+            "kind": "article",
+            "minutes": 200,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, Databases & SQL, HTML & CSS Foundations, JavaScript Core.",
+        "topics": [
+          "Programming Basics",
+          "Databases & SQL",
+          "HTML & CSS Foundations",
+          "JavaScript Core"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Python for Data Analysis, Business Analytics & Dashboards, React Frontend Development, React Native / Mobile Apps.",
+        "topics": [
+          "Python for Data Analysis",
+          "Business Analytics & Dashboards",
+          "React Frontend Development",
+          "React Native / Mobile Apps"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 43 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-29",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 1: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-05",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 2: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-12",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 3: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-19",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 4: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-26",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 5: 8h on Foundations — Programming Basics"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-03",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 6: 8h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-10",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 7: 8h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-17",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 8: 8h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-24",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 9: 6h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 10,
+          "start": "2026-10-31",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 10: 8h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-07",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 11: 8h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-14",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 12: 8h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-21",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 13: 6h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-28",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 14: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-05",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 15: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-12",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 16: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 17,
+          "start": "2026-12-19",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 17: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 18,
+          "start": "2026-12-26",
+          "milestone": "Foundations",
+          "hours": 8,
+          "note": "Week 18: 8h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 19,
+          "start": "2027-01-02",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 19: 5h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 20,
+          "start": "2027-01-09",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 20: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 21,
+          "start": "2027-01-16",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 21: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 22,
+          "start": "2027-01-23",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 22: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 23,
+          "start": "2027-01-30",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 23: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 24,
+          "start": "2027-02-06",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 24: 8h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 25,
+          "start": "2027-02-13",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 25: 8h on Core Skills — Business Analytics & Dashboards"
+        },
+        {
+          "week": 26,
+          "start": "2027-02-20",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 26: 8h on Core Skills — Business Analytics & Dashboards"
+        },
+        {
+          "week": 27,
+          "start": "2027-02-27",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 27: 8h on Core Skills — Business Analytics & Dashboards"
+        },
+        {
+          "week": 28,
+          "start": "2027-03-06",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 28: 8h on Core Skills — Business Analytics & Dashboards"
+        },
+        {
+          "week": 29,
+          "start": "2027-03-13",
+          "milestone": "Core Skills",
+          "hours": 3,
+          "note": "Week 29: 3h on Core Skills — Business Analytics & Dashboards"
+        },
+        {
+          "week": 30,
+          "start": "2027-03-20",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 30: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 31,
+          "start": "2027-03-27",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 31: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 32,
+          "start": "2027-04-03",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 32: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 33,
+          "start": "2027-04-10",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 33: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 34,
+          "start": "2027-04-17",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 34: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 35,
+          "start": "2027-04-24",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 35: 8h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 36,
+          "start": "2027-05-01",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 36: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 37,
+          "start": "2027-05-08",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 37: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 38,
+          "start": "2027-05-15",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 38: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 39,
+          "start": "2027-05-22",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 39: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 40,
+          "start": "2027-05-29",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 40: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 41,
+          "start": "2027-06-05",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 41: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 42,
+          "start": "2027-06-12",
+          "milestone": "Core Skills",
+          "hours": 8,
+          "note": "Week 42: 8h on Core Skills — React Native / Mobile Apps"
+        },
+        {
+          "week": 43,
+          "start": "2027-06-19",
+          "milestone": "Core Skills",
+          "hours": 2,
+          "note": "Week 43: 2h on Core Skills — React Native / Mobile Apps"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 0,
+      "auditory": 0
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "control-flow": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "databases-sql": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "sql-queries": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "joins": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "aggregations": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "schema-design-normalization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "indexing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "html-css": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "html-semantics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "css-selectors": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "box-model-layout": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "flexbox-grid": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "responsive-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "javascript-core": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "syntax-and-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions-scope-closures": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "arrays-objects": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "asynchronous-js": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "dom-manipulation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "business-analytics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "kpi-definition": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "visual-dashboards": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "sql-for-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "storytelling-with-data": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "react-frontend": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "components-and-props": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-and-hooks": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "effects-and-lifecycle": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "routing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "api-integration": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "react-native-mobile": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "native-components": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "navigation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-and-async": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "device-apis": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "app-store-release": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    }
+  },
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true,
+  "gapReport": {
+    "overallCoverage": 0.32917314935692726,
+    "topics": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "coverage": 0.196078431372549,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "data-types",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-types",
+              "sequence": 2,
+              "afterShare": 0.196078431372549,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~20% through \"Harvard CS50\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "variables",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "variables",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Harvard CS50\"."
+            }
+          },
+          {
+            "concept": "control-flow",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "control-flow",
+              "sequence": 3,
+              "afterShare": 0.392156862745098,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~39% through \"Harvard CS50\"."
+            }
+          },
+          {
+            "concept": "functions",
+            "weight": 1.2,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "functions",
+              "sequence": 4,
+              "afterShare": 0.588235294117647,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 210,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~59% through \"Harvard CS50\"."
+            }
+          },
+          {
+            "concept": "debugging",
+            "weight": 0.9,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "debugging",
+              "sequence": 5,
+              "afterShare": 0.8235294117647058,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 160,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"Harvard CS50\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "variables",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course"
+          },
+          "estMinutes": 175,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Harvard CS50\"."
+        },
+        "note": "You already have 1 of 5 concepts in Programming Basics; the gap is variables, control-flow, functions, debugging."
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "coverage": 0.18518518518518517,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "sql-queries",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "sql-queries",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"SQLBolt (interactive)\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "joins",
+            "weight": 1.3,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "joins",
+              "sequence": 2,
+              "afterShare": 0.18518518518518517,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 30,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~19% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "aggregations",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "aggregations",
+              "sequence": 3,
+              "afterShare": 0.4259259259259259,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~43% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "schema-design-normalization",
+            "weight": 1.1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "schema-design-normalization",
+              "sequence": 4,
+              "afterShare": 0.611111111111111,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~61% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "indexing",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "indexing",
+              "sequence": 5,
+              "afterShare": 0.8148148148148149,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~81% through \"SQLBolt (interactive)\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "sql-queries",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 20,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"SQLBolt (interactive)\"."
+        },
+        "note": "You already have 1 of 5 concepts in Databases & SQL; the gap is joins, aggregations, schema-design-normalization, indexing."
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "html-semantics",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "html-semantics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"MDN HTML Tutorial\"."
+            }
+          },
+          {
+            "concept": "css-selectors",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "css-selectors",
+              "sequence": 2,
+              "afterShare": 0.18181818181818182,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~18% through \"MDN HTML Tutorial\"."
+            }
+          },
+          {
+            "concept": "box-model-layout",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "box-model-layout",
+              "sequence": 3,
+              "afterShare": 0.36363636363636365,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~36% through \"MDN HTML Tutorial\"."
+            }
+          },
+          {
+            "concept": "flexbox-grid",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "flexbox-grid",
+              "sequence": 4,
+              "afterShare": 0.5818181818181819,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"MDN HTML Tutorial\"."
+            }
+          },
+          {
+            "concept": "responsive-design",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "responsive-design",
+              "sequence": 5,
+              "afterShare": 0.8,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~80% through \"MDN HTML Tutorial\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "html-semantics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article"
+          },
+          "estMinutes": 55,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"MDN HTML Tutorial\"."
+        },
+        "note": "No evidence you already know HTML & CSS Foundations — start from the foundation."
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "coverage": 0.1694915254237288,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "syntax-and-types",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "syntax-and-types",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"MDN JavaScript Guide\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "functions-scope-closures",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions-scope-closures",
+              "sequence": 2,
+              "afterShare": 0.1694915254237288,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 90,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~17% through \"MDN JavaScript Guide\"."
+            }
+          },
+          {
+            "concept": "arrays-objects",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "arrays-objects",
+              "sequence": 3,
+              "afterShare": 0.38983050847457623,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~39% through \"MDN JavaScript Guide\"."
+            }
+          },
+          {
+            "concept": "asynchronous-js",
+            "weight": 1.4,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "asynchronous-js",
+              "sequence": 4,
+              "afterShare": 0.5762711864406779,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 95,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"MDN JavaScript Guide\"."
+            }
+          },
+          {
+            "concept": "dom-manipulation",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dom-manipulation",
+              "sequence": 5,
+              "afterShare": 0.8135593220338982,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~81% through \"MDN JavaScript Guide\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "syntax-and-types",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article"
+          },
+          "estMinutes": 70,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"MDN JavaScript Guide\"."
+        },
+        "note": "You already have 1 of 5 concepts in JavaScript Core; the gap is functions-scope-closures, arrays-objects, asynchronous-js, dom-manipulation."
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "coverage": 0.6363636363636364,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "pandas-dataframes",
+            "weight": 1.3,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "pandas-dataframes",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 95,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "data-cleaning",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-cleaning",
+              "sequence": 3,
+              "afterShare": 0.41818181818181815,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 85,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~42% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "data-visualization",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-visualization",
+              "sequence": 4,
+              "afterShare": 0.6363636363636364,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~64% through \"Kaggle Learn Python + Pandas\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "numpy-arrays",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "numpy-arrays",
+              "sequence": 2,
+              "afterShare": 0.23636363636363636,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~24% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "eda-reporting",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "eda-reporting",
+              "sequence": 5,
+              "afterShare": 0.8181818181818182,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"Kaggle Learn Python + Pandas\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "pandas-dataframes",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course"
+          },
+          "estMinutes": 95,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Kaggle Learn Python + Pandas\"."
+        },
+        "note": "You already have 3 of 5 concepts in Python for Data Analysis; the gap is numpy-arrays, eda-reporting."
+      },
+      {
+        "topicId": "business-analytics",
+        "name": "Business Analytics & Dashboards",
+        "coverage": 0.48780487804878053,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "sql-for-reporting",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "sql-for-reporting",
+              "sequence": 3,
+              "afterShare": 0.5121951219512195,
+              "resource": {
+                "title": "Tableau Starter",
+                "url": "https://www.tableau.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 3 of 4 — roughly the first ~51% through \"Tableau Starter\"."
+            }
+          },
+          {
+            "concept": "storytelling-with-data",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "storytelling-with-data",
+              "sequence": 4,
+              "afterShare": 0.7560975609756099,
+              "resource": {
+                "title": "Tableau Starter",
+                "url": "https://www.tableau.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 4 of 4 — roughly the first ~76% through \"Tableau Starter\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "kpi-definition",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "kpi-definition",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Tableau Starter",
+                "url": "https://www.tableau.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 1 of 4 — roughly the first ~0% through \"Tableau Starter\"."
+            }
+          },
+          {
+            "concept": "visual-dashboards",
+            "weight": 1.1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "visual-dashboards",
+              "sequence": 2,
+              "afterShare": 0.24390243902439027,
+              "resource": {
+                "title": "Tableau Starter",
+                "url": "https://www.tableau.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 80,
+              "paceNote": "Plan study block 2 of 4 — roughly the first ~24% through \"Tableau Starter\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "kpi-definition",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Tableau Starter",
+            "url": "https://www.tableau.com/learn",
+            "kind": "course"
+          },
+          "estMinutes": 75,
+          "paceNote": "Plan study block 1 of 4 — roughly the first ~0% through \"Tableau Starter\"."
+        },
+        "note": "You already have 2 of 4 concepts in Business Analytics & Dashboards; the gap is kpi-definition, visual-dashboards."
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "coverage": 0.5384615384615384,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "components-and-props",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "components-and-props",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"React official docs\"."
+            }
+          },
+          {
+            "concept": "state-and-hooks",
+            "weight": 1.3,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "state-and-hooks",
+              "sequence": 2,
+              "afterShare": 0.15384615384615385,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 100,
+              "paceNote": "Plan study block 2 of 6 — roughly the first ~15% through \"React official docs\"."
+            }
+          },
+          {
+            "concept": "effects-and-lifecycle",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "effects-and-lifecycle",
+              "sequence": 3,
+              "afterShare": 0.3538461538461538,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 90,
+              "paceNote": "Plan study block 3 of 6 — roughly the first ~35% through \"React official docs\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "routing",
+            "weight": 0.9,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "routing",
+              "sequence": 4,
+              "afterShare": 0.5384615384615384,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 4 of 6 — roughly the first ~54% through \"React official docs\"."
+            }
+          },
+          {
+            "concept": "api-integration",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "api-integration",
+              "sequence": 5,
+              "afterShare": 0.676923076923077,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 5 of 6 — roughly the first ~68% through \"React official docs\"."
+            }
+          },
+          {
+            "concept": "state-management",
+            "weight": 1.1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "state-management",
+              "sequence": 6,
+              "afterShare": 0.8307692307692308,
+              "resource": {
+                "title": "React official docs",
+                "url": "https://react.dev/learn",
+                "kind": "course"
+              },
+              "estMinutes": 85,
+              "paceNote": "Plan study block 6 of 6 — roughly the first ~83% through \"React official docs\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "components-and-props",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "React official docs",
+            "url": "https://react.dev/learn",
+            "kind": "course"
+          },
+          "estMinutes": 75,
+          "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"React official docs\"."
+        },
+        "note": "You already have 3 of 6 concepts in React Frontend Development; the gap is routing, api-integration, state-management."
+      },
+      {
+        "topicId": "react-native-mobile",
+        "name": "React Native / Mobile Apps",
+        "coverage": 0.42000000000000004,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "native-components",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "native-components",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "React Native official docs",
+                "url": "https://reactnative.dev/docs/getting-started",
+                "kind": "course"
+              },
+              "estMinutes": 80,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"React Native official docs\"."
+            }
+          },
+          {
+            "concept": "state-and-async",
+            "weight": 1.1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "state-and-async",
+              "sequence": 3,
+              "afterShare": 0.4,
+              "resource": {
+                "title": "React Native official docs",
+                "url": "https://reactnative.dev/docs/getting-started",
+                "kind": "course"
+              },
+              "estMinutes": 90,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~40% through \"React Native official docs\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "navigation",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "navigation",
+              "sequence": 2,
+              "afterShare": 0.2,
+              "resource": {
+                "title": "React Native official docs",
+                "url": "https://reactnative.dev/docs/getting-started",
+                "kind": "course"
+              },
+              "estMinutes": 80,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~20% through \"React Native official docs\"."
+            }
+          },
+          {
+            "concept": "device-apis",
+            "weight": 1,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "device-apis",
+              "sequence": 4,
+              "afterShare": 0.62,
+              "resource": {
+                "title": "React Native official docs",
+                "url": "https://reactnative.dev/docs/getting-started",
+                "kind": "course"
+              },
+              "estMinutes": 80,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~62% through \"React Native official docs\"."
+            }
+          },
+          {
+            "concept": "app-store-release",
+            "weight": 0.9,
+            "evidence": "profile baseline (some) + resume shows this topic",
+            "confidence": 0.5,
+            "pacing": {
+              "concept": "app-store-release",
+              "sequence": 5,
+              "afterShare": 0.82,
+              "resource": {
+                "title": "React Native official docs",
+                "url": "https://reactnative.dev/docs/getting-started",
+                "kind": "course"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"React Native official docs\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "native-components",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "React Native official docs",
+            "url": "https://reactnative.dev/docs/getting-started",
+            "kind": "course"
+          },
+          "estMinutes": 80,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"React Native official docs\"."
+        },
+        "note": "You already have 2 of 5 concepts in React Native / Mobile Apps; the gap is navigation, device-apis, app-store-release."
+      }
+    ],
+    "summary": "Most of the path is new — 67% of required concepts are not yet evidenced in your background."
+  }
+}

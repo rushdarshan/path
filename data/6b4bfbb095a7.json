@@ -1,0 +1,55 @@
+{
+  "id": "6b4bfbb095a7",
+  "createdAt": "2026-08-30T17:28:52.257Z",
+  "updatedAt": "2026-08-30T17:28:52.315Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "My current role: Software Engineer at Google.",
+      "at": "2026-08-30T17:28:52.283Z"
+    },
+    {
+      "role": "user",
+      "text": "Tasks I've performed: Collaborate with teams, Manage projects, Design solutions.",
+      "at": "2026-08-30T17:28:52.300Z"
+    },
+    {
+      "role": "user",
+      "text": "Skills I have: Python, SQL, System Design, JavaScript, Machine Learning.",
+      "at": "2026-08-30T17:28:52.304Z"
+    },
+    {
+      "role": "user",
+      "text": "Education: Bachelor's degree in Computer Science. I can study 8 hours per week.",
+      "at": "2026-08-30T17:28:52.309Z"
+    },
+    {
+      "role": "user",
+      "text": "Motivations: Career switch, Build a portfolio.",
+      "at": "2026-08-30T17:28:52.312Z"
+    },
+    {
+      "role": "user",
+      "text": "My target career: Data Scientist.",
+      "at": "2026-08-30T17:28:52.315Z"
+    }
+  ],
+  "answers": {
+    "goal": "My current role: Software Engineer at Google.",
+    "interests": "Tasks I've performed: Collaborate with teams, Manage projects, Design solutions.",
+    "baseline": "Skills I have: Python, SQL, System Design, JavaScript, Machine Learning.",
+    "learningPattern": "Education: Bachelor's degree in Computer Science. I can study 8 hours per week."
+  },
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "audit": [],
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

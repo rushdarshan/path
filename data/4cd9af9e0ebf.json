@@ -1,0 +1,18 @@
+{
+  "id": "4cd9af9e0ebf",
+  "createdAt": "2026-08-29T18:04:12.305Z",
+  "updatedAt": "2026-08-29T18:04:12.305Z",
+  "convoStep": "goal",
+  "convoHistory": [],
+  "answers": {},
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

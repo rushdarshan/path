@@ -1,0 +1,15 @@
+{
+  "id": "bf8b8c4c1181",
+  "createdAt": "2026-08-29T17:34:40.679Z",
+  "updatedAt": "2026-08-29T17:34:40.679Z",
+  "convoStep": "goal",
+  "convoHistory": [],
+  "answers": {},
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling"
+}

@@ -1,0 +1,1903 @@
+{
+  "id": "b17eebfb8c8d",
+  "createdAt": "2026-08-29T18:37:27.964Z",
+  "updatedAt": "2026-08-29T18:37:28.093Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "I want to become a data scientist, job focused.",
+      "at": "2026-08-29T18:37:27.984Z"
+    },
+    {
+      "role": "user",
+      "text": "machine learning, python, sql",
+      "at": "2026-08-29T18:37:28.015Z"
+    },
+    {
+      "role": "user",
+      "text": "basic statistics, git, 1 year coding",
+      "at": "2026-08-29T18:37:28.046Z"
+    },
+    {
+      "role": "user",
+      "text": "videos then hands-on",
+      "at": "2026-08-29T18:37:28.063Z"
+    },
+    {
+      "role": "user",
+      "text": "an hour a day",
+      "at": "2026-08-29T18:37:28.092Z"
+    }
+  ],
+  "answers": {
+    "goal": "I want to become a data scientist, job focused.",
+    "interests": "machine learning, python, sql",
+    "baseline": "basic statistics, git, 1 year coding",
+    "learningPattern": "videos then hands-on",
+    "timeBudget": "an hour a day",
+    "hoursPerWeek": 7
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "career_transition",
+        "confidence": 0.7,
+        "evidence": "become a"
+      },
+      {
+        "goal": "job_ready",
+        "confidence": 0.775,
+        "evidence": "job focused"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "databases-sql",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "ml-basics",
+        "confidence": 0.8,
+        "evidence": "machine",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "statistics-foundations",
+        "confidence": 0.8,
+        "evidence": "statistics",
+        "kind": "explicit_keyword"
+      }
+    ],
+    "needs": [
+      {
+        "need": "aggregations depth",
+        "concept": "aggregations",
+        "topicId": "databases-sql",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Databases & SQL"
+      },
+      {
+        "need": "linked-lists-stacks-queues depth",
+        "concept": "linked-lists-stacks-queues",
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Data Structures & Algorithms"
+      },
+      {
+        "need": "data-cleaning depth",
+        "concept": "data-cleaning",
+        "topicId": "python-for-data",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Python for Data Analysis"
+      },
+      {
+        "need": "model-evaluation depth",
+        "concept": "model-evaluation",
+        "topicId": "ml-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Machine Learning Fundamentals"
+      },
+      {
+        "need": "control-flow depth",
+        "concept": "control-flow",
+        "topicId": "programming-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Programming Basics"
+      },
+      {
+        "need": "distributions depth",
+        "concept": "distributions",
+        "topicId": "statistics-foundations",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Statistics Foundations"
+      }
+    ],
+    "style": {
+      "visual": 1,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 7,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    "baseline": {
+      "level": "some",
+      "confidence": 0.45,
+      "evidence": "explicit signal"
+    },
+    "resume": null,
+    "profilerEvidence": {
+      "style": {
+        "visual": "videos",
+        "hands": "hands-on"
+      },
+      "goals": [
+        "become a",
+        "job focused"
+      ],
+      "interests": [
+        "data",
+        "data",
+        "data",
+        "machine",
+        "python",
+        "statistics"
+      ],
+      "baseline": "explicit signal"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "domain": "ml",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.758,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Statistics Foundations, Python for Data Analysis first"
+          },
+          "style": {
+            "score": 0.46,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "domain": "programming",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.724,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.5,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.686,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.4,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.664,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.5,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.635,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.46,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.633,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.44,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-29T18:37:28.093Z"
+  },
+  "path": {
+    "id": "path-mteq3an1",
+    "totalHours": 260,
+    "estimatedWeeks": 40,
+    "hoursPerWeek": 7,
+    "order": [
+      "programming-basics",
+      "statistics-foundations",
+      "databases-sql",
+      "data-structures-algorithms",
+      "python-for-data",
+      "ml-basics"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "statistics-foundations",
+          "databases-sql"
+        ],
+        "totalHours": 100
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "ml-basics"
+        ],
+        "totalHours": 160
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "data-structures-algorithms",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      },
+      {
+        "from": "statistics-foundations",
+        "to": "ml-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "python-for-data",
+        "to": "ml-basics",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 2,
+        "start": "2026-09-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 3,
+        "start": "2026-09-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 4,
+        "start": "2026-09-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 5,
+        "start": "2026-09-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 6,
+        "start": "2026-10-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 5,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics: 40h total — this week 5h (Foundations)."
+      },
+      {
+        "week": 7,
+        "start": "2026-10-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 8,
+        "start": "2026-10-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 9,
+        "start": "2026-10-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 10,
+        "start": "2026-10-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 11,
+        "start": "2026-11-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 2,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations: 30h total — this week 2h (Foundations)."
+      },
+      {
+        "week": 12,
+        "start": "2026-11-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 13,
+        "start": "2026-11-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 14,
+        "start": "2026-11-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 15,
+        "start": "2026-12-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL: 30h total — this week 7h (Foundations)."
+      },
+      {
+        "week": 16,
+        "start": "2026-12-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 2,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL: 30h total — this week 2h (Foundations)."
+      },
+      {
+        "week": 17,
+        "start": "2026-12-19",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 18,
+        "start": "2026-12-26",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 19,
+        "start": "2027-01-02",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 20,
+        "start": "2027-01-09",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 21,
+        "start": "2027-01-16",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 22,
+        "start": "2027-01-23",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 23,
+        "start": "2027-01-30",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 24,
+        "start": "2027-02-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 25,
+        "start": "2027-02-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 4,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms: 60h total — this week 4h (Core Skills)."
+      },
+      {
+        "week": 26,
+        "start": "2027-02-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 27,
+        "start": "2027-02-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 28,
+        "start": "2027-03-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 29,
+        "start": "2027-03-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 30,
+        "start": "2027-03-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 31,
+        "start": "2027-03-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 5,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis: 40h total — this week 5h (Core Skills)."
+      },
+      {
+        "week": 32,
+        "start": "2027-04-03",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 33,
+        "start": "2027-04-10",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 34,
+        "start": "2027-04-17",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 35,
+        "start": "2027-04-24",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 36,
+        "start": "2027-05-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 37,
+        "start": "2027-05-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 38,
+        "start": "2027-05-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 39,
+        "start": "2027-05-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 7h (Core Skills)."
+      },
+      {
+        "week": 40,
+        "start": "2027-05-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 4,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals: 60h total — this week 4h (Core Skills)."
+      }
+    ],
+    "definitions": {
+      "programming-basics": {
+        "name": "Programming Basics",
+        "estHours": 40,
+        "level": 1
+      },
+      "statistics-foundations": {
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "databases-sql": {
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "level": 1
+      },
+      "data-structures-algorithms": {
+        "name": "Data Structures & Algorithms",
+        "estHours": 60,
+        "level": 2
+      },
+      "python-for-data": {
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "level": 2
+      },
+      "ml-basics": {
+        "name": "Machine Learning Fundamentals",
+        "estHours": 60,
+        "level": 2
+      }
+    },
+    "createdAt": "2026-08-29T18:37:28.093Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a some baseline learner who wants to career transition — 260 hours across 40 weeks, tuned to 7h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "estHours": 40,
+        "score": 0.686,
+        "summary": "Programming Basics is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.80): advances \"career transition\" goal your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "score": 0.635,
+        "summary": "Statistics Foundations is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.58): no prerequisites — can start immediately your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "statistics",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.58): no prerequisites — can start immediately",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Khan Academy Statistics",
+            "url": "https://www.khanacademy.org/math/statistics-probability",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Seeing Theory (visual)",
+            "url": "https://seeing-theory.brown.edu/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "StatQuest YouTube",
+            "url": "https://www.youtube.com/@statquest",
+            "kind": "video",
+            "minutes": 400,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "score": 0.633,
+        "summary": "Databases & SQL is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.58): no prerequisites — can start immediately your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.58): no prerequisites — can start immediately",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "PostgreSQL Tutorial",
+            "url": "https://www.postgresqltutorial.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Stanford DB Course",
+            "url": "https://www.coursera.org/learn/database-sql",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "estHours": 60,
+        "score": 0.724,
+        "summary": "Data Structures & Algorithms is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.80): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.80): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "NeetCode.io",
+            "url": "https://neetcode.io/",
+            "kind": "interactive",
+            "minutes": 1200,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "Coursera Algorithms I (Princeton)",
+            "url": "https://www.coursera.org/learn/algorithms-part1",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "CS Dojo YouTube",
+            "url": "https://www.youtube.com/@CSDojo",
+            "kind": "video",
+            "minutes": 240,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "score": 0.664,
+        "summary": "Python for Data Analysis is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "estHours": 60,
+        "score": 0.758,
+        "summary": "Machine Learning Fundamentals is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 1.00): portfolio-worthy for job hunting your current level (score 0.89): level 2 vs your some baseline",
+        "profiledBacking": "machine",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 1.00): portfolio-worthy for job hunting",
+          "your current level (score 0.89): level 2 vs your some baseline"
+        ],
+        "prereqs": [
+          "Statistics Foundations",
+          "Python for Data Analysis"
+        ],
+        "prereqSummary": "Prerequisites required first: Statistics Foundations, Python for Data Analysis.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Andrej Karpathy's Zero to Hero",
+            "url": "https://karpathy.ai/zero-to-hero.html",
+            "kind": "video",
+            "minutes": 600,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Stanford CS229",
+            "url": "https://cs229.stanford.edu/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scikit-learn Tutorials",
+            "url": "https://scikit-learn.org/stable/tutorial/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, Statistics Foundations, Databases & SQL.",
+        "topics": [
+          "Programming Basics",
+          "Statistics Foundations",
+          "Databases & SQL"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Data Structures & Algorithms, Python for Data Analysis, Machine Learning Fundamentals.",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Python for Data Analysis",
+          "Machine Learning Fundamentals"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 40 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-29",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 1: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-05",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 2: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-12",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 3: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-19",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 4: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-26",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 5: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-03",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 6: 5h on Foundations — Programming Basics"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-10",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 7: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-17",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 8: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-24",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 9: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 10,
+          "start": "2026-10-31",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 10: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-07",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 11: 2h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-14",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 12: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-21",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 13: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-28",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 14: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-05",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 15: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-12",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 16: 2h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 17,
+          "start": "2026-12-19",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 17: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 18,
+          "start": "2026-12-26",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 18: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 19,
+          "start": "2027-01-02",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 19: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 20,
+          "start": "2027-01-09",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 20: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 21,
+          "start": "2027-01-16",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 21: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 22,
+          "start": "2027-01-23",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 22: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 23,
+          "start": "2027-01-30",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 23: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 24,
+          "start": "2027-02-06",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 24: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 25,
+          "start": "2027-02-13",
+          "milestone": "Core Skills",
+          "hours": 4,
+          "note": "Week 25: 4h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 26,
+          "start": "2027-02-20",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 26: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 27,
+          "start": "2027-02-27",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 27: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 28,
+          "start": "2027-03-06",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 28: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 29,
+          "start": "2027-03-13",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 29: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 30,
+          "start": "2027-03-20",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 30: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 31,
+          "start": "2027-03-27",
+          "milestone": "Core Skills",
+          "hours": 5,
+          "note": "Week 31: 5h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 32,
+          "start": "2027-04-03",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 32: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 33,
+          "start": "2027-04-10",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 33: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 34,
+          "start": "2027-04-17",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 34: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 35,
+          "start": "2027-04-24",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 35: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 36,
+          "start": "2027-05-01",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 36: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 37,
+          "start": "2027-05-08",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 37: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 38,
+          "start": "2027-05-15",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 38: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 39,
+          "start": "2027-05-22",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 39: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 40,
+          "start": "2027-05-29",
+          "milestone": "Core Skills",
+          "hours": 4,
+          "note": "Week 40: 4h on Core Skills — Machine Learning Fundamentals"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 1,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "control-flow": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "statistics-foundations": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "descriptive-statistics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "probability": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "distributions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hypothesis-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "correlation-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "databases-sql": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "sql-queries": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "joins": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "aggregations": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "schema-design-normalization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "indexing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "data-structures-algorithms": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "arrays-and-strings": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hash-maps": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "linked-lists-stacks-queues": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "trees-graphs": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "sorting-searching": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "recursion-dp": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "ml-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "supervised-learning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "classification-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "model-evaluation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "overfitting-regularization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "feature-engineering": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    }
+  },
+  "nextQuiz": null,
+  "status": "ready",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

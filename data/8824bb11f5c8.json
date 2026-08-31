@@ -1,0 +1,4855 @@
+{
+  "id": "8824bb11f5c8",
+  "createdAt": "2026-08-30T11:38:21.170Z",
+  "updatedAt": "2026-08-30T11:42:45.913Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "hi",
+      "at": "2026-08-30T11:41:54.781Z"
+    },
+    {
+      "role": "user",
+      "text": "python",
+      "at": "2026-08-30T11:42:00.202Z"
+    },
+    {
+      "role": "user",
+      "text": "expert",
+      "at": "2026-08-30T11:42:09.228Z"
+    },
+    {
+      "role": "user",
+      "text": "videos",
+      "at": "2026-08-30T11:42:18.364Z"
+    },
+    {
+      "role": "user",
+      "text": "48",
+      "at": "2026-08-30T11:42:26.909Z"
+    },
+    {
+      "role": "user",
+      "text": "10",
+      "at": "2026-08-30T11:42:37.332Z"
+    },
+    {
+      "role": "user",
+      "text": "10 hours",
+      "at": "2026-08-30T11:42:45.881Z"
+    }
+  ],
+  "answers": {
+    "goal": "hi",
+    "interests": "python",
+    "baseline": "expert",
+    "learningPattern": "videos",
+    "timeBudget": "10 hours",
+    "hoursPerWeek": 10
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "start_learning",
+        "confidence": 0.4,
+        "evidence": "short or generic answer"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      }
+    ],
+    "needs": [],
+    "style": {
+      "visual": 1,
+      "reading": 0,
+      "hands": 0,
+      "auditory": 0
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 10,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    "baseline": {
+      "level": "strong",
+      "confidence": 0.7,
+      "evidence": "explicit signal"
+    },
+    "resume": null,
+    "profilerEvidence": {
+      "style": {
+        "visual": "videos"
+      },
+      "goals": [
+        "short or generic answer"
+      ],
+      "interests": [
+        "python",
+        "python"
+      ],
+      "baseline": "explicit signal"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.706,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.26,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.575,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.33999999999999997,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 2 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Programming Basics first"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "domain": "web",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.469,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.466,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "game-design",
+        "name": "Game Design & Prototyping",
+        "domain": "game",
+        "level": 1,
+        "estHours": 25,
+        "total": 0.466,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.457,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.30000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.3,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.451,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.26,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.26,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "ux-design",
+        "name": "UX Design & Research",
+        "domain": "product",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.439,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.18000000000000002,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.18,
+            "driver": "pace-adjusted available resources"
+          }
+        ]
+      },
+      {
+        "topicId": "product-management",
+        "name": "Product Management",
+        "domain": "product",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.427,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.935,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.1,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "readiness",
+            "score": 0.94,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "interest",
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          }
+        ]
+      },
+      {
+        "topicId": "git-version-control",
+        "name": "Git & Version Control",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 12,
+        "total": 0.423,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Programming Basics first"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "game-dev-basics",
+        "name": "Game Development Fundamentals",
+        "domain": "game",
+        "level": 1,
+        "estHours": 35,
+        "total": 0.423,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Programming Basics first"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "domain": "web",
+        "level": 1,
+        "estHours": 45,
+        "total": 0.411,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.28,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Programming Basics first"
+          },
+          {
+            "factor": "style",
+            "score": 0.28,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.387,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Linux & Shell Basics first"
+          },
+          "style": {
+            "score": 0.12,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Linux & Shell Basics first"
+          },
+          {
+            "factor": "interest",
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          }
+        ]
+      },
+      {
+        "topicId": "security-basics",
+        "name": "Security Fundamentals",
+        "domain": "security",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.381,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.7200000000000001,
+            "driver": "requires Linux & Shell Basics, Networking Basics first"
+          },
+          "style": {
+            "score": 0.08000000000000002,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0,
+            "driver": "level 1 vs your strong baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.72,
+            "driver": "requires Linux & Shell Basics, Networking Basics first"
+          },
+          {
+            "factor": "interest",
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-30T11:42:45.886Z"
+  },
+  "path": {
+    "id": "path-mtfqpu2n",
+    "totalHours": 407,
+    "estimatedWeeks": 43,
+    "hoursPerWeek": 10,
+    "order": [
+      "programming-basics",
+      "html-css",
+      "statistics-foundations",
+      "game-design",
+      "databases-sql",
+      "linux-basics",
+      "ux-design",
+      "product-management",
+      "git-version-control",
+      "game-dev-basics",
+      "javascript-core",
+      "python-for-data",
+      "networking-basics",
+      "security-basics"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "html-css",
+          "statistics-foundations",
+          "game-design",
+          "databases-sql",
+          "linux-basics",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "game-dev-basics",
+          "javascript-core",
+          "networking-basics",
+          "security-basics"
+        ],
+        "totalHours": 367
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "python-for-data"
+        ],
+        "totalHours": 40
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "git-version-control",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "game-dev-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "javascript-core",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "networking-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "security-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "networking-basics",
+        "to": "security-basics",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 10,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 10h. Focus: variables."
+      },
+      {
+        "week": 2,
+        "start": "2026-09-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 10,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 10h. Focus: data-types."
+      },
+      {
+        "week": 3,
+        "start": "2026-09-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 10,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 10h. Focus: control-flow."
+      },
+      {
+        "week": 4,
+        "start": "2026-09-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 10,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 10h. Focus: functions."
+      },
+      {
+        "week": 5,
+        "start": "2026-09-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 10,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 10h. Focus: html-semantics."
+      },
+      {
+        "week": 6,
+        "start": "2026-10-04",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 10,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 10h. Focus: css-selectors."
+      },
+      {
+        "week": 7,
+        "start": "2026-10-11",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 10,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 10h. Focus: box-model-layout."
+      },
+      {
+        "week": 8,
+        "start": "2026-10-18",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 10,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 10h. Focus: descriptive-statistics."
+      },
+      {
+        "week": 9,
+        "start": "2026-10-25",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 10,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 10h. Focus: probability."
+      },
+      {
+        "week": 10,
+        "start": "2026-11-01",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 10,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 10h. Focus: distributions."
+      },
+      {
+        "week": 11,
+        "start": "2026-11-08",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-design",
+        "topic": "Game Design & Prototyping",
+        "hours": 10,
+        "topics": [
+          "game-design"
+        ],
+        "action": "Game Design & Prototyping (Foundations) — 10h. Focus: core-mechanics."
+      },
+      {
+        "week": 12,
+        "start": "2026-11-15",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-design",
+        "topic": "Game Design & Prototyping",
+        "hours": 10,
+        "topics": [
+          "game-design"
+        ],
+        "action": "Game Design & Prototyping (Foundations) — 10h. Focus: level-design."
+      },
+      {
+        "week": 13,
+        "start": "2026-11-22",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-design",
+        "topic": "Game Design & Prototyping",
+        "hours": 5,
+        "topics": [
+          "game-design"
+        ],
+        "action": "Game Design & Prototyping (Foundations) — 5h. Focus: player-motivation."
+      },
+      {
+        "week": 14,
+        "start": "2026-11-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 10,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 10h. Focus: sql-queries."
+      },
+      {
+        "week": 15,
+        "start": "2026-12-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 10,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 10h. Focus: joins."
+      },
+      {
+        "week": 16,
+        "start": "2026-12-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 10,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 10h. Focus: aggregations."
+      },
+      {
+        "week": 17,
+        "start": "2026-12-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "linux-basics",
+        "topic": "Linux & Shell Basics",
+        "hours": 10,
+        "topics": [
+          "linux-basics"
+        ],
+        "action": "Linux & Shell Basics (Foundations) — 10h. Focus: filesystem-navigation."
+      },
+      {
+        "week": 18,
+        "start": "2026-12-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "linux-basics",
+        "topic": "Linux & Shell Basics",
+        "hours": 10,
+        "topics": [
+          "linux-basics"
+        ],
+        "action": "Linux & Shell Basics (Foundations) — 10h. Focus: shell-commands."
+      },
+      {
+        "week": 19,
+        "start": "2027-01-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "ux-design",
+        "topic": "UX Design & Research",
+        "hours": 10,
+        "topics": [
+          "ux-design"
+        ],
+        "action": "UX Design & Research (Foundations) — 10h. Focus: user-research."
+      },
+      {
+        "week": 20,
+        "start": "2027-01-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "ux-design",
+        "topic": "UX Design & Research",
+        "hours": 10,
+        "topics": [
+          "ux-design"
+        ],
+        "action": "UX Design & Research (Foundations) — 10h. Focus: wireframing."
+      },
+      {
+        "week": 21,
+        "start": "2027-01-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "ux-design",
+        "topic": "UX Design & Research",
+        "hours": 10,
+        "topics": [
+          "ux-design"
+        ],
+        "action": "UX Design & Research (Foundations) — 10h. Focus: prototyping-figma."
+      },
+      {
+        "week": 22,
+        "start": "2027-01-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "product-management",
+        "topic": "Product Management",
+        "hours": 10,
+        "topics": [
+          "product-management"
+        ],
+        "action": "Product Management (Foundations) — 10h. Focus: problem-definition."
+      },
+      {
+        "week": 23,
+        "start": "2027-01-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "product-management",
+        "topic": "Product Management",
+        "hours": 10,
+        "topics": [
+          "product-management"
+        ],
+        "action": "Product Management (Foundations) — 10h. Focus: roadmapping."
+      },
+      {
+        "week": 24,
+        "start": "2027-02-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "product-management",
+        "topic": "Product Management",
+        "hours": 10,
+        "topics": [
+          "product-management"
+        ],
+        "action": "Product Management (Foundations) — 10h. Focus: stakeholder-management."
+      },
+      {
+        "week": 25,
+        "start": "2027-02-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "git-version-control",
+        "topic": "Git & Version Control",
+        "hours": 10,
+        "topics": [
+          "git-version-control"
+        ],
+        "action": "Git & Version Control (Foundations) — 10h. Focus: commits."
+      },
+      {
+        "week": 26,
+        "start": "2027-02-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "git-version-control",
+        "topic": "Git & Version Control",
+        "hours": 2,
+        "topics": [
+          "git-version-control"
+        ],
+        "action": "Git & Version Control (Foundations) — 2h. Focus: branching."
+      },
+      {
+        "week": 27,
+        "start": "2027-02-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-dev-basics",
+        "topic": "Game Development Fundamentals",
+        "hours": 10,
+        "topics": [
+          "game-dev-basics"
+        ],
+        "action": "Game Development Fundamentals (Foundations) — 10h. Focus: game-loop."
+      },
+      {
+        "week": 28,
+        "start": "2027-03-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-dev-basics",
+        "topic": "Game Development Fundamentals",
+        "hours": 10,
+        "topics": [
+          "game-dev-basics"
+        ],
+        "action": "Game Development Fundamentals (Foundations) — 10h. Focus: sprite-rendering."
+      },
+      {
+        "week": 29,
+        "start": "2027-03-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-dev-basics",
+        "topic": "Game Development Fundamentals",
+        "hours": 10,
+        "topics": [
+          "game-dev-basics"
+        ],
+        "action": "Game Development Fundamentals (Foundations) — 10h. Focus: input-handling."
+      },
+      {
+        "week": 30,
+        "start": "2027-03-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "game-dev-basics",
+        "topic": "Game Development Fundamentals",
+        "hours": 5,
+        "topics": [
+          "game-dev-basics"
+        ],
+        "action": "Game Development Fundamentals (Foundations) — 5h. Focus: physics-basics."
+      },
+      {
+        "week": 31,
+        "start": "2027-03-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 10,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 10h. Focus: syntax-and-types."
+      },
+      {
+        "week": 32,
+        "start": "2027-04-04",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 10,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 10h. Focus: functions-scope-closures."
+      },
+      {
+        "week": 33,
+        "start": "2027-04-11",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 10,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 10h. Focus: arrays-objects."
+      },
+      {
+        "week": 34,
+        "start": "2027-04-18",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 10,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 10h. Focus: asynchronous-js."
+      },
+      {
+        "week": 35,
+        "start": "2027-04-25",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 5,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 5h. Focus: dom-manipulation."
+      },
+      {
+        "week": 36,
+        "start": "2027-05-02",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 10,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 10h. Focus: pandas-dataframes."
+      },
+      {
+        "week": 37,
+        "start": "2027-05-09",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 10,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 10h. Focus: numpy-arrays."
+      },
+      {
+        "week": 38,
+        "start": "2027-05-16",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 10,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 10h. Focus: data-cleaning."
+      },
+      {
+        "week": 39,
+        "start": "2027-05-23",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 10,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 10h. Focus: data-visualization."
+      },
+      {
+        "week": 40,
+        "start": "2027-05-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "networking-basics",
+        "topic": "Networking Basics",
+        "hours": 10,
+        "topics": [
+          "networking-basics"
+        ],
+        "action": "Networking Basics (Foundations) — 10h. Focus: osI-model."
+      },
+      {
+        "week": 41,
+        "start": "2027-06-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "networking-basics",
+        "topic": "Networking Basics",
+        "hours": 10,
+        "topics": [
+          "networking-basics"
+        ],
+        "action": "Networking Basics (Foundations) — 10h. Focus: tcp-ip."
+      },
+      {
+        "week": 42,
+        "start": "2027-06-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "security-basics",
+        "topic": "Security Fundamentals",
+        "hours": 10,
+        "topics": [
+          "security-basics"
+        ],
+        "action": "Security Fundamentals (Foundations) — 10h. Focus: threat-models."
+      },
+      {
+        "week": 43,
+        "start": "2027-06-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "security-basics",
+        "topic": "Security Fundamentals",
+        "hours": 10,
+        "topics": [
+          "security-basics"
+        ],
+        "action": "Security Fundamentals (Foundations) — 10h. Focus: network-security."
+      }
+    ],
+    "definitions": {
+      "programming-basics": {
+        "name": "Programming Basics",
+        "estHours": 40,
+        "level": 1
+      },
+      "html-css": {
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "statistics-foundations": {
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "game-design": {
+        "name": "Game Design & Prototyping",
+        "estHours": 25,
+        "level": 1
+      },
+      "databases-sql": {
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "level": 1
+      },
+      "linux-basics": {
+        "name": "Linux & Shell Basics",
+        "estHours": 20,
+        "level": 1
+      },
+      "ux-design": {
+        "name": "UX Design & Research",
+        "estHours": 30,
+        "level": 1
+      },
+      "product-management": {
+        "name": "Product Management",
+        "estHours": 30,
+        "level": 1
+      },
+      "git-version-control": {
+        "name": "Git & Version Control",
+        "estHours": 12,
+        "level": 1
+      },
+      "game-dev-basics": {
+        "name": "Game Development Fundamentals",
+        "estHours": 35,
+        "level": 1
+      },
+      "javascript-core": {
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "level": 1
+      },
+      "python-for-data": {
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "level": 2
+      },
+      "networking-basics": {
+        "name": "Networking Basics",
+        "estHours": 20,
+        "level": 1
+      },
+      "security-basics": {
+        "name": "Security Fundamentals",
+        "estHours": 20,
+        "level": 1
+      }
+    },
+    "createdAt": "2026-08-30T11:42:45.887Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a strong baseline learner who wants to grow — 407 hours across 43 weeks, tuned to 10h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "estHours": 40,
+        "score": 0.706,
+        "summary": "Programming Basics is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "score": 0.469,
+        "summary": "HTML & CSS Foundations is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.38): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.38): resources match how you learn"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "freeCodeCamp Responsive Web Design",
+            "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Flexbox Froggy",
+            "url": "https://flexboxfroggy.com/",
+            "kind": "interactive",
+            "minutes": 45,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "score": 0.466,
+        "summary": "Statistics Foundations is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.36): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.36): resources match how you learn"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Khan Academy Statistics",
+            "url": "https://www.khanacademy.org/math/statistics-probability",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Seeing Theory (visual)",
+            "url": "https://seeing-theory.brown.edu/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "StatQuest YouTube",
+            "url": "https://www.youtube.com/@statquest",
+            "kind": "video",
+            "minutes": 400,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "game-design",
+        "name": "Game Design & Prototyping",
+        "estHours": 25,
+        "score": 0.466,
+        "summary": "Game Design & Prototyping is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.36): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.36): resources match how you learn"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Game Design Concepts (GDC vault)",
+            "url": "https://www.gdcvault.com/",
+            "kind": "video",
+            "minutes": 500,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Extra Credits Essays",
+            "url": "https://www.youtube.com/@ExtraCredits",
+            "kind": "video",
+            "minutes": 200,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "score": 0.457,
+        "summary": "Databases & SQL is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.30): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.30): resources match how you learn"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "PostgreSQL Tutorial",
+            "url": "https://www.postgresqltutorial.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Stanford DB Course",
+            "url": "https://www.coursera.org/learn/database-sql",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "estHours": 20,
+        "score": 0.451,
+        "summary": "Linux & Shell Basics is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.26): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.26): resources match how you learn"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Linux Journey",
+            "url": "https://linuxjourney.com/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Missing Semester (MIT)",
+            "url": "https://missing.csail.mit.edu/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "OverTheWire Bandit",
+            "url": "https://overthewire.org/wargames/bandit/",
+            "kind": "interactive",
+            "minutes": 200,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "ux-design",
+        "name": "UX Design & Research",
+        "estHours": 30,
+        "score": 0.439,
+        "summary": "UX Design & Research is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your learning style (score 0.18): pace-adjusted available resources",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your learning style (score 0.18): pace-adjusted available resources"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Nielsen Norman Group",
+            "url": "https://www.nngroup.com/articles/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Figma Learn",
+            "url": "https://www.figma.com/learn/",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Google UX Certificate",
+            "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+            "kind": "course",
+            "minutes": 800,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "product-management",
+        "name": "Product Management",
+        "estHours": 30,
+        "score": 0.427,
+        "summary": "Product Management is in your path because it fills a gap in your learning goals.",
+        "why": "your readiness (score 0.94): no prerequisites — can start immediately your goal (score 0.90): beginner-friendly ramp your interests (score 0.15): no direct stated interest",
+        "profiledBacking": "",
+        "factors": [
+          "your readiness (score 0.94): no prerequisites — can start immediately",
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your interests (score 0.15): no direct stated interest"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Lenny's Newsletter",
+            "url": "https://www.lennysnewsletter.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Product School",
+            "url": "https://productschool.com/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "git-version-control",
+        "name": "Git & Version Control",
+        "estHours": 12,
+        "score": 0.423,
+        "summary": "Git & Version Control is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your readiness (score 0.72): requires Programming Basics first your learning style (score 0.36): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.72): requires Programming Basics first",
+          "your learning style (score 0.36): resources match how you learn"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Git official docs",
+            "url": "https://git-scm.com/doc",
+            "kind": "article",
+            "minutes": 180,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Learn Git Branching (interactive)",
+            "url": "https://learngitbranching.js.org/",
+            "kind": "interactive",
+            "minutes": 180,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "game-dev-basics",
+        "name": "Game Development Fundamentals",
+        "estHours": 35,
+        "score": 0.423,
+        "summary": "Game Development Fundamentals is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your readiness (score 0.72): requires Programming Basics first your learning style (score 0.36): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.72): requires Programming Basics first",
+          "your learning style (score 0.36): resources match how you learn"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Godot Official Docs",
+            "url": "https://docs.godotengine.org/",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Brackeys Unity (archived)",
+            "url": "https://www.youtube.com/@Brackeys",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "score": 0.411,
+        "summary": "JavaScript Core is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your readiness (score 0.72): requires Programming Basics first your learning style (score 0.28): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.72): requires Programming Basics first",
+          "your learning style (score 0.28): resources match how you learn"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive",
+            "minutes": 800,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Odin Project",
+            "url": "https://www.theodinproject.com/paths/foundations",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "score": 0.575,
+        "summary": "Python for Data Analysis is in your path because it fills a gap in your learning goals.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.72): requires Programming Basics first your goal (score 0.40): beginner-friendly ramp",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.72): requires Programming Basics first",
+          "your goal (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "estHours": 20,
+        "score": 0.387,
+        "summary": "Networking Basics is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your readiness (score 0.72): requires Linux & Shell Basics first your interests (score 0.15): no direct stated interest",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.72): requires Linux & Shell Basics first",
+          "your interests (score 0.15): no direct stated interest"
+        ],
+        "prereqs": [
+          "Linux & Shell Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Linux & Shell Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "Khan Academy Computer Networking",
+            "url": "https://www.khanacademy.org/computing/computer-science/networking",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Beacon: Computer Networking",
+            "url": "https://networklessons.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "security-basics",
+        "name": "Security Fundamentals",
+        "estHours": 20,
+        "score": 0.381,
+        "summary": "Security Fundamentals is in your path because it fills a gap in your learning goals.",
+        "why": "your goal (score 0.90): beginner-friendly ramp your readiness (score 0.72): requires Linux & Shell Basics, Networking Basics first your interests (score 0.15): no direct stated interest",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 0.90): beginner-friendly ramp",
+          "your readiness (score 0.72): requires Linux & Shell Basics, Networking Basics first",
+          "your interests (score 0.15): no direct stated interest"
+        ],
+        "prereqs": [
+          "Linux & Shell Basics",
+          "Networking Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Linux & Shell Basics, Networking Basics.",
+        "styleMatch": "Curated resources lean toward visuals: videos and interactive walks.",
+        "resources": [
+          {
+            "title": "OWASP Top 10",
+            "url": "https://owasp.org/www-project-top-ten/",
+            "kind": "article",
+            "minutes": 120,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Cybrary Intro",
+            "url": "https://www.cybrary.it/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, HTML & CSS Foundations, Statistics Foundations, Game Design & Prototyping, Databases & SQL, Linux & Shell Basics, UX Design & Research, Product Management, Git & Version Control, Game Development Fundamentals, JavaScript Core, Networking Basics, Security Fundamentals.",
+        "topics": [
+          "Programming Basics",
+          "HTML & CSS Foundations",
+          "Statistics Foundations",
+          "Game Design & Prototyping",
+          "Databases & SQL",
+          "Linux & Shell Basics",
+          "UX Design & Research",
+          "Product Management",
+          "Git & Version Control",
+          "Game Development Fundamentals",
+          "JavaScript Core",
+          "Networking Basics",
+          "Security Fundamentals"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Python for Data Analysis.",
+        "topics": [
+          "Python for Data Analysis"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 43 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-30",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 1: 10h on Foundations — Programming Basics"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-06",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 2: 10h on Foundations — Programming Basics"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-13",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 3: 10h on Foundations — Programming Basics"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-20",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 4: 10h on Foundations — Programming Basics"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-27",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 5: 10h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-04",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 6: 10h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-11",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 7: 10h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-18",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 8: 10h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-25",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 9: 10h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 10,
+          "start": "2026-11-01",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 10: 10h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-08",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 11: 10h on Foundations — Game Design & Prototyping"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-15",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 12: 10h on Foundations — Game Design & Prototyping"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-22",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 13: 5h on Foundations — Game Design & Prototyping"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-29",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 14: 10h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-06",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 15: 10h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-13",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 16: 10h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 17,
+          "start": "2026-12-20",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 17: 10h on Foundations — Linux & Shell Basics"
+        },
+        {
+          "week": 18,
+          "start": "2026-12-27",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 18: 10h on Foundations — Linux & Shell Basics"
+        },
+        {
+          "week": 19,
+          "start": "2027-01-03",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 19: 10h on Foundations — UX Design & Research"
+        },
+        {
+          "week": 20,
+          "start": "2027-01-10",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 20: 10h on Foundations — UX Design & Research"
+        },
+        {
+          "week": 21,
+          "start": "2027-01-17",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 21: 10h on Foundations — UX Design & Research"
+        },
+        {
+          "week": 22,
+          "start": "2027-01-24",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 22: 10h on Foundations — Product Management"
+        },
+        {
+          "week": 23,
+          "start": "2027-01-31",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 23: 10h on Foundations — Product Management"
+        },
+        {
+          "week": 24,
+          "start": "2027-02-07",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 24: 10h on Foundations — Product Management"
+        },
+        {
+          "week": 25,
+          "start": "2027-02-14",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 25: 10h on Foundations — Git & Version Control"
+        },
+        {
+          "week": 26,
+          "start": "2027-02-21",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 26: 2h on Foundations — Git & Version Control"
+        },
+        {
+          "week": 27,
+          "start": "2027-02-28",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 27: 10h on Foundations — Game Development Fundamentals"
+        },
+        {
+          "week": 28,
+          "start": "2027-03-07",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 28: 10h on Foundations — Game Development Fundamentals"
+        },
+        {
+          "week": 29,
+          "start": "2027-03-14",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 29: 10h on Foundations — Game Development Fundamentals"
+        },
+        {
+          "week": 30,
+          "start": "2027-03-21",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 30: 5h on Foundations — Game Development Fundamentals"
+        },
+        {
+          "week": 31,
+          "start": "2027-03-28",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 31: 10h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 32,
+          "start": "2027-04-04",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 32: 10h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 33,
+          "start": "2027-04-11",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 33: 10h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 34,
+          "start": "2027-04-18",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 34: 10h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 35,
+          "start": "2027-04-25",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 35: 5h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 36,
+          "start": "2027-05-02",
+          "milestone": "Core Skills",
+          "hours": 10,
+          "note": "Week 36: 10h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 37,
+          "start": "2027-05-09",
+          "milestone": "Core Skills",
+          "hours": 10,
+          "note": "Week 37: 10h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 38,
+          "start": "2027-05-16",
+          "milestone": "Core Skills",
+          "hours": 10,
+          "note": "Week 38: 10h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 39,
+          "start": "2027-05-23",
+          "milestone": "Core Skills",
+          "hours": 10,
+          "note": "Week 39: 10h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 40,
+          "start": "2027-05-30",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 40: 10h on Foundations — Networking Basics"
+        },
+        {
+          "week": 41,
+          "start": "2027-06-06",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 41: 10h on Foundations — Networking Basics"
+        },
+        {
+          "week": 42,
+          "start": "2027-06-13",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 42: 10h on Foundations — Security Fundamentals"
+        },
+        {
+          "week": 43,
+          "start": "2027-06-20",
+          "milestone": "Foundations",
+          "hours": 10,
+          "note": "Week 43: 10h on Foundations — Security Fundamentals"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 1,
+      "reading": 0,
+      "hands": 0,
+      "auditory": 0
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "control-flow": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "functions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "html-css": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "html-semantics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "css-selectors": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "box-model-layout": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "flexbox-grid": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "responsive-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "statistics-foundations": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "descriptive-statistics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "probability": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "distributions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "hypothesis-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "correlation-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "game-design": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "core-mechanics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "level-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "player-motivation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "prototyping-iteration": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "databases-sql": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "sql-queries": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "joins": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "aggregations": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "schema-design-normalization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "indexing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "linux-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "filesystem-navigation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "shell-commands": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "permissions-ownership": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "process-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "bash-scripting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "ux-design": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "user-research": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "wireframing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "prototyping-figma": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "usability-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "visual-hierarchy": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "product-management": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "problem-definition": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "roadmapping": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "stakeholder-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "metrics-and-analytics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "agile-scrum": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "git-version-control": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "commits": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "branching": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "merging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "remotes-and-pull-requests": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "game-dev-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "game-loop": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "sprite-rendering": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "input-handling": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "physics-basics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "scenes-game-states": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "javascript-core": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "syntax-and-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "functions-scope-closures": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "arrays-objects": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "asynchronous-js": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "dom-manipulation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "networking-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "osI-model": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "tcp-ip": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "dns-naming": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "http-apis": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "subnetting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    },
+    "security-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "threat-models": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "network-security": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "cryptography-basics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        },
+        "web-attacks": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": [],
+          "lastUpdated": null,
+          "pKnown": 0.1,
+          "pSlip": 0.1,
+          "pGuess": 0.25,
+          "pTransit": 0.12
+        }
+      }
+    }
+  },
+  "nextQuiz": null,
+  "status": "ready",
+  "audit": [
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "goal",
+      "value": "start_learning",
+      "confidence": 0.4,
+      "evidence": "short or generic answer"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "programming-basics",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "interest",
+      "value": "python-for-data",
+      "confidence": 0.8,
+      "evidence": "python"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "timeBudget",
+      "value": 10,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "baseline",
+      "value": "strong",
+      "confidence": 0.7,
+      "evidence": "explicit signal"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "visual",
+      "confidence": 1,
+      "evidence": "videos"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "reading",
+      "confidence": 0,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "hands",
+      "confidence": 0,
+      "evidence": "inferred"
+    },
+    {
+      "at": "2026-08-30T11:42:45.884Z",
+      "source": "conversation",
+      "factor": "learningPattern",
+      "value": "auditory",
+      "confidence": 0,
+      "evidence": "inferred"
+    }
+  ],
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true,
+  "gapReport": {
+    "overallCoverage": 0.07733538347326643,
+    "topics": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "coverage": 0.196078431372549,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "data-types",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-types",
+              "sequence": 2,
+              "afterShare": 0.196078431372549,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Week 1 of 43: study block 2 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "variables",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "variables",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Week 1 of 43: study block 1 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "control-flow",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "control-flow",
+              "sequence": 3,
+              "afterShare": 0.392156862745098,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 175,
+              "paceNote": "Week 1 of 43: study block 3 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "functions",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions",
+              "sequence": 4,
+              "afterShare": 0.588235294117647,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 210,
+              "paceNote": "Week 1 of 43: study block 4 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+            }
+          },
+          {
+            "concept": "debugging",
+            "weight": 0.9,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "debugging",
+              "sequence": 5,
+              "afterShare": 0.8235294117647058,
+              "resource": {
+                "title": "Harvard CS50",
+                "url": "https://cs50.harvard.edu/x/",
+                "kind": "course"
+              },
+              "estMinutes": 160,
+              "paceNote": "Week 1 of 43: study block 5 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "variables",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course"
+          },
+          "estMinutes": 175,
+          "paceNote": "Week 1 of 43: study block 1 of 5 — opens \"Harvard CS50\" (Programming Basics)."
+        },
+        "note": "You already have 1 of 5 concepts in Programming Basics; the gap is variables, control-flow, functions, debugging."
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "html-semantics",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "html-semantics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 5 of 43: study block 1 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+            }
+          },
+          {
+            "concept": "css-selectors",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "css-selectors",
+              "sequence": 2,
+              "afterShare": 0.18181818181818182,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 5 of 43: study block 2 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+            }
+          },
+          {
+            "concept": "box-model-layout",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "box-model-layout",
+              "sequence": 3,
+              "afterShare": 0.36363636363636365,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 5 of 43: study block 3 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+            }
+          },
+          {
+            "concept": "flexbox-grid",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "flexbox-grid",
+              "sequence": 4,
+              "afterShare": 0.5818181818181819,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 5 of 43: study block 4 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+            }
+          },
+          {
+            "concept": "responsive-design",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "responsive-design",
+              "sequence": 5,
+              "afterShare": 0.8,
+              "resource": {
+                "title": "MDN HTML Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 5 of 43: study block 5 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "html-semantics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article"
+          },
+          "estMinutes": 55,
+          "paceNote": "Week 5 of 43: study block 1 of 5 — opens \"MDN HTML Tutorial\" (HTML & CSS Foundations)."
+        },
+        "note": "No evidence you already know HTML & CSS Foundations — start from the foundation."
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "descriptive-statistics",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "descriptive-statistics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "StatQuest YouTube",
+                "url": "https://www.youtube.com/@statquest",
+                "kind": "video"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 8 of 43: study block 1 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+            }
+          },
+          {
+            "concept": "probability",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "probability",
+              "sequence": 2,
+              "afterShare": 0.17857142857142858,
+              "resource": {
+                "title": "StatQuest YouTube",
+                "url": "https://www.youtube.com/@statquest",
+                "kind": "video"
+              },
+              "estMinutes": 80,
+              "paceNote": "Week 8 of 43: study block 2 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+            }
+          },
+          {
+            "concept": "distributions",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "distributions",
+              "sequence": 3,
+              "afterShare": 0.37500000000000006,
+              "resource": {
+                "title": "StatQuest YouTube",
+                "url": "https://www.youtube.com/@statquest",
+                "kind": "video"
+              },
+              "estMinutes": 80,
+              "paceNote": "Week 8 of 43: study block 3 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+            }
+          },
+          {
+            "concept": "hypothesis-testing",
+            "weight": 1.3,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "hypothesis-testing",
+              "sequence": 4,
+              "afterShare": 0.5714285714285715,
+              "resource": {
+                "title": "StatQuest YouTube",
+                "url": "https://www.youtube.com/@statquest",
+                "kind": "video"
+              },
+              "estMinutes": 95,
+              "paceNote": "Week 8 of 43: study block 4 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+            }
+          },
+          {
+            "concept": "correlation-regression",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "correlation-regression",
+              "sequence": 5,
+              "afterShare": 0.8035714285714286,
+              "resource": {
+                "title": "StatQuest YouTube",
+                "url": "https://www.youtube.com/@statquest",
+                "kind": "video"
+              },
+              "estMinutes": 80,
+              "paceNote": "Week 8 of 43: study block 5 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "descriptive-statistics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "StatQuest YouTube",
+            "url": "https://www.youtube.com/@statquest",
+            "kind": "video"
+          },
+          "estMinutes": 70,
+          "paceNote": "Week 8 of 43: study block 1 of 5 — opens \"StatQuest YouTube\" (Statistics Foundations)."
+        },
+        "note": "No evidence you already know Statistics Foundations — start from the foundation."
+      },
+      {
+        "topicId": "game-design",
+        "name": "Game Design & Prototyping",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "core-mechanics",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "core-mechanics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Game Design Concepts (GDC vault)",
+                "url": "https://www.gdcvault.com/",
+                "kind": "video"
+              },
+              "estMinutes": 135,
+              "paceNote": "Week 11 of 43: study block 1 of 4 — opens \"Game Design Concepts (GDC vault)\" (Game Design & Prototyping)."
+            }
+          },
+          {
+            "concept": "level-design",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "level-design",
+              "sequence": 2,
+              "afterShare": 0.2727272727272727,
+              "resource": {
+                "title": "Game Design Concepts (GDC vault)",
+                "url": "https://www.gdcvault.com/",
+                "kind": "video"
+              },
+              "estMinutes": 125,
+              "paceNote": "Week 11 of 43: study block 2 of 4 — opens \"Game Design Concepts (GDC vault)\" (Game Design & Prototyping)."
+            }
+          },
+          {
+            "concept": "player-motivation",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "player-motivation",
+              "sequence": 3,
+              "afterShare": 0.5227272727272726,
+              "resource": {
+                "title": "Game Design Concepts (GDC vault)",
+                "url": "https://www.gdcvault.com/",
+                "kind": "video"
+              },
+              "estMinutes": 115,
+              "paceNote": "Week 11 of 43: study block 3 of 4 — opens \"Game Design Concepts (GDC vault)\" (Game Design & Prototyping)."
+            }
+          },
+          {
+            "concept": "prototyping-iteration",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "prototyping-iteration",
+              "sequence": 4,
+              "afterShare": 0.7499999999999999,
+              "resource": {
+                "title": "Game Design Concepts (GDC vault)",
+                "url": "https://www.gdcvault.com/",
+                "kind": "video"
+              },
+              "estMinutes": 125,
+              "paceNote": "Week 11 of 43: study block 4 of 4 — opens \"Game Design Concepts (GDC vault)\" (Game Design & Prototyping)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "core-mechanics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Game Design Concepts (GDC vault)",
+            "url": "https://www.gdcvault.com/",
+            "kind": "video"
+          },
+          "estMinutes": 135,
+          "paceNote": "Week 11 of 43: study block 1 of 4 — opens \"Game Design Concepts (GDC vault)\" (Game Design & Prototyping)."
+        },
+        "note": "No evidence you already know Game Design & Prototyping — start from the foundation."
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "sql-queries",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "sql-queries",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Week 14 of 43: study block 1 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+            }
+          },
+          {
+            "concept": "joins",
+            "weight": 1.3,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "joins",
+              "sequence": 2,
+              "afterShare": 0.18518518518518517,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 30,
+              "paceNote": "Week 14 of 43: study block 2 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+            }
+          },
+          {
+            "concept": "aggregations",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "aggregations",
+              "sequence": 3,
+              "afterShare": 0.4259259259259259,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Week 14 of 43: study block 3 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+            }
+          },
+          {
+            "concept": "schema-design-normalization",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "schema-design-normalization",
+              "sequence": 4,
+              "afterShare": 0.611111111111111,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Week 14 of 43: study block 4 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+            }
+          },
+          {
+            "concept": "indexing",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "indexing",
+              "sequence": 5,
+              "afterShare": 0.8148148148148149,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Week 14 of 43: study block 5 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "sql-queries",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 20,
+          "paceNote": "Week 14 of 43: study block 1 of 5 — opens \"SQLBolt (interactive)\" (Databases & SQL)."
+        },
+        "note": "No evidence you already know Databases & SQL — start from the foundation."
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "filesystem-navigation",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "filesystem-navigation",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 17 of 43: study block 1 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+            }
+          },
+          {
+            "concept": "shell-commands",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "shell-commands",
+              "sequence": 2,
+              "afterShare": 0.1923076923076923,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 17 of 43: study block 2 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+            }
+          },
+          {
+            "concept": "permissions-ownership",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "permissions-ownership",
+              "sequence": 3,
+              "afterShare": 0.3846153846153846,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 17 of 43: study block 3 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+            }
+          },
+          {
+            "concept": "process-management",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "process-management",
+              "sequence": 4,
+              "afterShare": 0.5769230769230769,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 17 of 43: study block 4 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+            }
+          },
+          {
+            "concept": "bash-scripting",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "bash-scripting",
+              "sequence": 5,
+              "afterShare": 0.7692307692307692,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 17 of 43: study block 5 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "filesystem-navigation",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Linux Journey",
+            "url": "https://linuxjourney.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 60,
+          "paceNote": "Week 17 of 43: study block 1 of 5 — opens \"Linux Journey\" (Linux & Shell Basics)."
+        },
+        "note": "No evidence you already know Linux & Shell Basics — start from the foundation."
+      },
+      {
+        "topicId": "ux-design",
+        "name": "UX Design & Research",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "user-research",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "user-research",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 19 of 43: study block 1 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+            }
+          },
+          {
+            "concept": "wireframing",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "wireframing",
+              "sequence": 2,
+              "afterShare": 0.20754716981132074,
+              "resource": {
+                "title": "Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 19 of 43: study block 2 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+            }
+          },
+          {
+            "concept": "prototyping-figma",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "prototyping-figma",
+              "sequence": 3,
+              "afterShare": 0.3962264150943396,
+              "resource": {
+                "title": "Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 19 of 43: study block 3 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+            }
+          },
+          {
+            "concept": "usability-testing",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "usability-testing",
+              "sequence": 4,
+              "afterShare": 0.6037735849056604,
+              "resource": {
+                "title": "Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 19 of 43: study block 4 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+            }
+          },
+          {
+            "concept": "visual-hierarchy",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "visual-hierarchy",
+              "sequence": 5,
+              "afterShare": 0.8113207547169812,
+              "resource": {
+                "title": "Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/",
+                "kind": "article"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 19 of 43: study block 5 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "user-research",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Nielsen Norman Group",
+            "url": "https://www.nngroup.com/articles/",
+            "kind": "article"
+          },
+          "estMinutes": 60,
+          "paceNote": "Week 19 of 43: study block 1 of 5 — opens \"Nielsen Norman Group\" (UX Design & Research)."
+        },
+        "note": "No evidence you already know UX Design & Research — start from the foundation."
+      },
+      {
+        "topicId": "product-management",
+        "name": "Product Management",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "problem-definition",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "problem-definition",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Lenny's Newsletter",
+                "url": "https://www.lennysnewsletter.com/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 22 of 43: study block 1 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+            }
+          },
+          {
+            "concept": "roadmapping",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "roadmapping",
+              "sequence": 2,
+              "afterShare": 0.1923076923076923,
+              "resource": {
+                "title": "Lenny's Newsletter",
+                "url": "https://www.lennysnewsletter.com/",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 22 of 43: study block 2 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+            }
+          },
+          {
+            "concept": "stakeholder-management",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "stakeholder-management",
+              "sequence": 3,
+              "afterShare": 0.40384615384615385,
+              "resource": {
+                "title": "Lenny's Newsletter",
+                "url": "https://www.lennysnewsletter.com/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 22 of 43: study block 3 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+            }
+          },
+          {
+            "concept": "metrics-and-analytics",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "metrics-and-analytics",
+              "sequence": 4,
+              "afterShare": 0.5961538461538461,
+              "resource": {
+                "title": "Lenny's Newsletter",
+                "url": "https://www.lennysnewsletter.com/",
+                "kind": "article"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 22 of 43: study block 4 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+            }
+          },
+          {
+            "concept": "agile-scrum",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "agile-scrum",
+              "sequence": 5,
+              "afterShare": 0.8076923076923077,
+              "resource": {
+                "title": "Lenny's Newsletter",
+                "url": "https://www.lennysnewsletter.com/",
+                "kind": "article"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 22 of 43: study block 5 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "problem-definition",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Lenny's Newsletter",
+            "url": "https://www.lennysnewsletter.com/",
+            "kind": "article"
+          },
+          "estMinutes": 60,
+          "paceNote": "Week 22 of 43: study block 1 of 5 — opens \"Lenny's Newsletter\" (Product Management)."
+        },
+        "note": "No evidence you already know Product Management — start from the foundation."
+      },
+      {
+        "topicId": "git-version-control",
+        "name": "Git & Version Control",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "commits",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "commits",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Git official docs",
+                "url": "https://git-scm.com/doc",
+                "kind": "article"
+              },
+              "estMinutes": 40,
+              "paceNote": "Week 25 of 43: study block 1 of 4 — opens \"Git official docs\" (Git & Version Control)."
+            }
+          },
+          {
+            "concept": "branching",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "branching",
+              "sequence": 2,
+              "afterShare": 0.2325581395348837,
+              "resource": {
+                "title": "Git official docs",
+                "url": "https://git-scm.com/doc",
+                "kind": "article"
+              },
+              "estMinutes": 50,
+              "paceNote": "Week 25 of 43: study block 2 of 4 — opens \"Git official docs\" (Git & Version Control)."
+            }
+          },
+          {
+            "concept": "merging",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "merging",
+              "sequence": 3,
+              "afterShare": 0.5116279069767441,
+              "resource": {
+                "title": "Git official docs",
+                "url": "https://git-scm.com/doc",
+                "kind": "article"
+              },
+              "estMinutes": 40,
+              "paceNote": "Week 25 of 43: study block 3 of 4 — opens \"Git official docs\" (Git & Version Control)."
+            }
+          },
+          {
+            "concept": "remotes-and-pull-requests",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "remotes-and-pull-requests",
+              "sequence": 4,
+              "afterShare": 0.7441860465116278,
+              "resource": {
+                "title": "Git official docs",
+                "url": "https://git-scm.com/doc",
+                "kind": "article"
+              },
+              "estMinutes": 45,
+              "paceNote": "Week 25 of 43: study block 4 of 4 — opens \"Git official docs\" (Git & Version Control)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "commits",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Git official docs",
+            "url": "https://git-scm.com/doc",
+            "kind": "article"
+          },
+          "estMinutes": 40,
+          "paceNote": "Week 25 of 43: study block 1 of 4 — opens \"Git official docs\" (Git & Version Control)."
+        },
+        "note": "No evidence you already know Git & Version Control — start from the foundation."
+      },
+      {
+        "topicId": "game-dev-basics",
+        "name": "Game Development Fundamentals",
+        "coverage": 0.20754716981132074,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "physics-basics",
+            "weight": 1.1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "physics-basics",
+              "sequence": 4,
+              "afterShare": 0.6037735849056604,
+              "resource": {
+                "title": "Brackeys Unity (archived)",
+                "url": "https://www.youtube.com/@Brackeys",
+                "kind": "video"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 27 of 43: study block 4 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "game-loop",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "game-loop",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Brackeys Unity (archived)",
+                "url": "https://www.youtube.com/@Brackeys",
+                "kind": "video"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 27 of 43: study block 1 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+            }
+          },
+          {
+            "concept": "sprite-rendering",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "sprite-rendering",
+              "sequence": 2,
+              "afterShare": 0.2264150943396226,
+              "resource": {
+                "title": "Brackeys Unity (archived)",
+                "url": "https://www.youtube.com/@Brackeys",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 27 of 43: study block 2 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+            }
+          },
+          {
+            "concept": "input-handling",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "input-handling",
+              "sequence": 3,
+              "afterShare": 0.4150943396226415,
+              "resource": {
+                "title": "Brackeys Unity (archived)",
+                "url": "https://www.youtube.com/@Brackeys",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 27 of 43: study block 3 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+            }
+          },
+          {
+            "concept": "scenes-game-states",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "scenes-game-states",
+              "sequence": 5,
+              "afterShare": 0.8113207547169812,
+              "resource": {
+                "title": "Brackeys Unity (archived)",
+                "url": "https://www.youtube.com/@Brackeys",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 27 of 43: study block 5 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "game-loop",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Brackeys Unity (archived)",
+            "url": "https://www.youtube.com/@Brackeys",
+            "kind": "video"
+          },
+          "estMinutes": 70,
+          "paceNote": "Week 27 of 43: study block 1 of 5 — opens \"Brackeys Unity (archived)\" (Game Development Fundamentals)."
+        },
+        "note": "You already have 1 of 5 concepts in Game Development Fundamentals; the gap is game-loop, sprite-rendering, input-handling, scenes-game-states."
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "syntax-and-types",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "syntax-and-types",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 31 of 43: study block 1 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "functions-scope-closures",
+            "weight": 1.3,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions-scope-closures",
+              "sequence": 2,
+              "afterShare": 0.1694915254237288,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 90,
+              "paceNote": "Week 31 of 43: study block 2 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "arrays-objects",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "arrays-objects",
+              "sequence": 3,
+              "afterShare": 0.38983050847457623,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 75,
+              "paceNote": "Week 31 of 43: study block 3 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "asynchronous-js",
+            "weight": 1.4,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "asynchronous-js",
+              "sequence": 4,
+              "afterShare": 0.5762711864406779,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 95,
+              "paceNote": "Week 31 of 43: study block 4 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+            }
+          },
+          {
+            "concept": "dom-manipulation",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dom-manipulation",
+              "sequence": 5,
+              "afterShare": 0.8135593220338982,
+              "resource": {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "kind": "article"
+              },
+              "estMinutes": 75,
+              "paceNote": "Week 31 of 43: study block 5 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "syntax-and-types",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article"
+          },
+          "estMinutes": 70,
+          "paceNote": "Week 31 of 43: study block 1 of 5 — opens \"MDN JavaScript Guide\" (JavaScript Core)."
+        },
+        "note": "No evidence you already know JavaScript Core — start from the foundation."
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "coverage": 0.4,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "data-cleaning",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-cleaning",
+              "sequence": 3,
+              "afterShare": 0.41818181818181815,
+              "resource": {
+                "title": "Corey Schafer Pandas",
+                "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+                "kind": "video"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 36 of 43: study block 3 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "data-visualization",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-visualization",
+              "sequence": 4,
+              "afterShare": 0.6363636363636364,
+              "resource": {
+                "title": "Corey Schafer Pandas",
+                "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 36 of 43: study block 4 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "pandas-dataframes",
+            "weight": 1.3,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "pandas-dataframes",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Corey Schafer Pandas",
+                "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+                "kind": "video"
+              },
+              "estMinutes": 70,
+              "paceNote": "Week 36 of 43: study block 1 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "numpy-arrays",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "numpy-arrays",
+              "sequence": 2,
+              "afterShare": 0.23636363636363636,
+              "resource": {
+                "title": "Corey Schafer Pandas",
+                "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 36 of 43: study block 2 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+            }
+          },
+          {
+            "concept": "eda-reporting",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "eda-reporting",
+              "sequence": 5,
+              "afterShare": 0.8181818181818182,
+              "resource": {
+                "title": "Corey Schafer Pandas",
+                "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+                "kind": "video"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 36 of 43: study block 5 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "pandas-dataframes",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video"
+          },
+          "estMinutes": 70,
+          "paceNote": "Week 36 of 43: study block 1 of 5 — opens \"Corey Schafer Pandas\" (Python for Data Analysis)."
+        },
+        "note": "You already have 2 of 5 concepts in Python for Data Analysis; the gap is pandas-dataframes, numpy-arrays, eda-reporting."
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "osI-model",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "osI-model",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 40 of 43: study block 1 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+            }
+          },
+          {
+            "concept": "tcp-ip",
+            "weight": 1.2,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "tcp-ip",
+              "sequence": 2,
+              "afterShare": 0.18518518518518517,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 65,
+              "paceNote": "Week 40 of 43: study block 2 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+            }
+          },
+          {
+            "concept": "dns-naming",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dns-naming",
+              "sequence": 3,
+              "afterShare": 0.40740740740740744,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 55,
+              "paceNote": "Week 40 of 43: study block 3 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+            }
+          },
+          {
+            "concept": "http-apis",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "http-apis",
+              "sequence": 4,
+              "afterShare": 0.5925925925925926,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 40 of 43: study block 4 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+            }
+          },
+          {
+            "concept": "subnetting",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "subnetting",
+              "sequence": 5,
+              "afterShare": 0.7962962962962964,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 60,
+              "paceNote": "Week 40 of 43: study block 5 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "osI-model",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Khan Academy Computer Networking",
+            "url": "https://www.khanacademy.org/computing/computer-science/networking",
+            "kind": "course"
+          },
+          "estMinutes": 55,
+          "paceNote": "Week 40 of 43: study block 1 of 5 — opens \"Khan Academy Computer Networking\" (Networking Basics)."
+        },
+        "note": "No evidence you already know Networking Basics — start from the foundation."
+      },
+      {
+        "topicId": "security-basics",
+        "name": "Security Fundamentals",
+        "coverage": 0.2790697674418604,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "cryptography-basics",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "cryptography-basics",
+              "sequence": 3,
+              "afterShare": 0.4651162790697674,
+              "resource": {
+                "title": "OWASP Top 10",
+                "url": "https://owasp.org/www-project-top-ten/",
+                "kind": "article"
+              },
+              "estMinutes": 35,
+              "paceNote": "Week 42 of 43: study block 3 of 4 — opens \"OWASP Top 10\" (Security Fundamentals)."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "threat-models",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "threat-models",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "OWASP Top 10",
+                "url": "https://owasp.org/www-project-top-ten/",
+                "kind": "article"
+              },
+              "estMinutes": 30,
+              "paceNote": "Week 42 of 43: study block 1 of 4 — opens \"OWASP Top 10\" (Security Fundamentals)."
+            }
+          },
+          {
+            "concept": "network-security",
+            "weight": 1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "network-security",
+              "sequence": 2,
+              "afterShare": 0.2325581395348837,
+              "resource": {
+                "title": "OWASP Top 10",
+                "url": "https://owasp.org/www-project-top-ten/",
+                "kind": "article"
+              },
+              "estMinutes": 30,
+              "paceNote": "Week 42 of 43: study block 2 of 4 — opens \"OWASP Top 10\" (Security Fundamentals)."
+            }
+          },
+          {
+            "concept": "web-attacks",
+            "weight": 1.1,
+            "evidence": "assumed from baseline strong",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "web-attacks",
+              "sequence": 4,
+              "afterShare": 0.7441860465116278,
+              "resource": {
+                "title": "OWASP Top 10",
+                "url": "https://owasp.org/www-project-top-ten/",
+                "kind": "article"
+              },
+              "estMinutes": 30,
+              "paceNote": "Week 42 of 43: study block 4 of 4 — opens \"OWASP Top 10\" (Security Fundamentals)."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "threat-models",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "OWASP Top 10",
+            "url": "https://owasp.org/www-project-top-ten/",
+            "kind": "article"
+          },
+          "estMinutes": 30,
+          "paceNote": "Week 42 of 43: study block 1 of 4 — opens \"OWASP Top 10\" (Security Fundamentals)."
+        },
+        "note": "You already have 1 of 4 concepts in Security Fundamentals; the gap is threat-models, network-security, web-attacks."
+      }
+    ],
+    "summary": "Most of the path is new — 92% of required concepts are not yet evidenced in your background."
+  }
+}

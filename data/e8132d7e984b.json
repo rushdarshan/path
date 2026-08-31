@@ -1,0 +1,38 @@
+{
+  "id": "e8132d7e984b",
+  "createdAt": "2026-08-29T18:21:33.215Z",
+  "updatedAt": "2026-08-29T18:21:33.252Z",
+  "convoStep": "learningPattern",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "I want to become a data scientist, job focused. Interests: machine learning, python, sql.",
+      "at": "2026-08-29T18:21:33.238Z"
+    },
+    {
+      "role": "user",
+      "text": "Background: basic statistics, git, 1 year coding. Learns by watching videos then hands-on.",
+      "at": "2026-08-29T18:21:33.248Z"
+    },
+    {
+      "role": "user",
+      "text": "One hour per day.",
+      "at": "2026-08-29T18:21:33.252Z"
+    }
+  ],
+  "answers": {
+    "goal": "I want to become a data scientist, job focused. Interests: machine learning, python, sql.",
+    "interests": "Background: basic statistics, git, 1 year coding. Learns by watching videos then hands-on.",
+    "baseline": "One hour per day."
+  },
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

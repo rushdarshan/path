@@ -1,0 +1,49 @@
+{
+  "id": "ded94706185d",
+  "createdAt": "2026-08-29T17:59:19.117Z",
+  "updatedAt": "2026-08-29T18:00:20.526Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "python, machine learning, sql",
+      "at": "2026-08-29T17:59:40.896Z"
+    },
+    {
+      "role": "user",
+      "text": "I have basic statistics, know git, 1 year of coding",
+      "at": "2026-08-29T17:59:50.098Z"
+    },
+    {
+      "role": "user",
+      "text": "learn by watching videos then hands-on projects",
+      "at": "2026-08-29T17:59:55.988Z"
+    },
+    {
+      "role": "user",
+      "text": "8 hours per week",
+      "at": "2026-08-29T18:00:05.747Z"
+    },
+    {
+      "role": "user",
+      "text": "an hour a day",
+      "at": "2026-08-29T18:00:20.526Z"
+    }
+  ],
+  "answers": {
+    "goal": "python, machine learning, sql",
+    "interests": "I have basic statistics, know git, 1 year of coding",
+    "baseline": "learn by watching videos then hands-on projects",
+    "learningPattern": "8 hours per week"
+  },
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

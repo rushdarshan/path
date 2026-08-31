@@ -1,0 +1,5322 @@
+{
+  "id": "d74856215c99",
+  "createdAt": "2026-08-29T17:37:39.305Z",
+  "updatedAt": "2026-08-29T17:37:39.390Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "data science job",
+      "at": "2026-08-29T17:37:39.324Z"
+    },
+    {
+      "role": "user",
+      "text": "python",
+      "at": "2026-08-29T17:37:39.334Z"
+    },
+    {
+      "role": "user",
+      "text": "beginner",
+      "at": "2026-08-29T17:37:39.350Z"
+    },
+    {
+      "role": "user",
+      "text": "hands on",
+      "at": "2026-08-29T17:37:39.366Z"
+    },
+    {
+      "role": "user",
+      "text": "6 hours",
+      "at": "2026-08-29T17:37:39.382Z"
+    }
+  ],
+  "answers": {
+    "goal": "data science job",
+    "interests": "python",
+    "baseline": "beginner",
+    "learningPattern": "hands on",
+    "timeBudget": "6 hours",
+    "hoursPerWeek": 6
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "start_learning",
+        "confidence": 0.4,
+        "evidence": "short or generic answer"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "databases-sql",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "statistics-foundations",
+        "confidence": 0.7,
+        "evidence": "data science",
+        "kind": "compound_match"
+      },
+      {
+        "topicId": "ml-basics",
+        "confidence": 0.7,
+        "evidence": "data science",
+        "kind": "compound_match"
+      }
+    ],
+    "needs": [
+      {
+        "need": "aggregations depth",
+        "concept": "aggregations",
+        "topicId": "databases-sql",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Databases & SQL"
+      },
+      {
+        "need": "linked-lists-stacks-queues depth",
+        "concept": "linked-lists-stacks-queues",
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Data Structures & Algorithms"
+      },
+      {
+        "need": "data-cleaning depth",
+        "concept": "data-cleaning",
+        "topicId": "python-for-data",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Python for Data Analysis"
+      },
+      {
+        "need": "control-flow depth",
+        "concept": "control-flow",
+        "topicId": "programming-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Programming Basics"
+      },
+      {
+        "need": "distributions depth",
+        "concept": "distributions",
+        "topicId": "statistics-foundations",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Statistics Foundations"
+      },
+      {
+        "need": "model-evaluation depth",
+        "concept": "model-evaluation",
+        "topicId": "ml-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Machine Learning Fundamentals"
+      }
+    ],
+    "style": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 6,
+      "confidence": 0.7,
+      "evidence": "6 hours"
+    },
+    "baseline": {
+      "level": "some",
+      "confidence": 0.45,
+      "evidence": "explicit signal"
+    },
+    "resume": null,
+    "profilerEvidence": {
+      "style": {
+        "hands": "hands on"
+      },
+      "goals": [
+        "short or generic answer"
+      ],
+      "interests": [
+        "data",
+        "data",
+        "data",
+        "python",
+        "data science",
+        "data science"
+      ],
+      "baseline": "explicit signal"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.697,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.33999999999999997,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.697,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.33999999999999997,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.691,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.30000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "domain": "programming",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.626,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.594,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.16000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "domain": "ml",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.594,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Statistics Foundations, Python for Data Analysis first"
+          },
+          "style": {
+            "score": 0.16000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.449,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "style",
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "domain": "web",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.446,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "game-design",
+        "name": "Game Design & Prototyping",
+        "domain": "game",
+        "level": 1,
+        "estHours": 25,
+        "total": 0.413,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.13999999999999999,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "ux-design",
+        "name": "UX Design & Research",
+        "domain": "product",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.413,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.13999999999999999,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "product-management",
+        "name": "Product Management",
+        "domain": "product",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.407,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.1,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "git-version-control",
+        "name": "Git & Version Control",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 12,
+        "total": 0.389,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "domain": "web",
+        "level": 1,
+        "estHours": 45,
+        "total": 0.386,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "penetration-testing",
+        "name": "Penetration Testing",
+        "domain": "security",
+        "level": 2,
+        "estHours": 50,
+        "total": 0.371,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Security Fundamentals, Linux & Shell Basics first"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "domain": "web",
+        "level": 2,
+        "estHours": 55,
+        "total": 0.368,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires JavaScript Core, HTML & CSS Foundations first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.4,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "game-dev-basics",
+        "name": "Game Development Fundamentals",
+        "domain": "game",
+        "level": 1,
+        "estHours": 35,
+        "total": 0.359,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.18000000000000002,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.28,
+            "driver": "requires Programming Basics first"
+          }
+        ]
+      },
+      {
+        "topicId": "security-basics",
+        "name": "Security Fundamentals",
+        "domain": "security",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.353,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Linux & Shell Basics, Networking Basics first"
+          },
+          "style": {
+            "score": 0.13999999999999999,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.28,
+            "driver": "requires Linux & Shell Basics, Networking Basics first"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.35,
+        "factors": {
+          "interest": {
+            "score": 0.15,
+            "driver": "no direct stated interest"
+          },
+          "goal": {
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Linux & Shell Basics first"
+          },
+          "style": {
+            "score": 0.12,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 0.9,
+            "driver": "beginner-friendly ramp"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.28,
+            "driver": "requires Linux & Shell Basics first"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-29T17:37:39.387Z"
+  },
+  "path": {
+    "id": "path-mtenydkr",
+    "totalHours": 632,
+    "estimatedWeeks": 106,
+    "hoursPerWeek": 6,
+    "order": [
+      "programming-basics",
+      "databases-sql",
+      "statistics-foundations",
+      "linux-basics",
+      "html-css",
+      "game-design",
+      "ux-design",
+      "product-management",
+      "git-version-control",
+      "javascript-core",
+      "game-dev-basics",
+      "data-structures-algorithms",
+      "python-for-data",
+      "networking-basics",
+      "react-frontend",
+      "ml-basics",
+      "security-basics",
+      "penetration-testing"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ],
+        "totalHours": 367
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ],
+        "totalHours": 265
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "git-version-control",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "javascript-core",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "game-dev-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "data-structures-algorithms",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "networking-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "javascript-core",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "html-css",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "statistics-foundations",
+        "to": "ml-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "python-for-data",
+        "to": "ml-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "security-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "networking-basics",
+        "to": "security-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "security-basics",
+        "to": "penetration-testing",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "penetration-testing",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 2,
+        "start": "2026-09-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 3,
+        "start": "2026-09-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 4,
+        "start": "2026-09-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 5,
+        "start": "2026-09-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 6,
+        "start": "2026-10-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 7,
+        "start": "2026-10-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 8,
+        "start": "2026-10-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 9,
+        "start": "2026-10-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 10,
+        "start": "2026-10-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 11,
+        "start": "2026-11-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 12,
+        "start": "2026-11-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 13,
+        "start": "2026-11-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 14,
+        "start": "2026-11-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 15,
+        "start": "2026-12-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 16,
+        "start": "2026-12-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 17,
+        "start": "2026-12-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 18,
+        "start": "2026-12-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 19,
+        "start": "2027-01-02",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 20,
+        "start": "2027-01-09",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 21,
+        "start": "2027-01-16",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 22,
+        "start": "2027-01-23",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 23,
+        "start": "2027-01-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 24,
+        "start": "2027-02-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 25,
+        "start": "2027-02-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 26,
+        "start": "2027-02-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 27,
+        "start": "2027-02-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 28,
+        "start": "2027-03-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 29,
+        "start": "2027-03-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 30,
+        "start": "2027-03-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 31,
+        "start": "2027-03-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 32,
+        "start": "2027-04-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 33,
+        "start": "2027-04-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 34,
+        "start": "2027-04-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 35,
+        "start": "2027-04-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 36,
+        "start": "2027-05-01",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 37,
+        "start": "2027-05-08",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 38,
+        "start": "2027-05-15",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 39,
+        "start": "2027-05-22",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 40,
+        "start": "2027-05-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 41,
+        "start": "2027-06-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 42,
+        "start": "2027-06-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 43,
+        "start": "2027-06-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 44,
+        "start": "2027-06-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 45,
+        "start": "2027-07-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 46,
+        "start": "2027-07-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 47,
+        "start": "2027-07-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 48,
+        "start": "2027-07-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 49,
+        "start": "2027-07-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 50,
+        "start": "2027-08-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 51,
+        "start": "2027-08-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 52,
+        "start": "2027-08-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 53,
+        "start": "2027-08-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 54,
+        "start": "2027-09-04",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 55,
+        "start": "2027-09-11",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 56,
+        "start": "2027-09-18",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 57,
+        "start": "2027-09-25",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 58,
+        "start": "2027-10-02",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 59,
+        "start": "2027-10-09",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 60,
+        "start": "2027-10-16",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 61,
+        "start": "2027-10-23",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 6,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 62,
+        "start": "2027-10-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "hours": 1,
+        "topics": [
+          "programming-basics",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "html-css",
+          "game-design",
+          "ux-design",
+          "product-management",
+          "git-version-control",
+          "javascript-core",
+          "game-dev-basics",
+          "networking-basics",
+          "security-basics"
+        ]
+      },
+      {
+        "week": 63,
+        "start": "2027-11-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 64,
+        "start": "2027-11-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 65,
+        "start": "2027-11-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 66,
+        "start": "2027-11-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 67,
+        "start": "2027-12-04",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 68,
+        "start": "2027-12-11",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 69,
+        "start": "2027-12-18",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 70,
+        "start": "2027-12-25",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 71,
+        "start": "2028-01-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 72,
+        "start": "2028-01-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 73,
+        "start": "2028-01-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 74,
+        "start": "2028-01-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 75,
+        "start": "2028-01-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 76,
+        "start": "2028-02-05",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 77,
+        "start": "2028-02-12",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 78,
+        "start": "2028-02-19",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 79,
+        "start": "2028-02-26",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 80,
+        "start": "2028-03-04",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 81,
+        "start": "2028-03-11",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 82,
+        "start": "2028-03-18",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 83,
+        "start": "2028-03-25",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 84,
+        "start": "2028-04-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 85,
+        "start": "2028-04-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 86,
+        "start": "2028-04-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 87,
+        "start": "2028-04-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 88,
+        "start": "2028-04-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 89,
+        "start": "2028-05-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 90,
+        "start": "2028-05-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 91,
+        "start": "2028-05-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 92,
+        "start": "2028-05-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 93,
+        "start": "2028-06-03",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 94,
+        "start": "2028-06-10",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 95,
+        "start": "2028-06-17",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 96,
+        "start": "2028-06-24",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 97,
+        "start": "2028-07-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 98,
+        "start": "2028-07-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 99,
+        "start": "2028-07-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 100,
+        "start": "2028-07-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 101,
+        "start": "2028-07-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 102,
+        "start": "2028-08-05",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 103,
+        "start": "2028-08-12",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 104,
+        "start": "2028-08-19",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 105,
+        "start": "2028-08-26",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 106,
+        "start": "2028-09-02",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 6,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      },
+      {
+        "week": 107,
+        "start": "2028-09-09",
+        "milestone": "Core Skills",
+        "level": 2,
+        "hours": 1,
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics",
+          "penetration-testing"
+        ]
+      }
+    ],
+    "createdAt": "2026-08-29T17:37:39.388Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a some baseline learner who wants to grow — 632 hours across 106 weeks, tuned to 6h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "summary": "Programming Basics is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "summary": "Databases & SQL is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "PostgreSQL Tutorial",
+            "url": "https://www.postgresqltutorial.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Stanford DB Course",
+            "url": "https://www.coursera.org/learn/database-sql",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "summary": "Statistics Foundations is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Khan Academy Statistics",
+            "url": "https://www.khanacademy.org/math/statistics-probability",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Seeing Theory (visual)",
+            "url": "https://seeing-theory.brown.edu/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "StatQuest YouTube",
+            "url": "https://www.youtube.com/@statquest",
+            "kind": "video",
+            "minutes": 400,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "summary": "Linux & Shell Basics is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately",
+          "- **your learning style** (score 0.38): resources match how you learn"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Linux Journey",
+            "url": "https://linuxjourney.com/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Missing Semester (MIT)",
+            "url": "https://missing.csail.mit.edu/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "OverTheWire Bandit",
+            "url": "https://overthewire.org/wargames/bandit/",
+            "kind": "interactive",
+            "minutes": 200,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "summary": "HTML & CSS Foundations is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately",
+          "- **your learning style** (score 0.36): resources match how you learn"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "freeCodeCamp Responsive Web Design",
+            "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Flexbox Froggy",
+            "url": "https://flexboxfroggy.com/",
+            "kind": "interactive",
+            "minutes": 45,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "game-design",
+        "name": "Game Design & Prototyping",
+        "summary": "Game Design & Prototyping is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately",
+          "- **your current level** (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Game Design Concepts (GDC vault)",
+            "url": "https://www.gdcvault.com/",
+            "kind": "video",
+            "minutes": 500,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Extra Credits Essays",
+            "url": "https://www.youtube.com/@ExtraCredits",
+            "kind": "video",
+            "minutes": 200,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "ux-design",
+        "name": "UX Design & Research",
+        "summary": "UX Design & Research is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately",
+          "- **your current level** (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Nielsen Norman Group",
+            "url": "https://www.nngroup.com/articles/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Figma Learn",
+            "url": "https://www.figma.com/learn/",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Google UX Certificate",
+            "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+            "kind": "course",
+            "minutes": 800,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "product-management",
+        "name": "Product Management",
+        "summary": "Product Management is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your readiness** (score 0.58): no prerequisites — can start immediately",
+          "- **your current level** (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Lenny's Newsletter",
+            "url": "https://www.lennysnewsletter.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Product School",
+            "url": "https://productschool.com/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "git-version-control",
+        "name": "Git & Version Control",
+        "summary": "Git & Version Control is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your learning style** (score 0.38): resources match how you learn",
+          "- **your current level** (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Git official docs",
+            "url": "https://git-scm.com/doc",
+            "kind": "article",
+            "minutes": 180,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Learn Git Branching (interactive)",
+            "url": "https://learngitbranching.js.org/",
+            "kind": "interactive",
+            "minutes": 180,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "summary": "JavaScript Core is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your learning style** (score 0.36): resources match how you learn",
+          "- **your current level** (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive",
+            "minutes": 800,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Odin Project",
+            "url": "https://www.theodinproject.com/paths/foundations",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "game-dev-basics",
+        "name": "Game Development Fundamentals",
+        "summary": "Game Development Fundamentals is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your current level** (score 0.34): level 1 vs your some baseline",
+          "- **your readiness** (score 0.28): requires Programming Basics first"
+        ],
+        "prereqs": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Godot Official Docs",
+            "url": "https://docs.godotengine.org/",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Brackeys Unity (archived)",
+            "url": "https://www.youtube.com/@Brackeys",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "summary": "Data Structures & Algorithms is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your current level** (score 0.89): level 2 vs your some baseline",
+          "- **your goal** (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "NeetCode.io",
+            "url": "https://neetcode.io/",
+            "kind": "interactive",
+            "minutes": 1200,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "Coursera Algorithms I (Princeton)",
+            "url": "https://www.coursera.org/learn/algorithms-part1",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "CS Dojo YouTube",
+            "url": "https://www.youtube.com/@CSDojo",
+            "kind": "video",
+            "minutes": 240,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "summary": "Python for Data Analysis is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your current level** (score 0.89): level 2 vs your some baseline",
+          "- **your goal** (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "summary": "Networking Basics is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your current level** (score 0.34): level 1 vs your some baseline",
+          "- **your readiness** (score 0.28): requires Linux & Shell Basics first"
+        ],
+        "prereqs": "Prerequisites required first: Linux & Shell Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Khan Academy Computer Networking",
+            "url": "https://www.khanacademy.org/computing/computer-science/networking",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Beacon: Computer Networking",
+            "url": "https://networklessons.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "summary": "React Frontend Development is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your current level** (score 0.89): level 2 vs your some baseline",
+          "- **your goal** (score 0.40): beginner-friendly ramp",
+          "- **your learning style** (score 0.36): resources match how you learn"
+        ],
+        "prereqs": "Prerequisites required first: JavaScript Core, HTML & CSS Foundations.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "React official docs",
+            "url": "https://react.dev/learn",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Epic React (Kent C. Dodds)",
+            "url": "https://www.epicreact.dev/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scrimba Learn React",
+            "url": "https://scrimba.com/learn/learnreact",
+            "kind": "interactive",
+            "minutes": 400,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "summary": "Machine Learning Fundamentals is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your interests** (score 1.00): explicit interest match",
+          "- **your current level** (score 0.89): level 2 vs your some baseline",
+          "- **your goal** (score 0.40): beginner-friendly ramp"
+        ],
+        "prereqs": "Prerequisites required first: Statistics Foundations, Python for Data Analysis.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Andrej Karpathy's Zero to Hero",
+            "url": "https://karpathy.ai/zero-to-hero.html",
+            "kind": "video",
+            "minutes": 600,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Stanford CS229",
+            "url": "https://cs229.stanford.edu/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scikit-learn Tutorials",
+            "url": "https://scikit-learn.org/stable/tutorial/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "security-basics",
+        "name": "Security Fundamentals",
+        "summary": "Security Fundamentals is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your goal** (score 0.90): beginner-friendly ramp",
+          "- **your current level** (score 0.34): level 1 vs your some baseline",
+          "- **your readiness** (score 0.28): requires Linux & Shell Basics, Networking Basics first"
+        ],
+        "prereqs": "Prerequisites required first: Linux & Shell Basics, Networking Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "OWASP Top 10",
+            "url": "https://owasp.org/www-project-top-ten/",
+            "kind": "article",
+            "minutes": 120,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Cybrary Intro",
+            "url": "https://www.cybrary.it/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "penetration-testing",
+        "name": "Penetration Testing",
+        "summary": "Penetration Testing is in your path because it fills a gap in your learning goals.",
+        "factors": [
+          "- **your current level** (score 0.89): level 2 vs your some baseline",
+          "- **your goal** (score 0.40): beginner-friendly ramp",
+          "- **your learning style** (score 0.38): resources match how you learn"
+        ],
+        "prereqs": "Prerequisites required first: Security Fundamentals, Linux & Shell Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "TryHackMe",
+            "url": "https://tryhackme.com/",
+            "kind": "interactive",
+            "minutes": 600,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "Hack The Box Academy",
+            "url": "https://academy.hackthebox.com/",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "PortSwigger Web Security",
+            "url": "https://portswigger.net/web-security",
+            "kind": "interactive",
+            "minutes": 500,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals.",
+        "topics": [
+          "Programming Basics",
+          "Databases & SQL",
+          "Statistics Foundations",
+          "Linux & Shell Basics",
+          "HTML & CSS Foundations",
+          "Game Design & Prototyping",
+          "UX Design & Research",
+          "Product Management",
+          "Git & Version Control",
+          "JavaScript Core",
+          "Game Development Fundamentals",
+          "Networking Basics",
+          "Security Fundamentals"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing.",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Python for Data Analysis",
+          "React Frontend Development",
+          "Machine Learning Fundamentals",
+          "Penetration Testing"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 107 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-29",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 1: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-05",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 2: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-12",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 3: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-19",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 4: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-26",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 5: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-03",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 6: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-10",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 7: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-17",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 8: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-24",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 9: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 10,
+          "start": "2026-10-31",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 10: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-07",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 11: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-14",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 12: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-21",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 13: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-28",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 14: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-05",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 15: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-12",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 16: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 17,
+          "start": "2026-12-19",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 17: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 18,
+          "start": "2026-12-26",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 18: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 19,
+          "start": "2027-01-02",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 19: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 20,
+          "start": "2027-01-09",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 20: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 21,
+          "start": "2027-01-16",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 21: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 22,
+          "start": "2027-01-23",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 22: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 23,
+          "start": "2027-01-30",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 23: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 24,
+          "start": "2027-02-06",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 24: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 25,
+          "start": "2027-02-13",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 25: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 26,
+          "start": "2027-02-20",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 26: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 27,
+          "start": "2027-02-27",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 27: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 28,
+          "start": "2027-03-06",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 28: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 29,
+          "start": "2027-03-13",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 29: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 30,
+          "start": "2027-03-20",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 30: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 31,
+          "start": "2027-03-27",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 31: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 32,
+          "start": "2027-04-03",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 32: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 33,
+          "start": "2027-04-10",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 33: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 34,
+          "start": "2027-04-17",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 34: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 35,
+          "start": "2027-04-24",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 35: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 36,
+          "start": "2027-05-01",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 36: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 37,
+          "start": "2027-05-08",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 37: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 38,
+          "start": "2027-05-15",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 38: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 39,
+          "start": "2027-05-22",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 39: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 40,
+          "start": "2027-05-29",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 40: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 41,
+          "start": "2027-06-05",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 41: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 42,
+          "start": "2027-06-12",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 42: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 43,
+          "start": "2027-06-19",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 43: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 44,
+          "start": "2027-06-26",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 44: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 45,
+          "start": "2027-07-03",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 45: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 46,
+          "start": "2027-07-10",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 46: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 47,
+          "start": "2027-07-17",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 47: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 48,
+          "start": "2027-07-24",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 48: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 49,
+          "start": "2027-07-31",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 49: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 50,
+          "start": "2027-08-07",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 50: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 51,
+          "start": "2027-08-14",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 51: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 52,
+          "start": "2027-08-21",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 52: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 53,
+          "start": "2027-08-28",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 53: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 54,
+          "start": "2027-09-04",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 54: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 55,
+          "start": "2027-09-11",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 55: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 56,
+          "start": "2027-09-18",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 56: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 57,
+          "start": "2027-09-25",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 57: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 58,
+          "start": "2027-10-02",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 58: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 59,
+          "start": "2027-10-09",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 59: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 60,
+          "start": "2027-10-16",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 60: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 61,
+          "start": "2027-10-23",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 61: 6h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 62,
+          "start": "2027-10-30",
+          "milestone": "Foundations",
+          "hours": 1,
+          "note": "Week 62: 1h on Foundations — Programming Basics, Databases & SQL, Statistics Foundations, Linux & Shell Basics, HTML & CSS Foundations, Game Design & Prototyping, UX Design & Research, Product Management, Git & Version Control, JavaScript Core, Game Development Fundamentals, Networking Basics, Security Fundamentals"
+        },
+        {
+          "week": 63,
+          "start": "2027-11-06",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 63: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 64,
+          "start": "2027-11-13",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 64: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 65,
+          "start": "2027-11-20",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 65: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 66,
+          "start": "2027-11-27",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 66: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 67,
+          "start": "2027-12-04",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 67: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 68,
+          "start": "2027-12-11",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 68: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 69,
+          "start": "2027-12-18",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 69: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 70,
+          "start": "2027-12-25",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 70: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 71,
+          "start": "2028-01-01",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 71: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 72,
+          "start": "2028-01-08",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 72: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 73,
+          "start": "2028-01-15",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 73: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 74,
+          "start": "2028-01-22",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 74: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 75,
+          "start": "2028-01-29",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 75: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 76,
+          "start": "2028-02-05",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 76: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 77,
+          "start": "2028-02-12",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 77: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 78,
+          "start": "2028-02-19",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 78: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 79,
+          "start": "2028-02-26",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 79: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 80,
+          "start": "2028-03-04",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 80: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 81,
+          "start": "2028-03-11",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 81: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 82,
+          "start": "2028-03-18",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 82: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 83,
+          "start": "2028-03-25",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 83: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 84,
+          "start": "2028-04-01",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 84: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 85,
+          "start": "2028-04-08",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 85: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 86,
+          "start": "2028-04-15",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 86: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 87,
+          "start": "2028-04-22",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 87: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 88,
+          "start": "2028-04-29",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 88: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 89,
+          "start": "2028-05-06",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 89: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 90,
+          "start": "2028-05-13",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 90: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 91,
+          "start": "2028-05-20",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 91: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 92,
+          "start": "2028-05-27",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 92: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 93,
+          "start": "2028-06-03",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 93: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 94,
+          "start": "2028-06-10",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 94: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 95,
+          "start": "2028-06-17",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 95: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 96,
+          "start": "2028-06-24",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 96: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 97,
+          "start": "2028-07-01",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 97: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 98,
+          "start": "2028-07-08",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 98: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 99,
+          "start": "2028-07-15",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 99: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 100,
+          "start": "2028-07-22",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 100: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 101,
+          "start": "2028-07-29",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 101: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 102,
+          "start": "2028-08-05",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 102: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 103,
+          "start": "2028-08-12",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 103: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 104,
+          "start": "2028-08-19",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 104: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 105,
+          "start": "2028-08-26",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 105: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 106,
+          "start": "2028-09-02",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 106: 6h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        },
+        {
+          "week": 107,
+          "start": "2028-09-09",
+          "milestone": "Core Skills",
+          "hours": 1,
+          "note": "Week 107: 1h on Core Skills — Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals, Penetration Testing"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.2937472,
+      "evidence": 0.59,
+      "n": 3,
+      "attempts": [
+        {
+          "correct": false,
+          "difficulty": 1,
+          "at": 1788025059422
+        },
+        {
+          "correct": true,
+          "difficulty": 1,
+          "at": 1788025059422
+        },
+        {
+          "correct": true,
+          "difficulty": 1,
+          "at": 1788025059422
+        }
+      ],
+      "lastUpdated": 1788025059422,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-types": {
+          "theta": 0.08800000000000001,
+          "evidence": 0.05,
+          "n": 1,
+          "attempts": [
+            {
+              "correct": false,
+              "difficulty": 1,
+              "at": 1788025059422
+            }
+          ],
+          "lastUpdated": 1788025059422
+        },
+        "control-flow": {
+          "theta": 0.20800000000000002,
+          "evidence": 0.27,
+          "n": 1,
+          "attempts": [
+            {
+              "correct": true,
+              "difficulty": 1,
+              "at": 1788025059422
+            }
+          ],
+          "lastUpdated": 1788025059422
+        },
+        "functions": {
+          "theta": 0.20800000000000002,
+          "evidence": 0.27,
+          "n": 1,
+          "attempts": [
+            {
+              "correct": true,
+              "difficulty": 1,
+              "at": 1788025059422
+            }
+          ],
+          "lastUpdated": 1788025059422
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "databases-sql": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "sql-queries": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "joins": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "aggregations": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "schema-design-normalization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "indexing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "statistics-foundations": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "descriptive-statistics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "probability": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "distributions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hypothesis-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "correlation-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "linux-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "filesystem-navigation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "shell-commands": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "permissions-ownership": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "process-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "bash-scripting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "html-css": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "html-semantics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "css-selectors": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "box-model-layout": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "flexbox-grid": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "responsive-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "game-design": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "core-mechanics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "level-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "player-motivation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "prototyping-iteration": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "ux-design": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "user-research": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "wireframing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "prototyping-figma": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "usability-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "visual-hierarchy": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "product-management": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "problem-definition": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "roadmapping": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "stakeholder-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "metrics-and-analytics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "agile-scrum": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "git-version-control": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "commits": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "branching": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "merging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "remotes-and-pull-requests": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "javascript-core": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "syntax-and-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions-scope-closures": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "arrays-objects": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "asynchronous-js": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "dom-manipulation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "game-dev-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "game-loop": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "sprite-rendering": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "input-handling": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "physics-basics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "scenes-game-states": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "data-structures-algorithms": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "arrays-and-strings": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hash-maps": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "linked-lists-stacks-queues": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "trees-graphs": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "sorting-searching": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "recursion-dp": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "networking-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "osI-model": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "tcp-ip": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "dns-naming": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "http-apis": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "subnetting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "react-frontend": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "components-and-props": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-and-hooks": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "effects-and-lifecycle": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "routing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "api-integration": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "ml-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "supervised-learning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "classification-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "model-evaluation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "overfitting-regularization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "feature-engineering": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "security-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "threat-models": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "network-security": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "cryptography-basics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "web-attacks": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "penetration-testing": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "reconnaissance": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "vulnerability-scanning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "exploitation-basics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "privilege-escalation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    }
+  },
+  "nextQuiz": {
+    "topicId": "programming-basics",
+    "topicName": "Programming Basics",
+    "concept": "data-types",
+    "reason": "Mastery of \"data-types\" is lowest in Programming Basics.",
+    "questions": [
+      {
+        "question": "Which Python data type is immutable?",
+        "options": [
+          "list",
+          "tuple",
+          "dict",
+          "set"
+        ],
+        "answerIndex": 1,
+        "concept": "data-types",
+        "difficulty": 1
+      },
+      {
+        "question": "What is the typical output of `type(3.14)` in Python?",
+        "options": [
+          "int",
+          "float",
+          "double",
+          "num"
+        ],
+        "answerIndex": 1,
+        "concept": "data-types",
+        "difficulty": 1
+      }
+    ]
+  },
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

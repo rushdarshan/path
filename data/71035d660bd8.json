@@ -1,0 +1,49 @@
+{
+  "id": "71035d660bd8",
+  "createdAt": "2026-08-29T19:07:06.509Z",
+  "updatedAt": "2026-08-29T19:07:06.549Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "career switch",
+      "at": "2026-08-29T19:07:06.517Z"
+    },
+    {
+      "role": "user",
+      "text": "python",
+      "at": "2026-08-29T19:07:06.524Z"
+    },
+    {
+      "role": "user",
+      "text": "beginner",
+      "at": "2026-08-29T19:07:06.530Z"
+    },
+    {
+      "role": "user",
+      "text": "videos",
+      "at": "2026-08-29T19:07:06.537Z"
+    },
+    {
+      "role": "user",
+      "text": "whenever I have time",
+      "at": "2026-08-29T19:07:06.549Z"
+    }
+  ],
+  "answers": {
+    "goal": "career switch",
+    "interests": "python",
+    "baseline": "beginner",
+    "learningPattern": "videos"
+  },
+  "profile": null,
+  "recommendation": null,
+  "path": null,
+  "explanation": null,
+  "mastery": null,
+  "nextQuiz": null,
+  "status": "profiling",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true
+}

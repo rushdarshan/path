@@ -1,0 +1,4900 @@
+{
+  "id": "612f6ea89a50",
+  "createdAt": "2026-08-29T18:50:46.886Z",
+  "updatedAt": "2026-08-29T18:50:46.964Z",
+  "convoStep": "timeBudget",
+  "convoHistory": [
+    {
+      "role": "user",
+      "text": "I want to become a data scientist, job focused",
+      "at": "2026-08-29T18:50:46.899Z"
+    },
+    {
+      "role": "user",
+      "text": "python, sql, statistics",
+      "at": "2026-08-29T18:50:46.902Z"
+    },
+    {
+      "role": "user",
+      "text": "I know some python, used sql at work",
+      "at": "2026-08-29T18:50:46.912Z"
+    },
+    {
+      "role": "user",
+      "text": "hands-on",
+      "at": "2026-08-29T18:50:46.928Z"
+    },
+    {
+      "role": "user",
+      "text": "an hour a day",
+      "at": "2026-08-29T18:50:46.943Z"
+    }
+  ],
+  "answers": {
+    "goal": "I want to become a data scientist, job focused",
+    "interests": "python, sql, statistics",
+    "baseline": "I know some python, used sql at work",
+    "learningPattern": "hands-on",
+    "timeBudget": "an hour a day",
+    "hoursPerWeek": 7
+  },
+  "profile": {
+    "person": null,
+    "goals": [
+      {
+        "goal": "career_transition",
+        "confidence": 0.7,
+        "evidence": "become a"
+      },
+      {
+        "goal": "job_ready",
+        "confidence": 0.775,
+        "evidence": "job focused"
+      }
+    ],
+    "interests": [
+      {
+        "topicId": "databases-sql",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "python-for-data",
+        "confidence": 0.8,
+        "evidence": "data",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "programming-basics",
+        "confidence": 0.8,
+        "evidence": "python",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "statistics-foundations",
+        "confidence": 0.8,
+        "evidence": "statistics",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "react-frontend",
+        "confidence": 0.8,
+        "evidence": "work",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "deep-learning",
+        "confidence": 0.8,
+        "evidence": "work",
+        "kind": "explicit_keyword"
+      },
+      {
+        "topicId": "networking-basics",
+        "confidence": 0.8,
+        "evidence": "work",
+        "kind": "explicit_keyword"
+      }
+    ],
+    "needs": [
+      {
+        "need": "aggregations depth",
+        "concept": "aggregations",
+        "topicId": "databases-sql",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Databases & SQL"
+      },
+      {
+        "need": "linked-lists-stacks-queues depth",
+        "concept": "linked-lists-stacks-queues",
+        "topicId": "data-structures-algorithms",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Data Structures & Algorithms"
+      },
+      {
+        "need": "data-cleaning depth",
+        "concept": "data-cleaning",
+        "topicId": "python-for-data",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Python for Data Analysis"
+      },
+      {
+        "need": "control-flow depth",
+        "concept": "control-flow",
+        "topicId": "programming-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Programming Basics"
+      },
+      {
+        "need": "distributions depth",
+        "concept": "distributions",
+        "topicId": "statistics-foundations",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Statistics Foundations"
+      },
+      {
+        "need": "effects-and-lifecycle depth",
+        "concept": "effects-and-lifecycle",
+        "topicId": "react-frontend",
+        "confidence": 0.45,
+        "evidence": "basic exposure to React Frontend Development"
+      },
+      {
+        "need": "cnn-vision depth",
+        "concept": "cnn-vision",
+        "topicId": "deep-learning",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Deep Learning"
+      },
+      {
+        "need": "dns-naming depth",
+        "concept": "dns-naming",
+        "topicId": "networking-basics",
+        "confidence": 0.45,
+        "evidence": "basic exposure to Networking Basics"
+      }
+    ],
+    "style": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    },
+    "pace": {
+      "pace": "steady",
+      "confidence": 0.3,
+      "evidence": "no explicit pace"
+    },
+    "timeBudget": {
+      "hoursPerWeek": 7,
+      "confidence": 0.8,
+      "evidence": "transcribed from chat"
+    },
+    "baseline": {
+      "level": "some",
+      "confidence": 0.45,
+      "evidence": "explicit signal"
+    },
+    "resume": null,
+    "profilerEvidence": {
+      "style": {
+        "hands": "hands-on"
+      },
+      "goals": [
+        "become a",
+        "job focused"
+      ],
+      "interests": [
+        "data",
+        "data",
+        "data",
+        "python",
+        "statistics",
+        "work",
+        "work",
+        "work"
+      ],
+      "baseline": "explicit signal"
+    }
+  },
+  "recommendation": {
+    "candidateCount": 28,
+    "selected": [
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "domain": "web",
+        "level": 2,
+        "estHours": 55,
+        "total": 0.744,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires JavaScript Core, HTML & CSS Foundations first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "domain": "programming",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.706,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "domain": "programming",
+        "level": 1,
+        "estHours": 40,
+        "total": 0.677,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.33999999999999997,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "domain": "ml",
+        "level": 2,
+        "estHours": 60,
+        "total": 0.668,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for Deep Learning (your stated interest)"
+          },
+          "goal": {
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Statistics Foundations, Python for Data Analysis first"
+          },
+          "style": {
+            "score": 0.16000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "goal",
+            "score": 1,
+            "driver": "portfolio-worthy for job hunting"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for Deep Learning (your stated interest)"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "domain": "web",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.635,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.618,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.33999999999999997,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "domain": "data",
+        "level": 2,
+        "estHours": 40,
+        "total": 0.614,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.16000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.8899999999999999,
+            "driver": "level 2 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.89,
+            "driver": "level 2 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "domain": "data",
+        "level": 1,
+        "estHours": 30,
+        "total": 0.612,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.30000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.578,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for Networking Basics (your stated interest)"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.5774999999999999,
+            "driver": "no prerequisites — can start immediately"
+          },
+          "style": {
+            "score": 0.38,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for Networking Basics (your stated interest)"
+          },
+          {
+            "factor": "readiness",
+            "score": 0.58,
+            "driver": "no prerequisites — can start immediately"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "domain": "web",
+        "level": 1,
+        "estHours": 45,
+        "total": 0.576,
+        "factors": {
+          "interest": {
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          "goal": {
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Programming Basics first"
+          },
+          "style": {
+            "score": 0.36000000000000004,
+            "driver": "resources match how you learn"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 0.85,
+            "driver": "prerequisite for React Frontend Development (your stated interest)"
+          },
+          {
+            "factor": "goal",
+            "score": 0.8,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "style",
+            "score": 0.36,
+            "driver": "resources match how you learn"
+          }
+        ]
+      },
+      {
+        "topicId": "deep-learning",
+        "name": "Deep Learning",
+        "domain": "ml",
+        "level": 3,
+        "estHours": 70,
+        "total": 0.564,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Machine Learning Fundamentals, Statistics Foundations first"
+          },
+          "style": {
+            "score": 0.16000000000000003,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.56,
+            "driver": "level 3 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "level",
+            "score": 0.56,
+            "driver": "level 3 vs your some baseline"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "domain": "cloud",
+        "level": 1,
+        "estHours": 20,
+        "total": 0.525,
+        "factors": {
+          "interest": {
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          "goal": {
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          "readiness": {
+            "score": 0.27999999999999997,
+            "driver": "requires Linux & Shell Basics first"
+          },
+          "style": {
+            "score": 0.12,
+            "driver": "pace-adjusted available resources"
+          },
+          "level": {
+            "score": 0.33999999999999986,
+            "driver": "level 1 vs your some baseline"
+          }
+        },
+        "topFactors": [
+          {
+            "factor": "interest",
+            "score": 1,
+            "driver": "explicit interest match"
+          },
+          {
+            "factor": "goal",
+            "score": 0.5,
+            "driver": "advances \"career transition\" goal"
+          },
+          {
+            "factor": "level",
+            "score": 0.34,
+            "driver": "level 1 vs your some baseline"
+          }
+        ]
+      }
+    ],
+    "weights": {
+      "interest": 0.3,
+      "goal": 0.2,
+      "readiness": 0.2,
+      "style": 0.15,
+      "level": 0.15
+    },
+    "generatedAt": "2026-08-29T18:50:46.946Z"
+  },
+  "path": {
+    "id": "path-mteqkf1f",
+    "totalHours": 500,
+    "estimatedWeeks": 76,
+    "hoursPerWeek": 7,
+    "order": [
+      "programming-basics",
+      "html-css",
+      "databases-sql",
+      "statistics-foundations",
+      "linux-basics",
+      "javascript-core",
+      "data-structures-algorithms",
+      "python-for-data",
+      "networking-basics",
+      "react-frontend",
+      "ml-basics",
+      "deep-learning"
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "level": 1,
+        "name": "Foundations",
+        "topics": [
+          "programming-basics",
+          "html-css",
+          "databases-sql",
+          "statistics-foundations",
+          "linux-basics",
+          "javascript-core",
+          "networking-basics"
+        ],
+        "totalHours": 215
+      },
+      {
+        "id": "m2",
+        "level": 2,
+        "name": "Core Skills",
+        "topics": [
+          "data-structures-algorithms",
+          "python-for-data",
+          "react-frontend",
+          "ml-basics"
+        ],
+        "totalHours": 215
+      },
+      {
+        "id": "m3",
+        "level": 3,
+        "name": "Applied Mastery",
+        "topics": [
+          "deep-learning"
+        ],
+        "totalHours": 70
+      }
+    ],
+    "edges": [
+      {
+        "from": "programming-basics",
+        "to": "javascript-core",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "data-structures-algorithms",
+        "prerequisite": true
+      },
+      {
+        "from": "programming-basics",
+        "to": "python-for-data",
+        "prerequisite": true
+      },
+      {
+        "from": "linux-basics",
+        "to": "networking-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "javascript-core",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "html-css",
+        "to": "react-frontend",
+        "prerequisite": true
+      },
+      {
+        "from": "statistics-foundations",
+        "to": "ml-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "python-for-data",
+        "to": "ml-basics",
+        "prerequisite": true
+      },
+      {
+        "from": "ml-basics",
+        "to": "deep-learning",
+        "prerequisite": true
+      },
+      {
+        "from": "statistics-foundations",
+        "to": "deep-learning",
+        "prerequisite": true
+      }
+    ],
+    "weeklyPlan": [
+      {
+        "week": 1,
+        "start": "2026-08-29",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 7h. Focus: variables."
+      },
+      {
+        "week": 2,
+        "start": "2026-09-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 7h. Focus: data-types."
+      },
+      {
+        "week": 3,
+        "start": "2026-09-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 7h. Focus: control-flow."
+      },
+      {
+        "week": 4,
+        "start": "2026-09-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 7h. Focus: functions."
+      },
+      {
+        "week": 5,
+        "start": "2026-09-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 7,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 7h. Focus: debugging."
+      },
+      {
+        "week": 6,
+        "start": "2026-10-03",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "programming-basics",
+        "topic": "Programming Basics",
+        "hours": 5,
+        "topics": [
+          "programming-basics"
+        ],
+        "action": "Programming Basics (Foundations) — 5h. Consolidation: review + practice Programming Basics."
+      },
+      {
+        "week": 7,
+        "start": "2026-10-10",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 7,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 7h. Focus: html-semantics."
+      },
+      {
+        "week": 8,
+        "start": "2026-10-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 7,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 7h. Focus: css-selectors."
+      },
+      {
+        "week": 9,
+        "start": "2026-10-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 7,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 7h. Focus: box-model-layout."
+      },
+      {
+        "week": 10,
+        "start": "2026-10-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 7,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 7h. Focus: flexbox-grid."
+      },
+      {
+        "week": 11,
+        "start": "2026-11-07",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "html-css",
+        "topic": "HTML & CSS Foundations",
+        "hours": 2,
+        "topics": [
+          "html-css"
+        ],
+        "action": "HTML & CSS Foundations (Foundations) — 2h. Focus: responsive-design."
+      },
+      {
+        "week": 12,
+        "start": "2026-11-14",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 7h. Focus: sql-queries."
+      },
+      {
+        "week": 13,
+        "start": "2026-11-21",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 7h. Focus: joins."
+      },
+      {
+        "week": 14,
+        "start": "2026-11-28",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 7h. Focus: aggregations."
+      },
+      {
+        "week": 15,
+        "start": "2026-12-05",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 7,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 7h. Focus: schema-design-normalization."
+      },
+      {
+        "week": 16,
+        "start": "2026-12-12",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "databases-sql",
+        "topic": "Databases & SQL",
+        "hours": 2,
+        "topics": [
+          "databases-sql"
+        ],
+        "action": "Databases & SQL (Foundations) — 2h. Focus: indexing."
+      },
+      {
+        "week": 17,
+        "start": "2026-12-19",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 7h. Focus: descriptive-statistics."
+      },
+      {
+        "week": 18,
+        "start": "2026-12-26",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 7h. Focus: probability."
+      },
+      {
+        "week": 19,
+        "start": "2027-01-02",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 7h. Focus: distributions."
+      },
+      {
+        "week": 20,
+        "start": "2027-01-09",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 7,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 7h. Focus: hypothesis-testing."
+      },
+      {
+        "week": 21,
+        "start": "2027-01-16",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "statistics-foundations",
+        "topic": "Statistics Foundations",
+        "hours": 2,
+        "topics": [
+          "statistics-foundations"
+        ],
+        "action": "Statistics Foundations (Foundations) — 2h. Focus: correlation-regression."
+      },
+      {
+        "week": 22,
+        "start": "2027-01-23",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "linux-basics",
+        "topic": "Linux & Shell Basics",
+        "hours": 7,
+        "topics": [
+          "linux-basics"
+        ],
+        "action": "Linux & Shell Basics (Foundations) — 7h. Focus: filesystem-navigation."
+      },
+      {
+        "week": 23,
+        "start": "2027-01-30",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "linux-basics",
+        "topic": "Linux & Shell Basics",
+        "hours": 7,
+        "topics": [
+          "linux-basics"
+        ],
+        "action": "Linux & Shell Basics (Foundations) — 7h. Focus: shell-commands."
+      },
+      {
+        "week": 24,
+        "start": "2027-02-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "linux-basics",
+        "topic": "Linux & Shell Basics",
+        "hours": 6,
+        "topics": [
+          "linux-basics"
+        ],
+        "action": "Linux & Shell Basics (Foundations) — 6h. Focus: permissions-ownership."
+      },
+      {
+        "week": 25,
+        "start": "2027-02-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Focus: syntax-and-types."
+      },
+      {
+        "week": 26,
+        "start": "2027-02-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Focus: functions-scope-closures."
+      },
+      {
+        "week": 27,
+        "start": "2027-02-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Focus: arrays-objects."
+      },
+      {
+        "week": 28,
+        "start": "2027-03-06",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Focus: asynchronous-js."
+      },
+      {
+        "week": 29,
+        "start": "2027-03-13",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Focus: dom-manipulation."
+      },
+      {
+        "week": 30,
+        "start": "2027-03-20",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 7,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 7h. Consolidation: review + practice JavaScript Core."
+      },
+      {
+        "week": 31,
+        "start": "2027-03-27",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "javascript-core",
+        "topic": "JavaScript Core",
+        "hours": 3,
+        "topics": [
+          "javascript-core"
+        ],
+        "action": "JavaScript Core (Foundations) — 3h. Consolidation: review + practice JavaScript Core."
+      },
+      {
+        "week": 32,
+        "start": "2027-04-03",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: arrays-and-strings."
+      },
+      {
+        "week": 33,
+        "start": "2027-04-10",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: hash-maps."
+      },
+      {
+        "week": 34,
+        "start": "2027-04-17",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: linked-lists-stacks-queues."
+      },
+      {
+        "week": 35,
+        "start": "2027-04-24",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: trees-graphs."
+      },
+      {
+        "week": 36,
+        "start": "2027-05-01",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: sorting-searching."
+      },
+      {
+        "week": 37,
+        "start": "2027-05-08",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Focus: recursion-dp."
+      },
+      {
+        "week": 38,
+        "start": "2027-05-15",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Consolidation: review + practice Data Structures & Algorithms."
+      },
+      {
+        "week": 39,
+        "start": "2027-05-22",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 7,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 7h. Consolidation: review + practice Data Structures & Algorithms."
+      },
+      {
+        "week": 40,
+        "start": "2027-05-29",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "data-structures-algorithms",
+        "topic": "Data Structures & Algorithms",
+        "hours": 4,
+        "topics": [
+          "data-structures-algorithms"
+        ],
+        "action": "Data Structures & Algorithms (Core Skills) — 4h. Consolidation: review + practice Data Structures & Algorithms."
+      },
+      {
+        "week": 41,
+        "start": "2027-06-05",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 7h. Focus: pandas-dataframes."
+      },
+      {
+        "week": 42,
+        "start": "2027-06-12",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 7h. Focus: numpy-arrays."
+      },
+      {
+        "week": 43,
+        "start": "2027-06-19",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 7h. Focus: data-cleaning."
+      },
+      {
+        "week": 44,
+        "start": "2027-06-26",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 7h. Focus: data-visualization."
+      },
+      {
+        "week": 45,
+        "start": "2027-07-03",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 7,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 7h. Focus: eda-reporting."
+      },
+      {
+        "week": 46,
+        "start": "2027-07-10",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "python-for-data",
+        "topic": "Python for Data Analysis",
+        "hours": 5,
+        "topics": [
+          "python-for-data"
+        ],
+        "action": "Python for Data Analysis (Core Skills) — 5h. Consolidation: review + practice Python for Data Analysis."
+      },
+      {
+        "week": 47,
+        "start": "2027-07-17",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "networking-basics",
+        "topic": "Networking Basics",
+        "hours": 7,
+        "topics": [
+          "networking-basics"
+        ],
+        "action": "Networking Basics (Foundations) — 7h. Focus: osI-model."
+      },
+      {
+        "week": 48,
+        "start": "2027-07-24",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "networking-basics",
+        "topic": "Networking Basics",
+        "hours": 7,
+        "topics": [
+          "networking-basics"
+        ],
+        "action": "Networking Basics (Foundations) — 7h. Focus: tcp-ip."
+      },
+      {
+        "week": 49,
+        "start": "2027-07-31",
+        "milestone": "Foundations",
+        "level": 1,
+        "topicId": "networking-basics",
+        "topic": "Networking Basics",
+        "hours": 6,
+        "topics": [
+          "networking-basics"
+        ],
+        "action": "Networking Basics (Foundations) — 6h. Focus: dns-naming."
+      },
+      {
+        "week": 50,
+        "start": "2027-08-07",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: components-and-props."
+      },
+      {
+        "week": 51,
+        "start": "2027-08-14",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: state-and-hooks."
+      },
+      {
+        "week": 52,
+        "start": "2027-08-21",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: effects-and-lifecycle."
+      },
+      {
+        "week": 53,
+        "start": "2027-08-28",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: routing."
+      },
+      {
+        "week": 54,
+        "start": "2027-09-04",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: api-integration."
+      },
+      {
+        "week": 55,
+        "start": "2027-09-11",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Focus: state-management."
+      },
+      {
+        "week": 56,
+        "start": "2027-09-18",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 7,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 7h. Consolidation: review + practice React Frontend Development."
+      },
+      {
+        "week": 57,
+        "start": "2027-09-25",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "react-frontend",
+        "topic": "React Frontend Development",
+        "hours": 6,
+        "topics": [
+          "react-frontend"
+        ],
+        "action": "React Frontend Development (Core Skills) — 6h. Consolidation: review + practice React Frontend Development."
+      },
+      {
+        "week": 58,
+        "start": "2027-10-02",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Focus: supervised-learning."
+      },
+      {
+        "week": 59,
+        "start": "2027-10-09",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Focus: classification-regression."
+      },
+      {
+        "week": 60,
+        "start": "2027-10-16",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Focus: model-evaluation."
+      },
+      {
+        "week": 61,
+        "start": "2027-10-23",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Focus: overfitting-regularization."
+      },
+      {
+        "week": 62,
+        "start": "2027-10-30",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Focus: feature-engineering."
+      },
+      {
+        "week": 63,
+        "start": "2027-11-06",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Consolidation: review + practice Machine Learning Fundamentals."
+      },
+      {
+        "week": 64,
+        "start": "2027-11-13",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Consolidation: review + practice Machine Learning Fundamentals."
+      },
+      {
+        "week": 65,
+        "start": "2027-11-20",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 7,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 7h. Consolidation: review + practice Machine Learning Fundamentals."
+      },
+      {
+        "week": 66,
+        "start": "2027-11-27",
+        "milestone": "Core Skills",
+        "level": 2,
+        "topicId": "ml-basics",
+        "topic": "Machine Learning Fundamentals",
+        "hours": 4,
+        "topics": [
+          "ml-basics"
+        ],
+        "action": "Machine Learning Fundamentals (Core Skills) — 4h. Consolidation: review + practice Machine Learning Fundamentals."
+      },
+      {
+        "week": 67,
+        "start": "2027-12-04",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Focus: neural-network-arch."
+      },
+      {
+        "week": 68,
+        "start": "2027-12-11",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Focus: backpropagation."
+      },
+      {
+        "week": 69,
+        "start": "2027-12-18",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Focus: cnn-vision."
+      },
+      {
+        "week": 70,
+        "start": "2027-12-25",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Focus: transformers."
+      },
+      {
+        "week": 71,
+        "start": "2028-01-01",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Focus: training-and-tuning."
+      },
+      {
+        "week": 72,
+        "start": "2028-01-08",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Consolidation: review + practice Deep Learning."
+      },
+      {
+        "week": 73,
+        "start": "2028-01-15",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Consolidation: review + practice Deep Learning."
+      },
+      {
+        "week": 74,
+        "start": "2028-01-22",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Consolidation: review + practice Deep Learning."
+      },
+      {
+        "week": 75,
+        "start": "2028-01-29",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Consolidation: review + practice Deep Learning."
+      },
+      {
+        "week": 76,
+        "start": "2028-02-05",
+        "milestone": "Applied Mastery",
+        "level": 3,
+        "topicId": "deep-learning",
+        "topic": "Deep Learning",
+        "hours": 7,
+        "topics": [
+          "deep-learning"
+        ],
+        "action": "Deep Learning (Applied Mastery) — 7h. Consolidation: review + practice Deep Learning."
+      }
+    ],
+    "definitions": {
+      "programming-basics": {
+        "name": "Programming Basics",
+        "estHours": 40,
+        "level": 1
+      },
+      "html-css": {
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "databases-sql": {
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "level": 1
+      },
+      "statistics-foundations": {
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "level": 1
+      },
+      "linux-basics": {
+        "name": "Linux & Shell Basics",
+        "estHours": 20,
+        "level": 1
+      },
+      "javascript-core": {
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "level": 1
+      },
+      "data-structures-algorithms": {
+        "name": "Data Structures & Algorithms",
+        "estHours": 60,
+        "level": 2
+      },
+      "python-for-data": {
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "level": 2
+      },
+      "networking-basics": {
+        "name": "Networking Basics",
+        "estHours": 20,
+        "level": 1
+      },
+      "react-frontend": {
+        "name": "React Frontend Development",
+        "estHours": 55,
+        "level": 2
+      },
+      "ml-basics": {
+        "name": "Machine Learning Fundamentals",
+        "estHours": 60,
+        "level": 2
+      },
+      "deep-learning": {
+        "name": "Deep Learning",
+        "estHours": 70,
+        "level": 3
+      }
+    },
+    "createdAt": "2026-08-29T18:50:46.947Z"
+  },
+  "explanation": {
+    "summary": "This path is built for a some baseline learner who wants to career transition — 500 hours across 76 weeks, tuned to 7h/week.",
+    "topicExplanations": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "estHours": 40,
+        "score": 0.677,
+        "summary": "Programming Basics is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.80): advances \"career transition\" goal your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "python",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Harvard CS50",
+            "url": "https://cs50.harvard.edu/x/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "freeCodeCamp Python",
+            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "estHours": 30,
+        "score": 0.635,
+        "summary": "HTML & CSS Foundations is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest) your goal (score 0.80): advances \"career transition\" goal your readiness (score 0.58): no prerequisites — can start immediately",
+        "profiledBacking": "",
+        "factors": [
+          "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest)",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your readiness (score 0.58): no prerequisites — can start immediately"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "MDN HTML Tutorial",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "freeCodeCamp Responsive Web Design",
+            "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Flexbox Froggy",
+            "url": "https://flexboxfroggy.com/",
+            "kind": "interactive",
+            "minutes": 45,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "estHours": 30,
+        "score": 0.618,
+        "summary": "Databases & SQL is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.58): no prerequisites — can start immediately your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.58): no prerequisites — can start immediately",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "PostgreSQL Tutorial",
+            "url": "https://www.postgresqltutorial.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Stanford DB Course",
+            "url": "https://www.coursera.org/learn/database-sql",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "estHours": 30,
+        "score": 0.612,
+        "summary": "Statistics Foundations is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your readiness (score 0.58): no prerequisites — can start immediately your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "statistics",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your readiness (score 0.58): no prerequisites — can start immediately",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Khan Academy Statistics",
+            "url": "https://www.khanacademy.org/math/statistics-probability",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Seeing Theory (visual)",
+            "url": "https://seeing-theory.brown.edu/",
+            "kind": "interactive",
+            "minutes": 120,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "StatQuest YouTube",
+            "url": "https://www.youtube.com/@statquest",
+            "kind": "video",
+            "minutes": 400,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "estHours": 20,
+        "score": 0.578,
+        "summary": "Linux & Shell Basics is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 0.85): prerequisite for Networking Basics (your stated interest) your readiness (score 0.58): no prerequisites — can start immediately your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "",
+        "factors": [
+          "your interests (score 0.85): prerequisite for Networking Basics (your stated interest)",
+          "your readiness (score 0.58): no prerequisites — can start immediately",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [],
+        "prereqSummary": "No prerequisites — you can start this immediately.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Linux Journey",
+            "url": "https://linuxjourney.com/",
+            "kind": "interactive",
+            "minutes": 300,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Missing Semester (MIT)",
+            "url": "https://missing.csail.mit.edu/",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "OverTheWire Bandit",
+            "url": "https://overthewire.org/wargames/bandit/",
+            "kind": "interactive",
+            "minutes": 200,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "estHours": 45,
+        "score": 0.576,
+        "summary": "JavaScript Core is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest) your goal (score 0.80): advances \"career transition\" goal your learning style (score 0.36): resources match how you learn",
+        "profiledBacking": "",
+        "factors": [
+          "your interests (score 0.85): prerequisite for React Frontend Development (your stated interest)",
+          "your goal (score 0.80): advances \"career transition\" goal",
+          "your learning style (score 0.36): resources match how you learn"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "MDN JavaScript Guide",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+            "kind": "article",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive",
+            "minutes": 800,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "The Odin Project",
+            "url": "https://www.theodinproject.com/paths/foundations",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "estHours": 60,
+        "score": 0.706,
+        "summary": "Data Structures & Algorithms is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.80): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.80): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "NeetCode.io",
+            "url": "https://neetcode.io/",
+            "kind": "interactive",
+            "minutes": 1200,
+            "reason": "hands-on; you learn best by doing"
+          },
+          {
+            "title": "Coursera Algorithms I (Princeton)",
+            "url": "https://www.coursera.org/learn/algorithms-part1",
+            "kind": "course",
+            "minutes": 600,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "CS Dojo YouTube",
+            "url": "https://www.youtube.com/@CSDojo",
+            "kind": "video",
+            "minutes": 240,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "estHours": 40,
+        "score": 0.614,
+        "summary": "Python for Data Analysis is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.89): level 2 vs your some baseline your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "data",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Programming Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Programming Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course",
+            "minutes": 400,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Python for Data Analysis (book)",
+            "url": "https://wesmckinney.com/book/",
+            "kind": "book",
+            "minutes": 800,
+            "reason": "in-depth reading reference"
+          },
+          {
+            "title": "Corey Schafer Pandas",
+            "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            "kind": "video",
+            "minutes": 300,
+            "reason": "watch-style content fits your visual preference"
+          }
+        ]
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "estHours": 20,
+        "score": 0.525,
+        "summary": "Networking Basics is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 0.50): advances \"career transition\" goal your current level (score 0.34): level 1 vs your some baseline",
+        "profiledBacking": "work",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 0.50): advances \"career transition\" goal",
+          "your current level (score 0.34): level 1 vs your some baseline"
+        ],
+        "prereqs": [
+          "Linux & Shell Basics"
+        ],
+        "prereqSummary": "Prerequisites required first: Linux & Shell Basics.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Khan Academy Computer Networking",
+            "url": "https://www.khanacademy.org/computing/computer-science/networking",
+            "kind": "course",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Beacon: Computer Networking",
+            "url": "https://networklessons.com/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "estHours": 55,
+        "score": 0.744,
+        "summary": "React Frontend Development is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your goal (score 1.00): portfolio-worthy for job hunting your current level (score 0.89): level 2 vs your some baseline",
+        "profiledBacking": "work",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your goal (score 1.00): portfolio-worthy for job hunting",
+          "your current level (score 0.89): level 2 vs your some baseline"
+        ],
+        "prereqs": [
+          "JavaScript Core",
+          "HTML & CSS Foundations"
+        ],
+        "prereqSummary": "Prerequisites required first: JavaScript Core, HTML & CSS Foundations.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "React official docs",
+            "url": "https://react.dev/learn",
+            "kind": "course",
+            "minutes": 500,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Epic React (Kent C. Dodds)",
+            "url": "https://www.epicreact.dev/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scrimba Learn React",
+            "url": "https://scrimba.com/learn/learnreact",
+            "kind": "interactive",
+            "minutes": 400,
+            "reason": "hands-on; you learn best by doing"
+          }
+        ]
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "estHours": 60,
+        "score": 0.668,
+        "summary": "Machine Learning Fundamentals is in your path because it advances your aim to career transition.",
+        "why": "your goal (score 1.00): portfolio-worthy for job hunting your current level (score 0.89): level 2 vs your some baseline your interests (score 0.85): prerequisite for Deep Learning (your stated interest)",
+        "profiledBacking": "",
+        "factors": [
+          "your goal (score 1.00): portfolio-worthy for job hunting",
+          "your current level (score 0.89): level 2 vs your some baseline",
+          "your interests (score 0.85): prerequisite for Deep Learning (your stated interest)"
+        ],
+        "prereqs": [
+          "Statistics Foundations",
+          "Python for Data Analysis"
+        ],
+        "prereqSummary": "Prerequisites required first: Statistics Foundations, Python for Data Analysis.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "Andrej Karpathy's Zero to Hero",
+            "url": "https://karpathy.ai/zero-to-hero.html",
+            "kind": "video",
+            "minutes": 600,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Stanford CS229",
+            "url": "https://cs229.stanford.edu/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "Scikit-learn Tutorials",
+            "url": "https://scikit-learn.org/stable/tutorial/",
+            "kind": "article",
+            "minutes": 300,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      },
+      {
+        "topicId": "deep-learning",
+        "name": "Deep Learning",
+        "estHours": 70,
+        "score": 0.564,
+        "summary": "Deep Learning is in your path because it advances your aim to career transition.",
+        "why": "your interests (score 1.00): explicit interest match your current level (score 0.56): level 3 vs your some baseline your goal (score 0.50): advances \"career transition\" goal",
+        "profiledBacking": "work",
+        "factors": [
+          "your interests (score 1.00): explicit interest match",
+          "your current level (score 0.56): level 3 vs your some baseline",
+          "your goal (score 0.50): advances \"career transition\" goal"
+        ],
+        "prereqs": [
+          "Machine Learning Fundamentals",
+          "Statistics Foundations"
+        ],
+        "prereqSummary": "Prerequisites required first: Machine Learning Fundamentals, Statistics Foundations.",
+        "styleMatch": "This journey favours hands-on work: projects and interactive exercises.",
+        "resources": [
+          {
+            "title": "fast.ai Practical DL",
+            "url": "https://course.fast.ai/",
+            "kind": "course",
+            "minutes": 800,
+            "reason": "structured reference you can skim"
+          },
+          {
+            "title": "3Blue1Brown Neural Networks",
+            "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+            "kind": "video",
+            "minutes": 120,
+            "reason": "watch-style content fits your visual preference"
+          },
+          {
+            "title": "Stanford CS224N NLP",
+            "url": "https://web.stanford.edu/class/cs224n/",
+            "kind": "course",
+            "minutes": 900,
+            "reason": "structured reference you can skim"
+          }
+        ]
+      }
+    ],
+    "milestoneExplanations": [
+      {
+        "milestoneId": "m1",
+        "name": "Foundations",
+        "level": 1,
+        "rationale": "Milestone \"Foundations\" groups Level 1 topics so you build one coherent skill band before moving up: Programming Basics, HTML & CSS Foundations, Databases & SQL, Statistics Foundations, Linux & Shell Basics, JavaScript Core, Networking Basics.",
+        "topics": [
+          "Programming Basics",
+          "HTML & CSS Foundations",
+          "Databases & SQL",
+          "Statistics Foundations",
+          "Linux & Shell Basics",
+          "JavaScript Core",
+          "Networking Basics"
+        ]
+      },
+      {
+        "milestoneId": "m2",
+        "name": "Core Skills",
+        "level": 2,
+        "rationale": "Milestone \"Core Skills\" groups Level 2 topics so you build one coherent skill band before moving up: Data Structures & Algorithms, Python for Data Analysis, React Frontend Development, Machine Learning Fundamentals.",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Python for Data Analysis",
+          "React Frontend Development",
+          "Machine Learning Fundamentals"
+        ]
+      },
+      {
+        "milestoneId": "m3",
+        "name": "Applied Mastery",
+        "level": 3,
+        "rationale": "Milestone \"Applied Mastery\" groups Level 3 topics so you build one coherent skill band before moving up: Deep Learning.",
+        "topics": [
+          "Deep Learning"
+        ]
+      }
+    ],
+    "plan": {
+      "summary": "At your budget this path spans 76 weekly sessions.",
+      "weeks": [
+        {
+          "week": 1,
+          "start": "2026-08-29",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 1: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 2,
+          "start": "2026-09-05",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 2: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 3,
+          "start": "2026-09-12",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 3: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 4,
+          "start": "2026-09-19",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 4: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 5,
+          "start": "2026-09-26",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 5: 7h on Foundations — Programming Basics"
+        },
+        {
+          "week": 6,
+          "start": "2026-10-03",
+          "milestone": "Foundations",
+          "hours": 5,
+          "note": "Week 6: 5h on Foundations — Programming Basics"
+        },
+        {
+          "week": 7,
+          "start": "2026-10-10",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 7: 7h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 8,
+          "start": "2026-10-17",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 8: 7h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 9,
+          "start": "2026-10-24",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 9: 7h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 10,
+          "start": "2026-10-31",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 10: 7h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 11,
+          "start": "2026-11-07",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 11: 2h on Foundations — HTML & CSS Foundations"
+        },
+        {
+          "week": 12,
+          "start": "2026-11-14",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 12: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 13,
+          "start": "2026-11-21",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 13: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 14,
+          "start": "2026-11-28",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 14: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 15,
+          "start": "2026-12-05",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 15: 7h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 16,
+          "start": "2026-12-12",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 16: 2h on Foundations — Databases & SQL"
+        },
+        {
+          "week": 17,
+          "start": "2026-12-19",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 17: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 18,
+          "start": "2026-12-26",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 18: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 19,
+          "start": "2027-01-02",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 19: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 20,
+          "start": "2027-01-09",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 20: 7h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 21,
+          "start": "2027-01-16",
+          "milestone": "Foundations",
+          "hours": 2,
+          "note": "Week 21: 2h on Foundations — Statistics Foundations"
+        },
+        {
+          "week": 22,
+          "start": "2027-01-23",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 22: 7h on Foundations — Linux & Shell Basics"
+        },
+        {
+          "week": 23,
+          "start": "2027-01-30",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 23: 7h on Foundations — Linux & Shell Basics"
+        },
+        {
+          "week": 24,
+          "start": "2027-02-06",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 24: 6h on Foundations — Linux & Shell Basics"
+        },
+        {
+          "week": 25,
+          "start": "2027-02-13",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 25: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 26,
+          "start": "2027-02-20",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 26: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 27,
+          "start": "2027-02-27",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 27: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 28,
+          "start": "2027-03-06",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 28: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 29,
+          "start": "2027-03-13",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 29: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 30,
+          "start": "2027-03-20",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 30: 7h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 31,
+          "start": "2027-03-27",
+          "milestone": "Foundations",
+          "hours": 3,
+          "note": "Week 31: 3h on Foundations — JavaScript Core"
+        },
+        {
+          "week": 32,
+          "start": "2027-04-03",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 32: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 33,
+          "start": "2027-04-10",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 33: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 34,
+          "start": "2027-04-17",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 34: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 35,
+          "start": "2027-04-24",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 35: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 36,
+          "start": "2027-05-01",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 36: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 37,
+          "start": "2027-05-08",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 37: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 38,
+          "start": "2027-05-15",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 38: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 39,
+          "start": "2027-05-22",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 39: 7h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 40,
+          "start": "2027-05-29",
+          "milestone": "Core Skills",
+          "hours": 4,
+          "note": "Week 40: 4h on Core Skills — Data Structures & Algorithms"
+        },
+        {
+          "week": 41,
+          "start": "2027-06-05",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 41: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 42,
+          "start": "2027-06-12",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 42: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 43,
+          "start": "2027-06-19",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 43: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 44,
+          "start": "2027-06-26",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 44: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 45,
+          "start": "2027-07-03",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 45: 7h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 46,
+          "start": "2027-07-10",
+          "milestone": "Core Skills",
+          "hours": 5,
+          "note": "Week 46: 5h on Core Skills — Python for Data Analysis"
+        },
+        {
+          "week": 47,
+          "start": "2027-07-17",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 47: 7h on Foundations — Networking Basics"
+        },
+        {
+          "week": 48,
+          "start": "2027-07-24",
+          "milestone": "Foundations",
+          "hours": 7,
+          "note": "Week 48: 7h on Foundations — Networking Basics"
+        },
+        {
+          "week": 49,
+          "start": "2027-07-31",
+          "milestone": "Foundations",
+          "hours": 6,
+          "note": "Week 49: 6h on Foundations — Networking Basics"
+        },
+        {
+          "week": 50,
+          "start": "2027-08-07",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 50: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 51,
+          "start": "2027-08-14",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 51: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 52,
+          "start": "2027-08-21",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 52: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 53,
+          "start": "2027-08-28",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 53: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 54,
+          "start": "2027-09-04",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 54: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 55,
+          "start": "2027-09-11",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 55: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 56,
+          "start": "2027-09-18",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 56: 7h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 57,
+          "start": "2027-09-25",
+          "milestone": "Core Skills",
+          "hours": 6,
+          "note": "Week 57: 6h on Core Skills — React Frontend Development"
+        },
+        {
+          "week": 58,
+          "start": "2027-10-02",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 58: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 59,
+          "start": "2027-10-09",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 59: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 60,
+          "start": "2027-10-16",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 60: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 61,
+          "start": "2027-10-23",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 61: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 62,
+          "start": "2027-10-30",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 62: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 63,
+          "start": "2027-11-06",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 63: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 64,
+          "start": "2027-11-13",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 64: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 65,
+          "start": "2027-11-20",
+          "milestone": "Core Skills",
+          "hours": 7,
+          "note": "Week 65: 7h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 66,
+          "start": "2027-11-27",
+          "milestone": "Core Skills",
+          "hours": 4,
+          "note": "Week 66: 4h on Core Skills — Machine Learning Fundamentals"
+        },
+        {
+          "week": 67,
+          "start": "2027-12-04",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 67: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 68,
+          "start": "2027-12-11",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 68: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 69,
+          "start": "2027-12-18",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 69: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 70,
+          "start": "2027-12-25",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 70: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 71,
+          "start": "2028-01-01",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 71: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 72,
+          "start": "2028-01-08",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 72: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 73,
+          "start": "2028-01-15",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 73: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 74,
+          "start": "2028-01-22",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 74: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 75,
+          "start": "2028-01-29",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 75: 7h on Applied Mastery — Deep Learning"
+        },
+        {
+          "week": 76,
+          "start": "2028-02-05",
+          "milestone": "Applied Mastery",
+          "hours": 7,
+          "note": "Week 76: 7h on Applied Mastery — Deep Learning"
+        }
+      ]
+    },
+    "styleMatch": {
+      "visual": 0,
+      "reading": 0,
+      "hands": 1,
+      "auditory": 0
+    }
+  },
+  "mastery": {
+    "programming-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "variables": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "control-flow": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "debugging": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "html-css": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "html-semantics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "css-selectors": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "box-model-layout": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "flexbox-grid": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "responsive-design": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "databases-sql": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "sql-queries": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "joins": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "aggregations": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "schema-design-normalization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "indexing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "statistics-foundations": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "descriptive-statistics": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "probability": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "distributions": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hypothesis-testing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "correlation-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "linux-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "filesystem-navigation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "shell-commands": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "permissions-ownership": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "process-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "bash-scripting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "javascript-core": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "syntax-and-types": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "functions-scope-closures": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "arrays-objects": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "asynchronous-js": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "dom-manipulation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "data-structures-algorithms": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "arrays-and-strings": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "hash-maps": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "linked-lists-stacks-queues": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "trees-graphs": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "sorting-searching": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "recursion-dp": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "python-for-data": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "pandas-dataframes": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "numpy-arrays": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-cleaning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "data-visualization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "eda-reporting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "networking-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "osI-model": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "tcp-ip": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "dns-naming": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "http-apis": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "subnetting": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "react-frontend": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "components-and-props": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-and-hooks": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "effects-and-lifecycle": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "routing": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "api-integration": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "state-management": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "ml-basics": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "supervised-learning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "classification-regression": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "model-evaluation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "overfitting-regularization": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "feature-engineering": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    },
+    "deep-learning": {
+      "theta": 0.1,
+      "evidence": 0,
+      "n": 0,
+      "attempts": [],
+      "lastUpdated": null,
+      "conceptScores": {
+        "neural-network-arch": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "backpropagation": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "cnn-vision": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "transformers": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        },
+        "training-and-tuning": {
+          "theta": 0.1,
+          "evidence": 0,
+          "n": 0,
+          "attempts": []
+        }
+      }
+    }
+  },
+  "nextQuiz": null,
+  "status": "ready",
+  "question": "Hi! I'm your learning path advisor. Let's build a path that actually fits you. First — what made you want to start learning? Something like: I want to get a job as a developer, I want to change careers into data science, it's a hobby, or I need to pass an exam.",
+  "hints": "Try: 'I want to break into tech as a web developer' or 'learning Python for data analysis as a hobby'",
+  "isFirst": true,
+  "gapReport": {
+    "overallCoverage": 0.09753011340988638,
+    "topics": [
+      {
+        "topicId": "programming-basics",
+        "name": "Programming Basics",
+        "coverage": 0.196078431372549,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "data-types",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-types",
+              "sequence": 2,
+              "afterShare": 0.196078431372549,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~20% through \"Python.org Beginner Tutorial\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "variables",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "variables",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Python.org Beginner Tutorial\"."
+            }
+          },
+          {
+            "concept": "control-flow",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "control-flow",
+              "sequence": 3,
+              "afterShare": 0.392156862745098,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~39% through \"Python.org Beginner Tutorial\"."
+            }
+          },
+          {
+            "concept": "functions",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions",
+              "sequence": 4,
+              "afterShare": 0.588235294117647,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~59% through \"Python.org Beginner Tutorial\"."
+            }
+          },
+          {
+            "concept": "debugging",
+            "weight": 0.9,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "debugging",
+              "sequence": 5,
+              "afterShare": 0.8235294117647058,
+              "resource": {
+                "title": "Python.org Beginner Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "kind": "interactive"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"Python.org Beginner Tutorial\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "variables",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Python.org Beginner Tutorial",
+            "url": "https://docs.python.org/3/tutorial/",
+            "kind": "interactive"
+          },
+          "estMinutes": 60,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Python.org Beginner Tutorial\"."
+        },
+        "note": "You already have 1 of 5 concepts in Programming Basics; the gap is variables, control-flow, functions, debugging."
+      },
+      {
+        "topicId": "html-css",
+        "name": "HTML & CSS Foundations",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "html-semantics",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "html-semantics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Flexbox Froggy",
+                "url": "https://flexboxfroggy.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Flexbox Froggy\"."
+            }
+          },
+          {
+            "concept": "css-selectors",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "css-selectors",
+              "sequence": 2,
+              "afterShare": 0.18181818181818182,
+              "resource": {
+                "title": "Flexbox Froggy",
+                "url": "https://flexboxfroggy.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~18% through \"Flexbox Froggy\"."
+            }
+          },
+          {
+            "concept": "box-model-layout",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "box-model-layout",
+              "sequence": 3,
+              "afterShare": 0.36363636363636365,
+              "resource": {
+                "title": "Flexbox Froggy",
+                "url": "https://flexboxfroggy.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~36% through \"Flexbox Froggy\"."
+            }
+          },
+          {
+            "concept": "flexbox-grid",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "flexbox-grid",
+              "sequence": 4,
+              "afterShare": 0.5818181818181819,
+              "resource": {
+                "title": "Flexbox Froggy",
+                "url": "https://flexboxfroggy.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"Flexbox Froggy\"."
+            }
+          },
+          {
+            "concept": "responsive-design",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "responsive-design",
+              "sequence": 5,
+              "afterShare": 0.8,
+              "resource": {
+                "title": "Flexbox Froggy",
+                "url": "https://flexboxfroggy.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~80% through \"Flexbox Froggy\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "html-semantics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Flexbox Froggy",
+            "url": "https://flexboxfroggy.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 20,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Flexbox Froggy\"."
+        },
+        "note": "No evidence you already know HTML & CSS Foundations — start from the foundation."
+      },
+      {
+        "topicId": "databases-sql",
+        "name": "Databases & SQL",
+        "coverage": 0.18518518518518517,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "sql-queries",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "sql-queries",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"SQLBolt (interactive)\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "joins",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "joins",
+              "sequence": 2,
+              "afterShare": 0.18518518518518517,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 30,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~19% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "aggregations",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "aggregations",
+              "sequence": 3,
+              "afterShare": 0.4259259259259259,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~43% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "schema-design-normalization",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "schema-design-normalization",
+              "sequence": 4,
+              "afterShare": 0.611111111111111,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~61% through \"SQLBolt (interactive)\"."
+            }
+          },
+          {
+            "concept": "indexing",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "indexing",
+              "sequence": 5,
+              "afterShare": 0.8148148148148149,
+              "resource": {
+                "title": "SQLBolt (interactive)",
+                "url": "https://sqlbolt.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~81% through \"SQLBolt (interactive)\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "sql-queries",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "SQLBolt (interactive)",
+            "url": "https://sqlbolt.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 20,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"SQLBolt (interactive)\"."
+        },
+        "note": "You already have 1 of 5 concepts in Databases & SQL; the gap is joins, aggregations, schema-design-normalization, indexing."
+      },
+      {
+        "topicId": "statistics-foundations",
+        "name": "Statistics Foundations",
+        "coverage": 0.17857142857142858,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "descriptive-statistics",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "descriptive-statistics",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Seeing Theory (visual)",
+                "url": "https://seeing-theory.brown.edu/",
+                "kind": "interactive"
+              },
+              "estMinutes": 20,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Seeing Theory (visual)\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "probability",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "probability",
+              "sequence": 2,
+              "afterShare": 0.17857142857142858,
+              "resource": {
+                "title": "Seeing Theory (visual)",
+                "url": "https://seeing-theory.brown.edu/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~18% through \"Seeing Theory (visual)\"."
+            }
+          },
+          {
+            "concept": "distributions",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "distributions",
+              "sequence": 3,
+              "afterShare": 0.37500000000000006,
+              "resource": {
+                "title": "Seeing Theory (visual)",
+                "url": "https://seeing-theory.brown.edu/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~38% through \"Seeing Theory (visual)\"."
+            }
+          },
+          {
+            "concept": "hypothesis-testing",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "hypothesis-testing",
+              "sequence": 4,
+              "afterShare": 0.5714285714285715,
+              "resource": {
+                "title": "Seeing Theory (visual)",
+                "url": "https://seeing-theory.brown.edu/",
+                "kind": "interactive"
+              },
+              "estMinutes": 30,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~57% through \"Seeing Theory (visual)\"."
+            }
+          },
+          {
+            "concept": "correlation-regression",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "correlation-regression",
+              "sequence": 5,
+              "afterShare": 0.8035714285714286,
+              "resource": {
+                "title": "Seeing Theory (visual)",
+                "url": "https://seeing-theory.brown.edu/",
+                "kind": "interactive"
+              },
+              "estMinutes": 25,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~80% through \"Seeing Theory (visual)\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "descriptive-statistics",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Seeing Theory (visual)",
+            "url": "https://seeing-theory.brown.edu/",
+            "kind": "interactive"
+          },
+          "estMinutes": 20,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Seeing Theory (visual)\"."
+        },
+        "note": "You already have 1 of 5 concepts in Statistics Foundations; the gap is probability, distributions, hypothesis-testing, correlation-regression."
+      },
+      {
+        "topicId": "linux-basics",
+        "name": "Linux & Shell Basics",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "filesystem-navigation",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "filesystem-navigation",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Linux Journey\"."
+            }
+          },
+          {
+            "concept": "shell-commands",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "shell-commands",
+              "sequence": 2,
+              "afterShare": 0.1923076923076923,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~19% through \"Linux Journey\"."
+            }
+          },
+          {
+            "concept": "permissions-ownership",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "permissions-ownership",
+              "sequence": 3,
+              "afterShare": 0.3846153846153846,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~38% through \"Linux Journey\"."
+            }
+          },
+          {
+            "concept": "process-management",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "process-management",
+              "sequence": 4,
+              "afterShare": 0.5769230769230769,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"Linux Journey\"."
+            }
+          },
+          {
+            "concept": "bash-scripting",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "bash-scripting",
+              "sequence": 5,
+              "afterShare": 0.7692307692307692,
+              "resource": {
+                "title": "Linux Journey",
+                "url": "https://linuxjourney.com/",
+                "kind": "interactive"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~77% through \"Linux Journey\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "filesystem-navigation",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Linux Journey",
+            "url": "https://linuxjourney.com/",
+            "kind": "interactive"
+          },
+          "estMinutes": 60,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Linux Journey\"."
+        },
+        "note": "No evidence you already know Linux & Shell Basics — start from the foundation."
+      },
+      {
+        "topicId": "javascript-core",
+        "name": "JavaScript Core",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "syntax-and-types",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "syntax-and-types",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 135,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"JavaScript.info\"."
+            }
+          },
+          {
+            "concept": "functions-scope-closures",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "functions-scope-closures",
+              "sequence": 2,
+              "afterShare": 0.1694915254237288,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~17% through \"JavaScript.info\"."
+            }
+          },
+          {
+            "concept": "arrays-objects",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "arrays-objects",
+              "sequence": 3,
+              "afterShare": 0.38983050847457623,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 150,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~39% through \"JavaScript.info\"."
+            }
+          },
+          {
+            "concept": "asynchronous-js",
+            "weight": 1.4,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "asynchronous-js",
+              "sequence": 4,
+              "afterShare": 0.5762711864406779,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 190,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"JavaScript.info\"."
+            }
+          },
+          {
+            "concept": "dom-manipulation",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dom-manipulation",
+              "sequence": 5,
+              "afterShare": 0.8135593220338982,
+              "resource": {
+                "title": "JavaScript.info",
+                "url": "https://javascript.info/",
+                "kind": "interactive"
+              },
+              "estMinutes": 150,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~81% through \"JavaScript.info\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "syntax-and-types",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info/",
+            "kind": "interactive"
+          },
+          "estMinutes": 135,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"JavaScript.info\"."
+        },
+        "note": "No evidence you already know JavaScript Core — start from the foundation."
+      },
+      {
+        "topicId": "data-structures-algorithms",
+        "name": "Data Structures & Algorithms",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "arrays-and-strings",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "arrays-and-strings",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"NeetCode.io\"."
+            }
+          },
+          {
+            "concept": "hash-maps",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "hash-maps",
+              "sequence": 2,
+              "afterShare": 0.14492753623188406,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 190,
+              "paceNote": "Plan study block 2 of 6 — roughly the first ~14% through \"NeetCode.io\"."
+            }
+          },
+          {
+            "concept": "linked-lists-stacks-queues",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "linked-lists-stacks-queues",
+              "sequence": 3,
+              "afterShare": 0.30434782608695654,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 175,
+              "paceNote": "Plan study block 3 of 6 — roughly the first ~30% through \"NeetCode.io\"."
+            }
+          },
+          {
+            "concept": "trees-graphs",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "trees-graphs",
+              "sequence": 4,
+              "afterShare": 0.4492753623188406,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 225,
+              "paceNote": "Plan study block 4 of 6 — roughly the first ~45% through \"NeetCode.io\"."
+            }
+          },
+          {
+            "concept": "sorting-searching",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "sorting-searching",
+              "sequence": 5,
+              "afterShare": 0.6376811594202899,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 190,
+              "paceNote": "Plan study block 5 of 6 — roughly the first ~64% through \"NeetCode.io\"."
+            }
+          },
+          {
+            "concept": "recursion-dp",
+            "weight": 1.4,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "recursion-dp",
+              "sequence": 6,
+              "afterShare": 0.7971014492753623,
+              "resource": {
+                "title": "NeetCode.io",
+                "url": "https://neetcode.io/",
+                "kind": "interactive"
+              },
+              "estMinutes": 245,
+              "paceNote": "Plan study block 6 of 6 — roughly the first ~80% through \"NeetCode.io\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "arrays-and-strings",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "NeetCode.io",
+            "url": "https://neetcode.io/",
+            "kind": "interactive"
+          },
+          "estMinutes": 175,
+          "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"NeetCode.io\"."
+        },
+        "note": "No evidence you already know Data Structures & Algorithms — start from the foundation."
+      },
+      {
+        "topicId": "python-for-data",
+        "name": "Python for Data Analysis",
+        "coverage": 0.4,
+        "gapLevel": "bridge",
+        "covered": [
+          {
+            "concept": "data-cleaning",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-cleaning",
+              "sequence": 3,
+              "afterShare": 0.41818181818181815,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 85,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~42% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "data-visualization",
+            "weight": 1,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "data-visualization",
+              "sequence": 4,
+              "afterShare": 0.6363636363636364,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~64% through \"Kaggle Learn Python + Pandas\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "pandas-dataframes",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "pandas-dataframes",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 95,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "numpy-arrays",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "numpy-arrays",
+              "sequence": 2,
+              "afterShare": 0.23636363636363636,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~24% through \"Kaggle Learn Python + Pandas\"."
+            }
+          },
+          {
+            "concept": "eda-reporting",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "eda-reporting",
+              "sequence": 5,
+              "afterShare": 0.8181818181818182,
+              "resource": {
+                "title": "Kaggle Learn Python + Pandas",
+                "url": "https://www.kaggle.com/learn",
+                "kind": "course"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"Kaggle Learn Python + Pandas\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "pandas-dataframes",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Kaggle Learn Python + Pandas",
+            "url": "https://www.kaggle.com/learn",
+            "kind": "course"
+          },
+          "estMinutes": 95,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Kaggle Learn Python + Pandas\"."
+        },
+        "note": "You already have 2 of 5 concepts in Python for Data Analysis; the gap is pandas-dataframes, numpy-arrays, eda-reporting."
+      },
+      {
+        "topicId": "networking-basics",
+        "name": "Networking Basics",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "osI-model",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "osI-model",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Khan Academy Computer Networking\"."
+            }
+          },
+          {
+            "concept": "tcp-ip",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "tcp-ip",
+              "sequence": 2,
+              "afterShare": 0.18518518518518517,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 65,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~19% through \"Khan Academy Computer Networking\"."
+            }
+          },
+          {
+            "concept": "dns-naming",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "dns-naming",
+              "sequence": 3,
+              "afterShare": 0.40740740740740744,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~41% through \"Khan Academy Computer Networking\"."
+            }
+          },
+          {
+            "concept": "http-apis",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "http-apis",
+              "sequence": 4,
+              "afterShare": 0.5925925925925926,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~59% through \"Khan Academy Computer Networking\"."
+            }
+          },
+          {
+            "concept": "subnetting",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "subnetting",
+              "sequence": 5,
+              "afterShare": 0.7962962962962964,
+              "resource": {
+                "title": "Khan Academy Computer Networking",
+                "url": "https://www.khanacademy.org/computing/computer-science/networking",
+                "kind": "course"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~80% through \"Khan Academy Computer Networking\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "osI-model",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Khan Academy Computer Networking",
+            "url": "https://www.khanacademy.org/computing/computer-science/networking",
+            "kind": "course"
+          },
+          "estMinutes": 55,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Khan Academy Computer Networking\"."
+        },
+        "note": "No evidence you already know Networking Basics — start from the foundation."
+      },
+      {
+        "topicId": "react-frontend",
+        "name": "React Frontend Development",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "components-and-props",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "components-and-props",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"Scrimba Learn React\"."
+            }
+          },
+          {
+            "concept": "state-and-hooks",
+            "weight": 1.3,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "state-and-hooks",
+              "sequence": 2,
+              "afterShare": 0.15384615384615385,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 80,
+              "paceNote": "Plan study block 2 of 6 — roughly the first ~15% through \"Scrimba Learn React\"."
+            }
+          },
+          {
+            "concept": "effects-and-lifecycle",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "effects-and-lifecycle",
+              "sequence": 3,
+              "afterShare": 0.3538461538461538,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 75,
+              "paceNote": "Plan study block 3 of 6 — roughly the first ~35% through \"Scrimba Learn React\"."
+            }
+          },
+          {
+            "concept": "routing",
+            "weight": 0.9,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "routing",
+              "sequence": 4,
+              "afterShare": 0.5384615384615384,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 55,
+              "paceNote": "Plan study block 4 of 6 — roughly the first ~54% through \"Scrimba Learn React\"."
+            }
+          },
+          {
+            "concept": "api-integration",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "api-integration",
+              "sequence": 5,
+              "afterShare": 0.676923076923077,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 60,
+              "paceNote": "Plan study block 5 of 6 — roughly the first ~68% through \"Scrimba Learn React\"."
+            }
+          },
+          {
+            "concept": "state-management",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "state-management",
+              "sequence": 6,
+              "afterShare": 0.8307692307692308,
+              "resource": {
+                "title": "Scrimba Learn React",
+                "url": "https://scrimba.com/learn/learnreact",
+                "kind": "interactive"
+              },
+              "estMinutes": 70,
+              "paceNote": "Plan study block 6 of 6 — roughly the first ~83% through \"Scrimba Learn React\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "components-and-props",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Scrimba Learn React",
+            "url": "https://scrimba.com/learn/learnreact",
+            "kind": "interactive"
+          },
+          "estMinutes": 60,
+          "paceNote": "Plan study block 1 of 6 — roughly the first ~0% through \"Scrimba Learn React\"."
+        },
+        "note": "No evidence you already know React Frontend Development — start from the foundation."
+      },
+      {
+        "topicId": "ml-basics",
+        "name": "Machine Learning Fundamentals",
+        "coverage": 0.21052631578947367,
+        "gapLevel": "foundational",
+        "covered": [
+          {
+            "concept": "supervised-learning",
+            "weight": 1.2,
+            "evidence": "direct keyword match in profile signals",
+            "confidence": 0.85,
+            "pacing": {
+              "concept": "supervised-learning",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "Andrej Karpathy's Zero to Hero",
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "kind": "video"
+              },
+              "estMinutes": 125,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Andrej Karpathy's Zero to Hero\"."
+            }
+          }
+        ],
+        "missing": [
+          {
+            "concept": "classification-regression",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "classification-regression",
+              "sequence": 2,
+              "afterShare": 0.21052631578947367,
+              "resource": {
+                "title": "Andrej Karpathy's Zero to Hero",
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "kind": "video"
+              },
+              "estMinutes": 115,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~21% through \"Andrej Karpathy's Zero to Hero\"."
+            }
+          },
+          {
+            "concept": "model-evaluation",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "model-evaluation",
+              "sequence": 3,
+              "afterShare": 0.40350877192982454,
+              "resource": {
+                "title": "Andrej Karpathy's Zero to Hero",
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "kind": "video"
+              },
+              "estMinutes": 125,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~40% through \"Andrej Karpathy's Zero to Hero\"."
+            }
+          },
+          {
+            "concept": "overfitting-regularization",
+            "weight": 1.2,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "overfitting-regularization",
+              "sequence": 4,
+              "afterShare": 0.6140350877192983,
+              "resource": {
+                "title": "Andrej Karpathy's Zero to Hero",
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "kind": "video"
+              },
+              "estMinutes": 125,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~61% through \"Andrej Karpathy's Zero to Hero\"."
+            }
+          },
+          {
+            "concept": "feature-engineering",
+            "weight": 1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "feature-engineering",
+              "sequence": 5,
+              "afterShare": 0.8245614035087719,
+              "resource": {
+                "title": "Andrej Karpathy's Zero to Hero",
+                "url": "https://karpathy.ai/zero-to-hero.html",
+                "kind": "video"
+              },
+              "estMinutes": 105,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"Andrej Karpathy's Zero to Hero\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "supervised-learning",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "Andrej Karpathy's Zero to Hero",
+            "url": "https://karpathy.ai/zero-to-hero.html",
+            "kind": "video"
+          },
+          "estMinutes": 125,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"Andrej Karpathy's Zero to Hero\"."
+        },
+        "note": "You already have 1 of 5 concepts in Machine Learning Fundamentals; the gap is classification-regression, model-evaluation, overfitting-regularization, feature-engineering."
+      },
+      {
+        "topicId": "deep-learning",
+        "name": "Deep Learning",
+        "coverage": 0,
+        "gapLevel": "foundational",
+        "covered": [],
+        "missing": [
+          {
+            "concept": "neural-network-arch",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "neural-network-arch",
+              "sequence": 1,
+              "afterShare": 0,
+              "resource": {
+                "title": "fast.ai Practical DL",
+                "url": "https://course.fast.ai/",
+                "kind": "course"
+              },
+              "estMinutes": 140,
+              "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"fast.ai Practical DL\"."
+            }
+          },
+          {
+            "concept": "backpropagation",
+            "weight": 1.4,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "backpropagation",
+              "sequence": 2,
+              "afterShare": 0.17741935483870971,
+              "resource": {
+                "title": "fast.ai Practical DL",
+                "url": "https://course.fast.ai/",
+                "kind": "course"
+              },
+              "estMinutes": 180,
+              "paceNote": "Plan study block 2 of 5 — roughly the first ~18% through \"fast.ai Practical DL\"."
+            }
+          },
+          {
+            "concept": "cnn-vision",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "cnn-vision",
+              "sequence": 3,
+              "afterShare": 0.40322580645161293,
+              "resource": {
+                "title": "fast.ai Practical DL",
+                "url": "https://course.fast.ai/",
+                "kind": "course"
+              },
+              "estMinutes": 140,
+              "paceNote": "Plan study block 3 of 5 — roughly the first ~40% through \"fast.ai Practical DL\"."
+            }
+          },
+          {
+            "concept": "transformers",
+            "weight": 1.5,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "transformers",
+              "sequence": 4,
+              "afterShare": 0.5806451612903226,
+              "resource": {
+                "title": "fast.ai Practical DL",
+                "url": "https://course.fast.ai/",
+                "kind": "course"
+              },
+              "estMinutes": 195,
+              "paceNote": "Plan study block 4 of 5 — roughly the first ~58% through \"fast.ai Practical DL\"."
+            }
+          },
+          {
+            "concept": "training-and-tuning",
+            "weight": 1.1,
+            "evidence": "assumed from baseline some",
+            "confidence": 0.25,
+            "pacing": {
+              "concept": "training-and-tuning",
+              "sequence": 5,
+              "afterShare": 0.8225806451612904,
+              "resource": {
+                "title": "fast.ai Practical DL",
+                "url": "https://course.fast.ai/",
+                "kind": "course"
+              },
+              "estMinutes": 140,
+              "paceNote": "Plan study block 5 of 5 — roughly the first ~82% through \"fast.ai Practical DL\"."
+            }
+          }
+        ],
+        "pacingCarrier": {
+          "concept": "neural-network-arch",
+          "sequence": 1,
+          "afterShare": 0,
+          "resource": {
+            "title": "fast.ai Practical DL",
+            "url": "https://course.fast.ai/",
+            "kind": "course"
+          },
+          "estMinutes": 140,
+          "paceNote": "Plan study block 1 of 5 — roughly the first ~0% through \"fast.ai Practical DL\"."
+        },
+        "note": "No evidence you already know Deep Learning — start from the foundation."
+      }
+    ],
+    "summary": "Most of the path is new — 90% of required concepts are not yet evidenced in your background."
+  }
+}
