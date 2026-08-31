@@ -12,13 +12,15 @@ const crypto = require("crypto");
 
 const store = require("./lib/store");
 const gemini = require("./lib/gemini");
-const { buildPath } = require("./lib/pathbuilder");
+const { buildPath, buildAdaptivePath } = require("./lib/pathbuilder");
 const { profileFromConversation, analyzeResume } = require("./lib/profiler");
 const { diagnoseGaps } = require("./lib/gaps");
 const { recommend } = require("./lib/recommender");
 const { buildExplanation } = require("./lib/explain");
 const { createMasteryMap, pickNextQuiz, submitAnswers, masteryLabel } = require("./lib/mastery");
 const { startSession, nextQuestion, judgeAnswer } = require("./lib/conversation");
+const { getAdaptiveRecommendations } = require("./lib/adaptive");
+const { getNextAction } = require("./lib/nextaction");
 
 const PORT = process.env.PORT || 4317;
 const PUBLIC_DIR = path.join(__dirname, "public");
@@ -46,6 +48,7 @@ function newSession() {
     id, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(),
     convoStep: "goal", convoHistory: [], answers: {}, profile: null,
     recommendation: null, path: null, explanation: null, mastery: null, nextQuiz: null,
+    feedback: [], adaptiveRecommendation: null,
     status: "profiling", audit: [],
     question: session.question, hints: session.hints, isFirst: true,
   };
@@ -74,6 +77,8 @@ function createDemoSession(type = "ml", existingId = null) {
     explanation: null,
     mastery: null,
     nextQuiz: null,
+    feedback: [],
+    adaptiveRecommendation: null,
     status: "ready",
     audit: [],
     question: "Welcome to your Pathlight learning map.",
@@ -142,6 +147,21 @@ function createDemoSession(type = "ml", existingId = null) {
     });
   }
 
+  // Recalculate adaptive path and adaptive recommendation based on the initialized mastery
+  const hw = (s.answers.hoursPerWeek || s.profile?.timeBudget?.hoursPerWeek || 8);
+  s.path = buildAdaptivePath({
+    selected: s.recommendation?.selected || [],
+    mastery: s.mastery,
+    feedback: s.feedback || [],
+    timeBudget: { hoursPerWeek: hw }
+  });
+  s.adaptiveRecommendation = getAdaptiveRecommendations({
+    profile: s.profile,
+    recommendation: s.recommendation,
+    mastery: s.mastery,
+    feedback: s.feedback || []
+  });
+
   store.save(id, s);
   return { ok: true, session: s, result };
 }
@@ -196,13 +216,28 @@ function runPipeline(session) {
   session.profile = profile;
   const rec = recommend(profile);
   session.recommendation = rec;
+  session.feedback = session.feedback || [];
 
   const hw = (session.answers.hoursPerWeek || profile.timeBudget?.hoursPerWeek || 8);
-  const pathData = buildPath({ selected: rec.selected, timeBudget: { hoursPerWeek: hw } });
+  const tempMastery = createMasteryMap(rec.selected.map(s => s.topicId));
+  session.mastery = tempMastery;
+
+  const pathData = buildAdaptivePath({
+    selected: rec.selected,
+    mastery: tempMastery,
+    feedback: session.feedback,
+    timeBudget: { hoursPerWeek: hw }
+  });
   session.path = pathData;
   session.gapReport = diagnoseGaps(profile, pathData.order, pathData.weeklyPlan);
   session.explanation = buildExplanation({ path: pathData, candidates: rec.selected, profile });
-  session.mastery = createMasteryMap(pathData.order);
+  
+  session.adaptiveRecommendation = getAdaptiveRecommendations({
+    profile,
+    recommendation: rec,
+    mastery: tempMastery,
+    feedback: session.feedback
+  });
 
   if (rec.honestMiss) {
     const reply = rec.note;
@@ -226,7 +261,7 @@ function runPipeline(session) {
 
 function handleApi(req, res, url) {
   const parts = url.pathname.split("/").filter(Boolean); // api, ...
-  const [, sub, id] = parts;
+  const [, sub, id, extra] = parts;
   
   if (sub === "new" && req.method === "GET") return json(res, 200, newSession());
   if (sub === "demo") {
@@ -238,6 +273,66 @@ function handleApi(req, res, url) {
     } catch {}
     const demo = createDemoSession(type, sid);
     return json(res, 200, demo);
+  }
+
+  if (sub === "session" && extra === "adaptive" && req.method === "GET") {
+    const s = getSession(id);
+    if (!s) return json(res, 404, { error: "not found" });
+    const adaptive = getAdaptiveRecommendations({
+      profile: s.profile,
+      recommendation: s.recommendation,
+      mastery: s.mastery,
+      feedback: s.feedback || []
+    });
+    return json(res, 200, adaptive);
+  }
+
+  if (sub === "session" && extra === "feedback" && req.method === "POST") {
+    const s = getSession(id);
+    if (!s) return json(res, 404, { error: "not found" });
+    readBody(req).then((b) => {
+      const { topicId, type, rating } = b;
+      if (!topicId || !type) return json(res, 400, { error: "missing topicId or type" });
+      s.feedback = s.feedback || [];
+      s.feedback.push({
+        topicId,
+        type,
+        rating: typeof rating === "number" ? rating : null,
+        timestamp: new Date().toISOString()
+      });
+
+      const adaptive = getAdaptiveRecommendations({
+        profile: s.profile,
+        recommendation: s.recommendation,
+        mastery: s.mastery,
+        feedback: s.feedback
+      });
+      s.adaptiveRecommendation = adaptive;
+
+      const hw = (s.answers.hoursPerWeek || s.profile?.timeBudget?.hoursPerWeek || 8);
+      s.path = buildAdaptivePath({
+        selected: s.recommendation?.selected || [],
+        mastery: s.mastery,
+        feedback: s.feedback,
+        timeBudget: { hoursPerWeek: hw }
+      });
+      s.updatedAt = new Date().toISOString();
+      store.save(s.id, s);
+      return json(res, 200, { ok: true, feedback: s.feedback });
+    });
+    return;
+  }
+
+  if (sub === "session" && extra === "next-action" && req.method === "GET") {
+    const s = getSession(id);
+    if (!s) return json(res, 404, { error: "not found" });
+    const action = getNextAction({
+      profile: s.profile,
+      path: s.path,
+      mastery: s.mastery,
+      feedback: s.feedback || []
+    });
+    return json(res, 200, action);
   }
   
   if (sub === "session" && req.method === "GET") {
@@ -276,13 +371,27 @@ function handleApi(req, res, url) {
           recordAudit(s, s.profile, "resume");
           if (ana.topicHits && ana.topicHits.length) {
             const rec = recommend(s.profile);
-            const hw = (s.answers.hoursPerWeek || s.profile.timeBudget?.hoursPerWeek || 8);
-            const pathData = buildPath({ selected: rec.selected, timeBudget: { hoursPerWeek: hw } });
+            const hw = (s.answers.hoursPerWeek || s.profile?.timeBudget?.hoursPerWeek || 8);
+            s.feedback = s.feedback || [];
+            const tempMastery = createMasteryMap(rec.selected.map(x => x.topicId));
+            s.mastery = tempMastery;
+
+            const pathData = buildAdaptivePath({
+              selected: rec.selected,
+              mastery: tempMastery,
+              feedback: s.feedback,
+              timeBudget: { hoursPerWeek: hw }
+            });
             s.recommendation = rec;
             s.path = pathData;
             s.gapReport = diagnoseGaps(s.profile, pathData.order, pathData.weeklyPlan);
             s.explanation = buildExplanation({ path: pathData, candidates: rec.selected, profile: s.profile });
-            s.mastery = createMasteryMap(pathData.order);
+            s.adaptiveRecommendation = getAdaptiveRecommendations({
+              profile: s.profile,
+              recommendation: rec,
+              mastery: tempMastery,
+              feedback: s.feedback
+            });
           }
         }
         store.save(s.id, s);
@@ -317,6 +426,24 @@ function handleApi(req, res, url) {
       const s = getSession(id);
       if (!s || !s.mastery) return json(res, 404, { error: "no session" });
       const out = submitAnswers(s.mastery, s.nextQuiz, b.answers);
+
+      const adaptive = getAdaptiveRecommendations({
+        profile: s.profile,
+        recommendation: s.recommendation,
+        mastery: s.mastery,
+        feedback: s.feedback || []
+      });
+      s.adaptiveRecommendation = adaptive;
+
+      const hw = (s.answers.hoursPerWeek || s.profile?.timeBudget?.hoursPerWeek || 8);
+      s.path = buildAdaptivePath({
+        selected: s.recommendation?.selected || [],
+        mastery: s.mastery,
+        feedback: s.feedback || [],
+        timeBudget: { hoursPerWeek: hw }
+      });
+      s.updatedAt = new Date().toISOString();
+
       store.save(s.id, s);
       json(res, 200, out);
     });
