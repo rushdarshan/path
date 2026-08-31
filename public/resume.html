@@ -6,85 +6,86 @@
   <title>My Resume — Pathlight</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <style>
+    body { font-family: "Plus Jakarta Sans", sans-serif; }
     /* ── Resume builder (Let's Code–inspired) ── */
     .resume-topbar{
-      max-width:var(--max);margin:0 auto;padding:10px 24px;
+      max-width:var(--max);margin:0 auto;padding:12px 24px;
       display:flex;align-items:center;justify-content:space-between;gap:16px;
-      background:var(--paper);border-bottom:1px solid var(--line);font-size:13px
+      background:var(--paper);border-bottom:1px solid var(--line);font-size:15px
     }
     .resume-topbar-left{display:flex;align-items:center;gap:14px;color:var(--muted);font-weight:500}
     .resume-topbar-left a{color:var(--muted)}
     .resume-topbar-left b{color:var(--ink)}
     .resume-topbar-actions{display:flex;gap:8px;align-items:center}
-    .btn-save{background:#6366f1;color:#fff;border-color:#6366f1;padding:7px 14px;font-size:13px}
-    .btn-pdf{background:var(--emerald);color:#fff;border-color:var(--emerald);padding:7px 14px;font-size:13px}
+    .btn-save{background:#4338CA;color:#fff;border-color:#4338CA;padding:8px 16px;font-size:15px}
+    .btn-pdf{background:var(--emerald);color:#fff;border-color:var(--emerald);padding:8px 16px;font-size:15px}
     .resume-banner{
-      max-width:var(--max);margin:12px auto 0;padding:10px 14px;
-      background:#1e1b4b;color:#c7d2fe;border-radius:10px;font-size:12.5px;
+      max-width:var(--max);margin:14px auto 0;padding:12px 18px;
+      background:#1e1b4b;color:#e0e7ff;border-radius:12px;font-size:15px;
       display:flex;align-items:center;justify-content:space-between;gap:12px
     }
     .resume-banner a{color:#a5b4fc;font-weight:600}
     .resume-layout{
-      max-width:var(--max);margin:16px auto;padding:0 24px;
-      display:grid;grid-template-columns:400px 1fr;gap:18px;align-items:start
+      max-width:var(--max);margin:20px auto;padding:0 24px;
+      display:grid;grid-template-columns:400px 1fr;gap:24px;align-items:start
     }
     @media(max-width:980px){.resume-layout{grid-template-columns:1fr}}
-    .editor-stack{display:flex;flex-direction:column;gap:14px}
+    .editor-stack{display:flex;flex-direction:column;gap:16px}
     .import-card{
       background:#EEF2FF;border:1px solid #C7D2FE;border-radius:16px;
-      padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px
+      padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px
     }
-    .import-card b{font-size:13px;color:#1e1b4b}
-    .import-card p{margin:2px 0 0;font-size:12px;color:#6366f1}
+    .import-card b{font-size:15px;color:#1e1b4b}
+    .import-card p{margin:3px 0 0;font-size:15px;color:#3730A3}
     .ac-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
-    .ac-head{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none}
-    .ac-head b{font-size:13.5px}
+    .ac-head{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none}
+    .ac-head b{font-size:18px}
     .ac-head span{color:var(--muted);font-size:12px}
-    .ac-body{padding:0 14px 14px;display:grid;gap:10px}
+    .ac-body{padding:0 16px 16px;display:grid;gap:12px}
     .ac-card.collapsed .ac-body{display:none}
-    .fi label{font-size:11.5px;font-weight:600;color:var(--ink);display:block;margin-bottom:4px}
+    .fi label{font-size:12px;font-weight:600;color:var(--ink);display:block;margin-bottom:4px}
     .fi input,.fi textarea,.fi select{
-      width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 11px;
-      font:inherit;font-size:13.5px;background:#fff;outline:none
+      width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+      font:inherit;font-size:15px;background:#fff;outline:none
     }
-    .fi textarea{resize:vertical;min-height:72px}
-    .fi-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .chip-row{display:flex;flex-wrap:wrap;gap:6px}
-    .code-input-row{display:flex;gap:6px;align-items:center}
+    .fi textarea{resize:vertical;min-height:76px}
+    .fi-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .chip-row{display:flex;flex-wrap:wrap;gap:8px}
+    .code-input-row{display:flex;gap:8px;align-items:center}
     .code-input-row input{flex:1}
-    .mini-btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 8px;cursor:pointer}
+    .mini-btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
     .add-dashed{
       width:100%;border:1px dashed var(--line);background:#F8FAFD;color:var(--muted);
-      border-radius:10px;padding:8px;font-size:12.5px;font-weight:600;cursor:pointer
+      border-radius:10px;padding:10px;font-size:15px;font-weight:600;cursor:pointer
     }
-    .exp-card{border:1px solid var(--line);border-radius:12px;padding:10px;background:#FDFCF8;display:grid;gap:8px}
+    .exp-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:#FDFCF8;display:grid;gap:10px}
     .exp-card-head{display:flex;justify-content:space-between;align-items:center}
-    .exp-card-head b{font-size:12.5px}
+    .exp-card-head b{font-size:15px}
     /* preview */
     .preview-shell{position:sticky;top:calc(var(--headerH) + 12px)}
     .preview-toolbar{
       display:flex;align-items:center;justify-content:space-between;
-      font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px
+      font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px
     }
     .paper-wrap{
       background:#0f172a;border:1px solid #1e293b;border-radius:16px;
-      padding:16px;overflow:auto;max-height:calc(100vh - 140px)
+      padding:20px;overflow:auto;max-height:calc(100vh - 140px)
     }
     .resume-paper{
       width:794px;max-width:100%;min-height:1123px;margin:0 auto;
-      background:#fff;color:#0f172a;padding:38px 44px;
-      font-family:"Times New Roman",Times,serif;font-size:11px;line-height:1.5;
+      background:#fff;color:#0f172a;padding:40px 48px;
+      font-family:"Times New Roman",Times,serif;font-size:15px;line-height:1.6;
       box-shadow:0 20px 60px rgba(0,0,0,.35)
     }
-    .resume-paper h2{font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #111827;padding-bottom:4px;margin:14px 0 8px}
-    .resume-paper .hdr{ text-align:center; border-bottom:none; margin:0 0 10px }
-    .resume-paper .hdr h1{font-size:18px;letter-spacing:.18em;margin:0}
-    .resume-paper .hdr .contacts{font-size:8.5px;color:#334155;margin-top:4px}
-    .resume-paper ul{margin:4px 0 0 16px;padding:0}
-    .resume-paper li{margin:1px 0}
+    .resume-paper h2{font-size:18px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #111827;padding-bottom:4px;margin:16px 0 10px}
+    .resume-paper .hdr{ text-align:center; border-bottom:none; margin:0 0 12px }
+    .resume-paper .hdr h1{font-size:26px;letter-spacing:.16em;margin:0}
+    .resume-paper .hdr .contacts{font-size:12px;color:#334155;margin-top:6px}
+    .resume-paper ul{margin:6px 0 0 18px;padding:0}
+    .resume-paper li{margin:2px 0}
     .resume-paper .meta-right{float:right;color:#475569}
     @media print{
       header,.resume-topbar,.resume-banner,.editor-stack,.preview-toolbar,.site-footer{display:none !important}
@@ -119,7 +120,7 @@
 </header>
 
 <div class="resume-topbar">
-  <div class="resume-topbar-left"><a href="/">← Templates</a> <span style="opacity:.4">|</span> <b>My Resume</b> <span style="background:#EEF2FF;color:#6366f1;border-radius:99px;padding:2px 8px;font-size:11px">Classic</span></div>
+  <div class="resume-topbar-left"><a href="/">← Templates</a> <span style="opacity:.4">|</span> <b>My Resume</b> <span style="background:#EEF2FF;color:#3730A3;border-radius:99px;padding:3px 10px;font-size:12px;font-weight:600">Classic</span></div>
   <div class="resume-topbar-actions">
     <button class="btn btn-save" id="btnSave">◫ Save</button>
     <button class="btn btn-pdf" id="btnPdf">⤓ Download PDF</button>
@@ -136,24 +137,21 @@
   <div class="editor-stack">
     <div class="import-card">
       <div><b>Fill from your profile</b><p>Auto-fill name, skills, experience & more</p></div>
-      <button class="btn primary" id="btnImport" style="padding:7px 12px;font-size:12.5px">⊕ Import</button>
+      <button class="btn primary" id="btnImport" style="padding:8px 16px;font-size:15px">⊕ Import</button>
     </div>
 
     <!-- Personal Info (open) -->
     <div class="ac-card" data-ac>
       <div class="ac-head"><b>Personal Info</b><span>⌃</span></div>
       <div class="ac-body">
-        <div class="fi"><label>Full Name</label><input id="fName" value="Lets Code"></div>
-        <div class="fi"><label>Job Title / Role</label><input id="fRole" value="Software Engineer"></div>
-        <div class="fi-row"><div class="fi"><label>Phone</label><input id="fPhone" value="+91 98765 43210"></div><div class="fi"><label>Email</label><input id="fEmail" value="letscode@lets-code.co.in"></div></div>
-        <div class="fi"><label>LinkedIn</label><input id="fLinkedin" value="linkedin.com/company/lets-code-forever"></div>
-        <div class="fi"><label>GitHub</label><input id="fGithub" value="github.com/Lets-code-with-us"></div>
-        <div class="fi"><label>Website / Portfolio</label><input id="fWebsite" value="lets-code.co.in"></div>
+        <div class="fi"><label>Full Name</label><input id="fName" value="" placeholder="Your full name"></div>
+        <div class="fi"><label>Job Title / Role</label><input id="fRole" value="" placeholder="e.g. Software Engineer"></div>
+        <div class="fi-row"><div class="fi"><label>Phone</label><input id="fPhone" value="" placeholder="+91 …"></div><div class="fi"><label>Email</label><input id="fEmail" value="" placeholder="you@example.com"></div></div>
+        <div class="fi"><label>LinkedIn</label><input id="fLinkedin" value="" placeholder="linkedin.com/in/…"></div>
+        <div class="fi"><label>GitHub</label><input id="fGithub" value="" placeholder="github.com/…"></div>
+        <div class="fi"><label>Website / Portfolio</label><input id="fWebsite" value="" placeholder="your site"></div>
         <div class="fi"><label>Coding Profiles</label>
-          <div id="codingProfiles" style="display:grid;gap:6px">
-            <div class="code-input-row"><input value="leetcode.com/u/letscode"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()">🗑</button></div>
-            <div class="code-input-row"><input value="codechef.com/users/letscode"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()">🗑</button></div>
-          </div>
+          <div id="codingProfiles" style="display:grid;gap:6px"></div>
           <button class="add-dashed" style="margin-top:6px" id="addCodingProfile">+ Add Coding Profile</button>
         </div>
       </div>
@@ -161,7 +159,7 @@
 
     <div class="ac-card collapsed" data-ac>
       <div class="ac-head"><b>Summary</b><span>⌄</span></div>
-      <div class="ac-body"><div class="fi"><textarea id="fSummary" rows="4">Software engineer with 2+ years experience building placement preparation platforms serving 50K+ students. Passionate about prerequisite-aware learning and ATS optimization.</textarea></div></div>
+      <div class="ac-body"><div class="fi"><textarea id="fSummary" rows="4" placeholder="Brief summary…"></textarea></div></div>
     </div>
 
     <div class="ac-card collapsed" data-ac>
@@ -183,10 +181,10 @@
     <div class="ac-card collapsed" data-ac>
       <div class="ac-head"><b>Skills</b><span>⌄</span></div>
       <div class="ac-body">
-        <div class="fi"><label>Coursework</label><input id="fCoursework" value="Data Structures and Algorithms, Object Oriented Programming, Web Development, Database Management System, Operating System"></div>
-        <div class="fi"><label>Languages</label><input id="fLanguages" value="C/C++, Java, JavaScript, TypeScript, Python, SQL"></div>
-        <div class="fi"><label>Technologies</label><input id="fTech" value="React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Redis, AWS, Docker, Git"></div>
-        <div class="fi"><label>Soft Skills</label><input id="fSoft" value="Leadership, Teamwork, Time Management, Problem Solving"></div>
+        <div class="fi"><label>Coursework</label><input id="fCoursework" value="" placeholder="e.g. Data Structures, Operating Systems"></div>
+        <div class="fi"><label>Languages</label><input id="fLanguages" value="" placeholder="e.g. Java, Python"></div>
+        <div class="fi"><label>Technologies</label><input id="fTech" value="" placeholder="e.g. React, Node.js"></div>
+        <div class="fi"><label>Soft Skills</label><input id="fSoft" value="" placeholder="e.g. Leadership"></div>
       </div>
     </div>
 
@@ -201,10 +199,7 @@
     <div class="ac-card collapsed" data-ac>
       <div class="ac-head"><b>Achievements</b><span>⌄</span></div>
       <div class="ac-body">
-        <div class="fi"><textarea id="fAchieve" rows="4">• Smart India Hackathon 2023 Finalist — Top 50 teams nationally.
-• AWS Cloud Practitioner Certified (2024)
-• Solved 600+ problems on LeetCode — Max Rating 1920.
-• Winner — college-level Code Sprint 2023.</textarea></div>
+        <div class="fi"><textarea id="fAchieve" rows="4" placeholder="One per line…"></textarea></div>
       </div>
     </div>
 
@@ -237,47 +232,49 @@
 <script src="/app.js"></script>
 <script>
 "use strict";
-const $ = (s, r=document)=>r.querySelector(s);
-const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
+// app.js already defines window.$ / window.$$ — reuse to avoid duplicate declaration
+const qs = (s, r=document)=> (window.$ ? window.$(s) : r.querySelector(s));
+const qsa = (s, r=document)=> (window.$$ ? window.$$(s) : Array.from(r.querySelectorAll(s)));
+const $r = qs; const $$r = qsa;
 
 let renderTimer=null;
 function scheduleRender(){ clearTimeout(renderTimer); renderTimer=setTimeout(renderPreview, 40); }
 
 function getData(){
-  const coding = $$("#codingProfiles input").map(i=>i.value.trim()).filter(Boolean);
-  const exps = $$("#expList .exp-card").map(card=>({
-    title: $("[data-field=title]",card)?.value.trim()||"",
-    company: $("[data-field=company]",card)?.value.trim()||"",
-    dates: $("[data-field=dates]",card)?.value.trim()||"",
-    bullets: $("[data-field=bullets]",card)?.value.split("\n").map(s=>s.trim()).filter(Boolean)||[]
+  const coding = $$r("#codingProfiles input").map(i=>i.value.trim()).filter(Boolean);
+  const exps = $$r("#expList .exp-card").map(card=>({
+    title: $r("[data-field=title]",card)?.value.trim()||"",
+    company: $r("[data-field=company]",card)?.value.trim()||"",
+    dates: $r("[data-field=dates]",card)?.value.trim()||"",
+    bullets: $r("[data-field=bullets]",card)?.value.split("\n").map(s=>s.trim()).filter(Boolean)||[]
   }));
-  const edus = $$("#eduList .exp-card").map(card=>({
-    school: $("[data-field=school]",card)?.value.trim()||"",
-    degree: $("[data-field=degree]",card)?.value.trim()||"",
-    gpa: $("[data-field=gpa]",card)?.value.trim()||"",
-    dates: $("[data-field=dates]",card)?.value.trim()||""
+  const edus = $$r("#eduList .exp-card").map(card=>({
+    school: $r("[data-field=school]",card)?.value.trim()||"",
+    degree: $r("[data-field=degree]",card)?.value.trim()||"",
+    gpa: $r("[data-field=gpa]",card)?.value.trim()||"",
+    dates: $r("[data-field=dates]",card)?.value.trim()||""
   }));
-  const projs = $$("#projList .exp-card").map(card=>({
-    name: $("[data-field=name]",card)?.value.trim()||"",
-    stack: $("[data-field=stack]",card)?.value.trim()||"",
-    desc: $("[data-field=desc]",card)?.value.trim()||""
+  const projs = $$r("#projList .exp-card").map(card=>({
+    name: $r("[data-field=name]",card)?.value.trim()||"",
+    stack: $r("[data-field=stack]",card)?.value.trim()||"",
+    desc: $r("[data-field=desc]",card)?.value.trim()||""
   }));
   return {
-    name: $("#fName")?.value.trim()||"Your Name",
-    role: $("#fRole")?.value.trim()||"",
-    phone: $("#fPhone")?.value.trim()||"",
-    email: $("#fEmail")?.value.trim()||"",
-    linkedin: $("#fLinkedin")?.value.trim()||"",
-    github: $("#fGithub")?.value.trim()||"",
-    website: $("#fWebsite")?.value.trim()||"",
+    name: $r("#fName")?.value.trim()||"",
+    role: $r("#fRole")?.value.trim()||"",
+    phone: $r("#fPhone")?.value.trim()||"",
+    email: $r("#fEmail")?.value.trim()||"",
+    linkedin: $r("#fLinkedin")?.value.trim()||"",
+    github: $r("#fGithub")?.value.trim()||"",
+    website: $r("#fWebsite")?.value.trim()||"",
     coding,
-    summary: $("#fSummary")?.value||"",
+    summary: $r("#fSummary")?.value||"",
     exps, edus, projs,
-    coursework: $("#fCoursework")?.value||"",
-    languages: $("#fLanguages")?.value||"",
-    tech: $("#fTech")?.value||"",
-    soft: $("#fSoft")?.value||"",
-    achievements: ($("#fAchieve")?.value||"").split("\n").map(s=>s.trim()).filter(Boolean)
+    coursework: $r("#fCoursework")?.value||"",
+    languages: $r("#fLanguages")?.value||"",
+    tech: $r("#fTech")?.value||"",
+    soft: $r("#fSoft")?.value||"",
+    achievements: ($r("#fAchieve")?.value||"").split("\n").map(s=>s.trim()).filter(Boolean)
   };
 }
 
@@ -285,99 +282,95 @@ function esc(s){ const d=document.createElement("div"); d.textContent=s; return 
 
 function renderPreview(){
   const d=getData();
-  const paper=$("#resumePaper"); if(!paper) return;
+  const paper=$r("#resumePaper"); if(!paper) return;
   const contacts=[d.email&&`✉ ${esc(d.email)}`, d.linkedin&&`in ${esc(d.linkedin)}`, d.github&&`⌥ ${esc(d.github)}`, d.website&&`◈ ${esc(d.website)}`, d.phone&&esc(d.phone)].filter(Boolean).join(" &nbsp;|&nbsp; ");
   const codingLine = d.coding.length ? `<div style="font-size:8px;color:#334155;margin-top:2px">${d.coding.map(c=>esc(c)).join(" &nbsp;|&nbsp; ")}</div>` : "";
-  const expHtml = d.exps.length ? `<h2>WORK EXPERIENCE</h2>` + d.exps.map(e=>`
+  const expHtml = d.exps.filter(e=>e.title||e.company||e.bullets.length).length ? `<h2>WORK EXPERIENCE</h2>` + d.exps.filter(e=>e.title||e.company||e.bullets.length).map(e=>`
     <div style="margin-bottom:7px">
       <div><b>${esc(e.title||"Role")}</b> ${e.company?` | ${esc(e.company)}`:""} <span class="meta-right">${esc(e.dates)}</span></div>
       ${e.bullets.length?`<ul>${e.bullets.map(b=>`<li>${esc(b)}</li>`).join("")}</ul>`:""}
-    </div>`).join("") : `<h2>WORK EXPERIENCE</h2>
-    <div><b>Software Engineer</b> | Lets Code <span class="meta-right">Jul 2024 — Present</span>
-    <ul><li>Built placement prep platform serving 50K+ students with DSA roadmaps, mock tests, and AI-powered resume tools.</li><li>Designed Node.js APIs handling 20K+ requests/day with 99.9% uptime using MongoDB and Redis caching.</li><li>Developed AI Resume Optimizer, Cover Letter Generator, and Job Finder — cutting application time by 60%</li></ul></div>
-    <div><b>Software Engineering Intern</b> | Lets Code <span class="meta-right">Jan 2024 — Jun 2024</span>
-    <ul><li>Built PYQ pages and interview experience modules, increasing organic traffic by 35%.</li><li>Integrated Clerk auth and built user dashboard with profile, bookmarks, and progress tracking.</li></ul></div>`;
+    </div>`).join("") : "";
 
-  const eduHtml = d.edus.length ? `<h2>EDUCATION</h2>` + d.edus.map(e=>`<div style="margin-bottom:6px"><b>• ${esc(e.school||"University")}</b> <span class="meta-right">${esc(e.dates)}</span><br><span style="color:#334155">${esc(e.degree)}${e.gpa?`, ${esc(e.gpa)}`:""}</span></div>`).join("") : `<h2>EDUCATION</h2>
-    <div style="margin-bottom:4px"><b>• ABC University</b> <span class="meta-right">2020 — 2024</span><br><span style="color:#334155">B.Tech — Computer Science & Engineering, 8.6 CGPA</span></div>
-    <div><b>• XYZ Senior Secondary School</b> <span class="meta-right">2020</span><br><span style="color:#334155">Class XII — CBSE, 94.2%</span></div>`;
+  const eduHtml = d.edus.filter(e=>e.school||e.degree).length ? `<h2>EDUCATION</h2>` + d.edus.filter(e=>e.school||e.degree).map(e=>`<div style="margin-bottom:6px"><b>• ${esc(e.school||"University")}</b> <span class="meta-right">${esc(e.dates)}</span><br><span style="color:#334155">${esc(e.degree)}${e.gpa?`, ${esc(e.gpa)}`:""}</span></div>`).join("") : "";
 
-  const projHtml = d.projs.length ? `<h2>PROJECTS</h2>` + d.projs.map(p=>`<div style="margin-bottom:6px"><b>• ${esc(p.name)}</b> ${p.stack?`(${esc(p.stack)})`:""}<br><span style="color:#334155">${esc(p.desc)}</span></div>`).join("") : `<h2>PROJECTS</h2>
-    <div style="margin-bottom:6px"><b>• Lets Code — Placement Prep Platform</b> (Next.js, TypeScript, MongoDB, Clerk, Tailwind CSS) Lets-code: Full-stack platform with 500+ PYQs, AI resume studio, mock tests, job board, and interview experiences.</div>
-    <div><b>• AI Resume Studio</b> (Next.js, Claude API, jsPDF, MongoDB) Lets-code: ATS resume analyser that scores, edits inline, runs AI rewrites, and exports as PDF or DOCX.</div>`;
+  const projHtml = d.projs.filter(p=>p.name||p.desc).length ? `<h2>PROJECTS</h2>` + d.projs.filter(p=>p.name||p.desc).map(p=>`<div style="margin-bottom:6px"><b>• ${esc(p.name)}</b> ${p.stack?`(${esc(p.stack)})`:""}<br><span style="color:#334155">${esc(p.desc)}</span></div>`).join("") : "";
 
-  const achieveHtml = d.achievements.length ? `<h2>ACHIEVEMENTS</h2><ul>${d.achievements.map(a=>`<li>${esc(a.replace(/^•\s*/,""))}</li>`).join("")}</ul>` :
-    `<h2>ACHIEVEMENTS</h2><ul><li>Smart India Hackathon 2023 Finalist — Top 50 teams nationally.</li><li>AWS Cloud Practitioner Certified (2024)</li><li>Solved 600+ problems on LeetCode — Max Rating 1920.</li><li>Winner — college-level Code Sprint 2023.</li></ul>`;
+  const achieveHtml = d.achievements.length ? `<h2>ACHIEVEMENTS</h2><ul>${d.achievements.map(a=>`<li>${esc(a.replace(/^•\s*/,""))}</li>`).join("")}</ul>` : "";
 
-  paper.innerHTML = `
-    <div class="hdr">
-      <h1>${esc(d.name.toUpperCase())}</h1>
-      <div class="contacts">${contacts}</div>
-      ${codingLine}
-    </div>
-    ${eduHtml}
+  const skillsBlock = (d.coursework||d.languages||d.tech||d.soft) ? `
     <h2>TECHNICAL SKILLS</h2>
     <div style="color:#334155">
       ${d.coursework?`<div><b>Coursework:</b> ${esc(d.coursework)}</div>`:""}
       ${d.languages?`<div><b>Languages:</b> ${esc(d.languages)}</div>`:""}
       ${d.tech?`<div><b>Technologies:</b> ${esc(d.tech)}</div>`:""}
       ${d.soft?`<div><b>Soft Skills:</b> ${esc(d.soft)}</div>`:""}
-    </div>
-    ${expHtml}
-    ${projHtml}
-    ${achieveHtml}
-  `;
+    </div>` : "";
+  const summaryBlock = d.summary ? `<div style="margin:8px 0;color:#334155">${esc(d.summary)}</div>` : "";
+  const hasAny = d.name||contacts||codingLine||summaryBlock||eduHtml||skillsBlock||expHtml||projHtml||achieveHtml;
+  if(!hasAny){
+    paper.innerHTML = `<div style="height:100%;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-family:'Plus Jakarta Sans',sans-serif;font-size:13.5px;text-align:center">Start typing on the left — your resume will appear here.<br>Fill from your profile to import your Pathlight data.</div>`;
+  } else {
+    paper.innerHTML = `
+      ${d.name?`<div class="hdr"><h1>${esc(d.name.toUpperCase())}</h1><div class="contacts">${contacts}</div>${codingLine}${d.role?`<div style="font-size:10px;color:#475569;margin-top:2px">${esc(d.role)}</div>`:""}</div>`:""}
+      ${summaryBlock}
+      ${eduHtml}
+      ${skillsBlock}
+      ${expHtml}
+      ${projHtml}
+      ${achieveHtml}
+    `;
+  }
   // sync legacy resumeInput for gap analyzer
-  const legacy = $("#resumeInput");
+  const legacy = $r("#resumeInput");
   if(legacy) legacy.value = [d.summary, d.coursework, d.languages, d.tech, d.exps.map(e=>e.title+" "+e.company+" "+e.bullets.join(" ")).join(" "), d.edus.map(e=>e.school+" "+e.degree).join(" "), d.projs.map(p=>p.name+" "+p.stack).join(" ")].join("\n");
   try{ localStorage.setItem("pathlight_resume_draft", JSON.stringify({...d, _ts: Date.now()})); }catch{}
 }
 
 function addExp(data={}){
-  const host=$("#expList");
+  const host=$r("#expList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
     <div class="exp-card-head"><b>Experience</b><button class="mini-btn" type="button">🗑</button></div>
     <div class="fi-row"><div class="fi"><label>Title</label><input data-field="title" value="${esc(data.title||"")}"></div><div class="fi"><label>Company</label><input data-field="company" value="${esc(data.company||"")}"></div></div>
     <div class="fi"><label>Dates</label><input data-field="dates" value="${esc(data.dates||"")}"></div>
     <div class="fi"><label>Bullets (one per line)</label><textarea data-field="bullets" rows="3">${esc((data.bullets||[]).join("\n"))}</textarea></div>`;
-  $("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
-  $$("input,textarea",el).forEach(i=> i.addEventListener("input", scheduleRender));
+  $r("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
+  $r("input,textarea",el).forEach(i=> i.addEventListener("input", scheduleRender));
   host.appendChild(el); scheduleRender();
 }
 function addEdu(data={}){
-  const host=$("#eduList");
+  const host=$r("#eduList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
     <div class="exp-card-head"><b>Education</b><button class="mini-btn" type="button">🗑</button></div>
     <div class="fi"><label>School</label><input data-field="school" value="${esc(data.school||"")}"></div>
     <div class="fi"><label>Degree</label><input data-field="degree" value="${esc(data.degree||"")}"></div>
     <div class="fi-row"><div class="fi"><label>GPA / Score</label><input data-field="gpa" value="${esc(data.gpa||"")}"></div><div class="fi"><label>Dates</label><input data-field="dates" value="${esc(data.dates||"")}"></div></div>`;
-  $("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
-  $$("input",el).forEach(i=> i.addEventListener("input", scheduleRender));
+  $r("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
+  $r("input",el).forEach(i=> i.addEventListener("input", scheduleRender));
   host.appendChild(el); scheduleRender();
 }
 function addProj(data={}){
-  const host=$("#projList");
+  const host=$r("#projList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
     <div class="exp-card-head"><b>Project</b><button class="mini-btn" type="button">🗑</button></div>
     <div class="fi"><label>Name</label><input data-field="name" value="${esc(data.name||"")}"></div>
     <div class="fi"><label>Stack</label><input data-field="stack" value="${esc(data.stack||"")}"></div>
     <div class="fi"><label>Description</label><input data-field="desc" value="${esc(data.desc||"")}"></div>`;
-  $("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
-  $$("input",el).forEach(i=> i.addEventListener("input", scheduleRender));
+  $r("button",el).onclick=()=>{ el.remove(); scheduleRender(); };
+  $r("input",el).forEach(i=> i.addEventListener("input", scheduleRender));
   host.appendChild(el); scheduleRender();
 }
 
 // accordion
-$$("[data-ac] .ac-head").forEach(h=>{
+$r("[data-ac] .ac-head").forEach(h=>{
   h.addEventListener("click",()=>{
     const card=h.closest("[data-ac]");
     const wasCollapsed=card.classList.contains("collapsed");
     // toggle this one only
     card.classList.toggle("collapsed");
-    $("span",h).textContent = card.classList.contains("collapsed") ? "⌄" : "⌃";
+    $r("span",h).textContent = card.classList.contains("collapsed") ? "⌄" : "⌃";
   });
 });
 
@@ -386,94 +379,94 @@ $$("[data-ac] .ac-head").forEach(h=>{
   const el=document.getElementById(id);
   if(el) el.addEventListener("input", scheduleRender);
 });
-$("#addCodingProfile")?.addEventListener("click",()=>{
-  const host=$("#codingProfiles");
+$r("#addCodingProfile")?.addEventListener("click",()=>{
+  const host=$r("#codingProfiles");
   const row=document.createElement("div"); row.className="code-input-row";
   row.innerHTML=`<input placeholder="leetcode.com/u/..."><button class="mini-btn">🗑</button>`;
   row.querySelector("button").onclick=()=>{ row.remove(); scheduleRender(); };
   row.querySelector("input").addEventListener("input", scheduleRender);
   host.appendChild(row);
 });
-$$("#codingProfiles input").forEach(i=> i.addEventListener("input", scheduleRender));
-$("#addExp")?.addEventListener("click",()=> addExp());
-$("#addEdu")?.addEventListener("click",()=> addEdu());
-$("#addProj")?.addEventListener("click",()=> addProj());
+$r("#codingProfiles input").forEach(i=> i.addEventListener("input", scheduleRender));
+$r("#addExp")?.addEventListener("click",()=> addExp());
+$r("#addEdu")?.addEventListener("click",()=> addEdu());
+$r("#addProj")?.addEventListener("click",()=> addProj());
 
 // Import from session/profile + gap analyzer
-$("#btnImport")?.addEventListener("click", async ()=>{
+$r("#btnImport")?.addEventListener("click", async ()=>{
   const sid = window.SID || localStorage.getItem("pathlight_sid");
   if(!sid){ alert("Complete Dreamer first to import your profile."); return; }
   try{
     const s=await fetch("/api/session/"+sid).then(r=>r.json());
     if(s.profile){
       const p=s.profile;
-      if(p.baseline?.evidence) $("#fSummary").value = p.baseline.evidence.slice(0,220);
+      if(p.baseline?.evidence) $r("#fSummary").value = p.baseline.evidence.slice(0,220);
       const interests=(p.interests||[]).map(i=>i.topicId).join(", ");
-      if(interests) $("#fCoursework").value = interests;
+      if(interests) $r("#fCoursework").value = interests;
       // try to fill name from answers if present
       const ans=s.answers||{};
-      if(ans.role) $("#fRole").value = ans.role;
+      if(ans.role) $r("#fRole").value = ans.role;
     }
     if(s.path) renderPreview();
     scheduleRender();
-    const btn=$("#btnImport"); const t=btn.textContent; btn.textContent="✓ Imported"; setTimeout(()=>btn.textContent=t, 1400);
+    const btn=$r("#btnImport"); const t=btn.textContent; btn.textContent="✓ Imported"; setTimeout(()=>btn.textContent=t, 1400);
   }catch(e){ alert(e.message); }
 });
 
-$("#btnSave")?.addEventListener("click",()=>{
+$r("#btnSave")?.addEventListener("click",()=>{
   scheduleRender(); // flush
-  const btn=$("#btnSave"); const t=btn.textContent;
+  const btn=$r("#btnSave"); const t=btn.textContent;
   btn.textContent="✓ Saved";
   setTimeout(()=>btn.textContent=t, 1400);
 });
 
-$("#btnPdf")?.addEventListener("click",()=> window.print());
+$r("#btnPdf")?.addEventListener("click",()=> window.print());
 
-$("#btnAnalyzeGap")?.addEventListener("click", async ()=>{
+$r("#btnAnalyzeGap")?.addEventListener("click", async ()=>{
   const sid = window.SID || localStorage.getItem("pathlight_sid");
-  const text = $("#resumeInput")?.value || getData().summary;
+  const text = $r("#resumeInput")?.value || getData().summary;
   if(!sid || !text.trim()) return;
-  const st=$("#gapStatus"); if(st) st.textContent="Analyzing…";
+  const st=$r("#gapStatus"); if(st) st.textContent="Analyzing…";
   try{
     const r=await fetch("/api/session/"+sid,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({resume:text})}).then(r=>r.json());
     const s=await fetch("/api/session/"+sid).then(r=>r.json());
     if(s.profile){ window.LAST_RESULT={profile:s.profile,path:s.path,gapReport:s.gapReport,explanation:s.explanation,audit:s.audit}; try{ window.syncPreview && window.syncPreview(); }catch{} }
     if(st) st.textContent = r.topicHits?.length ? `${r.topicHits.length} topics mapped — see Path/Why` : "No ontology hits — add skills/coursework";
   }catch(e){ if(st) st.textContent="⚠ "+e.message; }
-  setTimeout(()=>{ const el=$("#gapStatus"); if(el) el.textContent=""; }, 3600);
+  setTimeout(()=>{ const el=$r("#gapStatus"); if(el) el.textContent=""; }, 3600);
 });
-$("#btnLoadML")?.addEventListener("click",()=>{
+$r("#btnLoadML")?.addEventListener("click",()=>{
   // seed editor from ML sample
-  $("#fRole").value="Software Developer — Aspiring ML Engineer";
-  $("#fSummary").value="Software engineer with 2+ years building Python web services and data pipelines. Transitioning to ML Engineering with focus on linear algebra, statistics, and PyTorch.";
-  $("#fCoursework").value="Linear Algebra, Probability, Statistics, Data Structures & Algorithms, Database Systems, Discrete Mathematics";
-  $("#fLanguages").value="Python, SQL, C++, Bash";
-  $("#fTech").value="NumPy, Pandas, Scikit-Learn, PyTorch, Git, Docker, PostgreSQL, REST APIs";
+  $r("#fRole").value="Software Developer — Aspiring ML Engineer";
+  $r("#fSummary").value="Software engineer with 2+ years building Python web services and data pipelines. Transitioning to ML Engineering with focus on linear algebra, statistics, and PyTorch.";
+  $r("#fCoursework").value="Linear Algebra, Probability, Statistics, Data Structures & Algorithms, Database Systems, Discrete Mathematics";
+  $r("#fLanguages").value="Python, SQL, C++, Bash";
+  $r("#fTech").value="NumPy, Pandas, Scikit-Learn, PyTorch, Git, Docker, PostgreSQL, REST APIs";
   renderPreview();
-  $("#btnAnalyzeGap")?.click();
+  $r("#btnAnalyzeGap")?.click();
 });
 
 // hydrate draft if exists
 try{
   const raw=localStorage.getItem("pathlight_resume_draft");
   if(raw){
-    const d=JSON.parse(raw);
-    if(d.name) $("#fName").value=d.name;
-    if(d.role) $("#fRole").value=d.role;
-    if(d.phone) $("#fPhone").value=d.phone;
-    if(d.email) $("#fEmail").value=d.email;
-    if(d.linkedin) $("#fLinkedin").value=d.linkedin;
-    if(d.github) $("#fGithub").value=d.github;
-    if(d.website) $("#fWebsite").value=d.website;
-    if(d.summary) $("#fSummary").value=d.summary;
-    if(d.coursework) $("#fCoursework").value=d.coursework;
-    if(d.languages) $("#fLanguages").value=d.languages;
-    if(d.tech) $("#fTech").value=d.tech;
-    if(d.soft) $("#fSoft").value=d.soft;
-    if(d.achievements) $("#fAchieve").value=d.achievements.join("\n");
+    const d=JSON.parse(raw); if(d.name && d.name.indexOf("Lets")!==-1) throw new Error("skip old draft");
+    if(d.name) $r("#fName").value=d.name;
+    if(d.role) $r("#fRole").value=d.role;
+    if(d.phone) $r("#fPhone").value=d.phone;
+    if(d.email) $r("#fEmail").value=d.email;
+    if(d.linkedin) $r("#fLinkedin").value=d.linkedin;
+    if(d.github) $r("#fGithub").value=d.github;
+    if(d.website) $r("#fWebsite").value=d.website;
+    if(d.summary) $r("#fSummary").value=d.summary;
+    if(d.coursework) $r("#fCoursework").value=d.coursework;
+    if(d.languages) $r("#fLanguages").value=d.languages;
+    if(d.tech) $r("#fTech").value=d.tech;
+    if(d.soft) $r("#fSoft").value=d.soft;
+    if(d.achievements) $r("#fAchieve").value=d.achievements.join("\n");
     if(d.coding?.length){
-      $("#codingProfiles").innerHTML=d.coding.map(c=>`<div class="code-input-row"><input value="${esc(c)}"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()">🗑</button></div>`).join("");
-      $$("#codingProfiles input").forEach(i=> i.addEventListener("input", scheduleRender));
+      $r("#codingProfiles").innerHTML=d.coding.map(c=>`<div class="code-input-row"><input value="${esc(c)}"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()">🗑</button></div>`).join("");
+      $r("#codingProfiles input").forEach(i=> i.addEventListener("input", scheduleRender));
     }
     if(d.exps?.length) d.exps.forEach(addExp);
     if(d.edus?.length) d.edus.forEach(addEdu);
@@ -481,16 +474,16 @@ try{
   }
 }catch{}
 // seed default experience/education/projects so preview matches screenshot before edits
-if(!$("#expList").children.length){
-  addExp({title:"Software Engineer",company:"Lets Code",dates:"Jul 2024 — Present",bullets:["Built placement prep platform serving 50K+ students with DSA roadmaps, mock tests, and AI-powered resume tools.","Designed Node.js APIs handling 20K+ requests/day with 99.9% uptime using MongoDB and Redis caching.","Developed AI Resume Optimizer, Cover Letter Generator, and Job Finder — cutting application time by 60%"]});
-  addExp({title:"Software Engineering Intern",company:"Lets Code",dates:"Jan 2024 — Jun 2024",bullets:["Built PYQ pages and interview experience modules, increasing organic traffic by 35%.","Integrated Clerk auth and built user dashboard with profile, bookmarks, and progress tracking."]});
+if(!$r("#expList").children.length){
+  addExp({title:"Software Engineer",company:"",dates:"Jul 2024 — Present",bullets:["Built placement prep platform serving 50K+ students with DSA roadmaps, mock tests, and AI-powered resume tools.","Designed Node.js APIs handling 20K+ requests/day with 99.9% uptime using MongoDB and Redis caching.","Developed AI Resume Optimizer, Cover Letter Generator, and Job Finder — cutting application time by 60%"]});
+  addExp({title:"Software Engineering Intern",company:"",dates:"Jan 2024 — Jun 2024",bullets:["Built PYQ pages and interview experience modules, increasing organic traffic by 35%.","Integrated Clerk auth and built user dashboard with profile, bookmarks, and progress tracking."]});
 }
-if(!$("#eduList").children.length){
+if(!$r("#eduList").children.length){
   addEdu({school:"ABC University",degree:"B.Tech — Computer Science & Engineering, 8.6 CGPA",dates:"2020 — 2024"});
   addEdu({school:"XYZ Senior Secondary School",degree:"Class XII — CBSE, 94.2%",dates:"2020"});
 }
-if(!$("#projList").children.length){
-  addProj({name:"Lets Code — Placement Prep Platform",stack:"Next.js, TypeScript, MongoDB, Clerk, Tailwind CSS",desc:"Full-stack platform with 500+ PYQs, AI resume studio, mock tests, job board, and interview experiences."});
+if(!$r("#projList").children.length){
+  addProj({name:" — Placement Prep Platform",stack:"Next.js, TypeScript, MongoDB, Clerk, Tailwind CSS",desc:"Full-stack platform with 500+ PYQs, AI resume studio, mock tests, job board, and interview experiences."});
   addProj({name:"AI Resume Studio",stack:"Next.js, Claude API, jsPDF, MongoDB",desc:"ATS resume analyser that scores, edits inline, runs AI rewrites, and exports as PDF or DOCX."});
 }
 renderPreview();
