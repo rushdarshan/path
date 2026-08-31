@@ -333,7 +333,7 @@ $("#gateContinue")?.addEventListener("click",()=>{ document.getElementById("proo
     if(sid){
       try{ const full=await api("/api/session/"+SID); if(full && full.profile){ LAST_RESULT={profile:full.profile, path:full.path, gapReport:full.gapReport, explanation:full.explanation, recommendation:full.recommendation, audit:full.audit}; window.LAST_RESULT=LAST_RESULT; } }catch(e){}
     }
-    const sidEl=$("#sessionId"); if(sidEl) sidEl.textContent=SID;
+    const sidEl=$("#sessionId"); if(sidEl) sidEl.textContent="active";
     if(!sid){ botMsg(s.question); if(s.hints) showHints(s.hints); }
     drawPreview(LAST_RESULT?.path||null);
     syncPreview();
