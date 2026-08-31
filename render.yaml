@@ -22,6 +22,34 @@ services:
       #   sync: false
       # - key: GEMINI_MODEL
       #   value: gemini-1.5-flash
+      - key: RENDER_EXTERNAL_URL
+        fromService:
+          type: web
+          name: pathlight
+          property: host
+          # renders as https://pathlight.onrender.com — used by health/cron pings
+      - key: APP_URL
+        sync: false
+        # fill after first deploy if you want an explicit external URL for the keeper
+
+  # Free tier sleeps ~15m idle. This free cron pings /health every 10m to keep the web service warm.
+  # Comment out if you prefer an external UptimeRobot / cron-job.org ping instead.
+  - type: cron
+    name: pathlight-keeper
+    runtime: node
+    plan: free
+    schedule: "*/10 * * * *"
+    startCommand: node -e "fetch((process.env.RENDER_EXTERNAL_URL||process.env.APP_URL||'http://localhost:'+(process.env.PORT||10000))+'/health').then(r=>r.text().then(t=>console.log(new Date().toISOString(),r.status,t.slice(0,120)))).catch(e=>{console.error(e.message);process.exit(0)})"
+    envVars:
+      - key: RENDER_EXTERNAL_URL
+        fromService:
+          type: web
+          name: pathlight
+          property: host
+      - key: APP_URL
+        sync: false
 
 # For ephemeral FS note: data/*.json sessions reset on each deploy/restart on free plan.
 # To persist, add a Render Disk mounted at /opt/render/project/src/data (paid plans) and keep lib/store.js as-is.
+# Alternative keepalive: external pinger (UptimeRobot/cron-job.org) hitting GET https://<host>/health every 10m,
+# or run ./render-keepalive.sh https://<host> from any always-on machine.
