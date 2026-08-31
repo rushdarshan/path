@@ -1,6 +1,149 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Path — Pathlight</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"><link rel="stylesheet" href="/dreamer.css"><link rel="stylesheet" href="/styles.css"></head><body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark">◎</span><span class="brand-word">Pathlight</span><span class="brand-dot">·</span><span class="brand-sub">Path</span></a><nav class="header-nav" aria-label="Primary"><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/path.html" aria-current="page">Path</a><a href="/audit.html">Why</a><a href="/mastery.html">Mastery</a><a href="/resume.html">Resume</a><a class="nav-cta" href="/mastery.html">Check mastery →</a></nav><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button></div><div class="mobile-menu" id="mobileMenu" hidden><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/path.html">Path</a><a href="/audit.html">Why</a><a href="/mastery.html">Mastery</a><a href="/resume.html">Resume</a></div></header>
-<section class="section-inner" style="padding:32px 24px 12px"><p class="kicker">Dependency-ordered</p><h2 style="font-family:'Instrument Serif',serif;font-size:32px;margin:8px 0 12px">Your path — prerequisite-aware, time-budgeted.</h2><p class="subtle">Milestones → topics → weekly slots · Session <code id="sessionId">…</code></p><div style="display:grid;gap:16px;margin-top:16px"><div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><div id="preview-path"></div></div><div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><h3 style="font-size:13px;margin:0 0 8px">Weekly plan</h3><div id="proof-weekly"></div><canvas id="previewCanvas" width="360" height="260" style="margin-top:12px;border:1px solid var(--line);border-radius:12px;width:100%"></canvas><div id="previewMeta" class="preview-meta"></div></div><div id="chatWindow" aria-live="polite" style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--shadow)"></div><div style="display:flex;gap:8px"><textarea id="chatInput" rows="2" placeholder="Refine path…" style="flex:1"></textarea><button id="sendBtn" class="btn primary">Send</button></div></div></section>
-<footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography</span></div><div class="footer-links"><a href="/">Home</a><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/audit.html">Why</a><a href="/mastery.html">Mastery</a><a href="/resume.html">Resume</a></div></div></footer>
-<div hidden aria-hidden="true"><nav class="tabs" id="tabs"><button class="tab active" data-tab="chat">Converse</button></nav><section class="panel active" id="panel-chat"></section><div id="dreamerStage" hidden><div id="stageTop"></div><div id="progressDots"></div><div id="stepLabel"></div><h3 id="stageTitle"></h3><p id="stageInstr"></p><div id="stageBody"></div><div id="stageError"></div><button id="btnBack"></button><button id="btnNext"></button></div><div id="gate"></div><button id="gateContinue"></button><canvas id="dagCanvas" width="640" height="420"></canvas><div id="preview-profile"></div><div id="preview-audit"></div></div>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script><script src="/app.js"></script><script src="/dreamer.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Path — Pathlight</title>
+  <meta name="description" content="Explore your dependency-ordered, prerequisite-aware learning milestones and weekly study schedule.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">◎</span>
+      <span class="brand-word">Pathlight</span>
+      <span class="brand-dot">·</span>
+      <span class="brand-sub">Path</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/dreamer.html">Dreamer</a>
+      <a href="/profile.html">Profile</a>
+      <a href="/path.html" aria-current="page">Path</a>
+      <a href="/audit.html">Why</a>
+      <a href="/mastery.html">Mastery</a>
+      <a href="/resume.html">Resume</a>
+      <a class="nav-cta" href="/mastery.html">Check mastery →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="/dreamer.html">Dreamer</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/path.html" aria-current="page">Path</a>
+    <a href="/audit.html">Why</a>
+    <a href="/mastery.html">Mastery</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/mastery.html" class="primary">Check mastery</a>
+  </div>
+</header>
+
+<main class="page-shell">
+  <!-- Intro Banner -->
+  <section class="page-intro">
+    <div class="page-intro-left">
+      <p class="kicker">Dependency-Ordered</p>
+      <h1 class="page-title">Your Path — <em>prerequisite-aware</em>, time-budgeted.</h1>
+      <p class="page-sub">Milestones → topics → weekly slots. Built from your goals and gap diagnosis.</p>
+    </div>
+    <div class="page-intro-right" style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="btn-demo" data-load-demo="ml"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> ML Path</button>
+        <button class="btn-demo" data-load-demo="fullstack"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Fullstack</button>
+        <button class="btn-demo" data-load-demo="cyber"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Cyber</button>
+      </div>
+      <a href="/mastery.html" class="btn primary">Mastery Quizzes →</a>
+    </div>
+  </section>
+
+  <!-- 2-Column Layout -->
+  <div class="grid-2col">
+    <!-- Left Column: Milestones & Chat -->
+    <div class="grid-stack">
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">
+            <iconify-icon icon="lucide:list-ordered" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Recommended Milestones
+          </h2>
+          <span class="badge badge-green">Dependency Order</span>
+        </div>
+        <div class="card-body">
+          <div id="preview-path"></div>
+        </div>
+      </div>
+
+      <div class="chat-card">
+        <div class="card-head">
+          <h3 class="card-title">
+            <iconify-icon icon="lucide:sliders-horizontal" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Adjust Path Constraints
+          </h3>
+          <span class="card-subtitle">Change hours/week or target roles</span>
+        </div>
+        <div class="chat-window" id="chatWindow" aria-live="polite"></div>
+        <div class="chat-input-bar">
+          <textarea id="chatInput" rows="1" placeholder="e.g. 'I can only study 5 hours a week' or 'Skip basic Python'"></textarea>
+          <button id="sendBtn" class="btn primary">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Interactive DAG & Weekly Plan -->
+    <div class="grid-stack">
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">
+            <iconify-icon icon="lucide:network" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Live Prerequisite Graph
+          </h2>
+          <span class="badge badge-blue">Interactive</span>
+        </div>
+        <div class="card-body" style="padding:14px;display:flex;flex-direction:column;gap:10px;">
+          <canvas id="previewCanvas" width="360" height="240" style="border:1px solid var(--line);border-radius:12px;width:100%;display:block;background:#fff;"></canvas>
+          <div id="previewMeta" style="font-size:12px;color:var(--muted);text-align:center;font-family:var(--font-mono);">
+            Answer questions in Dreamer to see prerequisites bloom.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">
+            <iconify-icon icon="lucide:calendar" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Weekly Study Schedule
+          </h2>
+          <span class="badge badge-stone">Paced</span>
+        </div>
+        <div class="card-body">
+          <div id="proof-weekly"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography of Prerequisites</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/dreamer.html">Dreamer</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/path.html">Path</a>
+        <a href="/audit.html">Why</a>
+        <a href="/mastery.html">Mastery</a>
+        <a href="/resume.html">Resume</a>
+      </div>
+    </div>
+    <p class="legal">Path ordering computes prerequisites using topological sort over deterministic skill trees.</p>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>

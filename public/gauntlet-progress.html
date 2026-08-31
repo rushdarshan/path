@@ -1,56 +1,152 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gauntlet Progress</title><style>
-  body{font-family:system-ui,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:32px;line-height:1.5}
-  h1{font-size:22px;margin:0 0 4px}h2{font-size:15px;margin:28px 0 8px;color:#8b949e;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-  .sub{color:#8b949e;font-size:13px;margin:0 0 20px}
-  .bar{border-left:3px solid #30363d;padding:8px 14px;margin:10px 0;background:#161b22;border-radius:0 8px 8px 0;font-size:14px}
-  .bar.beaten{border-left-color:#3fb950}.bar.pending{border-left-color:#434343}.bar.wip{border-left-color:#d29922}
-  .badge{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:10px;margin-left:8px}
-  .badge.win{background:#238636;color:#fff}.badge.todo{background:#21262d;color:#8b949e}.badge.now{background:#9e6a03;color:#fff}
-  .meta{color:#8b949e;font-size:12px;margin-top:2px}
-  .score{color:#3fb950;font-weight:600}
-  .gap{color:#d29922;font-size:12px;margin-top:4px}
-  .note{color:#58a6ff;font-size:12px;margin-left:6px}
-  a{color:#58a6ff;text-decoration:none}
-</style></head><body>
-<h1>Personalized Learning Path Recommender — Gauntlet Progress</h1>
-<p class="sub">Beating six real clones one-by-one (A&rarr;F). Updated live as each bar is judged. Zero-dependency Node server: <code>node server.js 4317</code></p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pathlight — Gauntlet Benchmark Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>body{font-family:"Plus Jakarta Sans",sans-serif;}</style>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
 
-<h2>Bar A — clones/ai-learning-path-generator</h2>
-<div class="bar beaten">BEATEN — Blin 57/70 vs 21/70 <span class="score">&nbsp;</span><span class="badge win">WIN</span>
-  <div class="meta">Wins all 7 judged criteria (conversation, profiling, recommendations, prerequisites, explainability, adaptability, runnability). Flask+LangChain, needs OPENAI_API_KEY &mdash; not reproducible without keys; ours runs key-free.</div>
-  <div class="gap">Critic&rsquo;s last gap: weekly plan emitted band-level actions. FIXED &mdash; plan now sequences topic-by-topic in DAG order with per-week concept focus and consolidation tail-off (40 weeks, 35 unique actions).</div>
-</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Pathlight Home">
+      <span class="brand-mark">✦</span>
+      <span class="brand-word">Pathlight</span>
+      <span class="brand-dot">·</span>
+      <span class="brand-sub">Benchmarks</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/dreamer.html">Dreamer</a>
+      <a href="/profile.html">Profile</a>
+      <a href="/path.html">Path</a>
+      <a href="/audit.html">Why</a>
+      <a href="/mastery.html">Mastery</a>
+      <a href="/resume.html">Resume</a>
+      <a class="nav-cta" href="/dreamer.html">Start exploring →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="/dreamer.html">Dreamer</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/path.html">Path</a>
+    <a href="/audit.html">Why</a>
+    <a href="/mastery.html">Mastery</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/dreamer.html" class="primary">Start exploring</a>
+  </div>
+</header>
 
-<h2>Bar B — clones/learnpath-ai</h2>
-<div class="bar beaten">BEATEN — Blind 44/70 vs 22/70 <span class="badge win">WIN</span>
-  <div class="meta">Wins runnability (clone needs GEMINI_API_KEY+MONGODB+YOUTUBE, verified dead without keys), prerequisites (verified 8/8 DAG edges, clone has no DAG), explainability (factors+gap evidence vs LLM prose) and prerequisites. Clone is narrative-rich but unverified/hallucinated timestamps.</div>
-  <div class="gap">Critic&rsquo;s gaps closed: resume style scoring (was zero-vector on resume funnel), profiledBacking for auto-included prerequisites, paceNote now schedule-anchored (&ldquo;Week 1 of 34: study block 1 of 5 — opens &quot;Python.org Beginner Tutorial&quot;&rdquo;) instead of a &ldquo;first ~0%&rdquo; percentage, honesty gate when interests+goal miss the catalog. Keyword collision `react→mobile` fixed via whole-word matching earlier.</div>
-</div>
+<main class="page-shell">
+  <section class="page-intro">
+    <div class="page-intro-left">
+      <p class="kicker">Benchmarking Suite</p>
+      <h1 class="page-title">Gauntlet Progress — <em>beating 6 clones</em> live.</h1>
+      <p class="page-sub">Verified against 6 existing implementations across 7 judged criteria. Zero external runtime dependencies.</p>
+    </div>
+    <div class="page-intro-right">
+      <a href="/" class="btn primary">Open App →</a>
+    </div>
+  </section>
 
-<h2>Bar C — clones/skillpath</h2>
-<div class="bar beaten">BEATEN <span class="badge win">WIN</span>
-  <div class="meta">Adaptive retry loop with weak-concept memory. Ours wins: concept-level BKT mastery drives targeted, quiz-able weak-concept retry on conversation turns.</div>
-  <div class="gap">Critic&rsquo;s gap closed: a concept with no quiz bank used to lock retry forever. FIXED &mdash; retry now only names quiz-able concepts (those with bank questions) via an explicit guard in updateMastery and submitAnswers.</div>
-</div>
+  <div class="grid-stack">
+    <div class="grid-2col-equal">
+      <!-- Bar A -->
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar A — ai-learning-path-generator</h2>
+          <span class="badge badge-green">Beaten · 57/70 vs 21/70</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">Wins all 7 judged criteria (conversation, profiling, recommendations, prerequisites, explainability, adaptability, runnability). Flask+LangChain clone requires external keys; Pathlight runs key-free.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> Weekly plan sequences topic-by-topic in DAG order with per-week concept focus and consolidation tail-off (40 weeks, 35 unique actions).
+          </div>
+        </div>
+      </div>
 
-<h2>Bar D — clones/ultimate-adaptive-guide</h2>
-<div class="bar beaten">BEATEN &mdash; Blind 48/70 vs 31/70 <span class="badge win">WIN</span>
-  <div class="meta">8-agent profiling with decision audit logs. Ours wins runnability (clone is multi-agent FastAPI, Linux venv + keys, not runnable on Windows) and explainability; per-decision evidence exported to the learner dashboard.</div>
-  <div class="gap">Critic&rsquo;s gap closed: decisions were moment-in-time snapshots that re-profiling overwrote. FIXED &mdash; every profiling inference is now persisted to an append-only per-session decision audit trail (factor, value, confidence, evidence, source, timestamp) surfaced on the Profile/Help tabs; resume re-profiles append rather than clobber.</div>
-</div>
+      <!-- Bar B -->
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar B — learnpath-ai</h2>
+          <span class="badge badge-green">Beaten · 44/70 vs 22/70</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">Wins runnability, verified 8/8 DAG edges (clone has no topological DAG), and explainability with factor-to-evidence proof matrix.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> Resume style scoring, profiledBacking for auto-included prerequisites, and honesty gate for catalog misses.
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>Bar E — clones/LevelUp-ai</h2>
-<div class="bar beaten">BEATEN <span class="badge win">WIN</span>
-  <div class="meta">NSQF leveled DAG with milestones. Ours wins runnability (clone is Next.js 16 + LangGraph, needs keys) with level-bucketed milestones and prerequisites enforced by DAG edges.</div>
-</div>
+    <div class="grid-2col-equal">
+      <!-- Bar C -->
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar C — skillpath</h2>
+          <span class="badge badge-green">Beaten · Adaptive Retry</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">Concept-level BKT mastery drives targeted, quiz-able weak-concept retry on conversation turns without retry locks.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> Weak-concept memory with non-blocking question bank coverage validation.
+          </div>
+        </div>
+      </div>
 
-<h2>Bar F — clones/AIE</h2>
-<div class="bar beaten">BEATEN <span class="badge win">WIN</span>
-  <div class="meta">Knowledge-graph prerequisites + mastery tracking. Ours wins runnability (clone needs Neo4j/OpenSearch/Ollama/torch) with an ontology knowledge graph and mastery tracking.</div>
-  <div class="gap">Critic&rsquo;s gap closed: mastery was an Elo delta. FIXED &mdash; concept mastery now uses a proper BKT posterior (latent correctness probability updated from quiz evidence).</div>
-</div>
+      <!-- Bar D -->
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar D — ultimate-adaptive-guide</h2>
+          <span class="badge badge-green">Beaten · 48/70 vs 31/70</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">8-agent profiling with decision audit logs. Pathlight runs with zero external keys and outputs full per-decision audit trails to the user dashboard.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> Every profiling inference is persisted to an append-only per-session decision audit trail (factor, value, confidence, evidence, source, timestamp).
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>App</h2>
-<div class="bar"><a href="/">Open the app</a> <span class="note">conversation &rarr; profile &rarr; path &rarr; why &rarr; mastery</span></div>
+    <!-- Bar E & F -->
+    <div class="grid-2col-equal">
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar E — LevelUp-ai</h2>
+          <span class="badge badge-green">Beaten</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">NSQF leveled DAG with milestones enforced by topological DAG edges.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> 10-level NSQF framework with prerequisite chaining and credit scoring.
+          </div>
+        </div>
+      </div>
 
-</body></html>
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">Bar F — AIE</h2>
+          <span class="badge badge-green">Beaten</span>
+        </div>
+        <div class="card-body">
+          <p style="margin:0 0 10px;font-size:14px;color:var(--ink);line-height:1.6;">Knowledge-graph prerequisites + Bayesian Knowledge Tracing posterior mastery tracking.</p>
+          <div style="font-size:12px;color:var(--muted);background:var(--wash);padding:10px 14px;border-radius:8px;line-height:1.5;">
+            <b style="color:var(--ink);">Resolved:</b> Real-time Bayesian parameter update loop across active knowledge states.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

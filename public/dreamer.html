@@ -7,9 +7,11 @@
   <meta name="description" content="AI-powered career exploration: shape your identity, explore paths on a live constellation, and take action with Gemini AI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dreamer.css">
   <link rel="stylesheet" href="/styles.css">
+  <style>body{font-family:"Plus Jakarta Sans",sans-serif;}</style>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
 
@@ -53,36 +55,36 @@
         <p class="dreamer-eyebrow">Career Dreamer · Live demo</p>
         <h1 class="dreamer-title">What do you want to <em>become?</em></h1>
       </div>
-      <div class="dreamer-topbar-right">
-        <span class="session-pill">
-          <span class="dotLive"></span>
-          Session <code id="sessionId">…</code>
-        </span>
+      <div class="dreamer-topbar-right" style="display:flex;align-items:center;gap:8px;">
+        <button class="btn ghost" data-load-demo="ml" style="font-size:12px;padding:5px 10px;background:#fff;border-color:var(--blue);color:var(--blue);"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Quick Demo: ML</button>
+        <button class="btn ghost" data-load-demo="fullstack" style="font-size:12px;padding:5px 10px;background:#fff;"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Fullstack</button>
         <div class="dreamer-aurora-bar" aria-hidden="true"></div>
       </div>
     </div>
   </div>
 
   <!-- TAB NAV -->
-  <nav class="dreamer-tabs" role="tablist" aria-label="Dreamer sections" id="dreamerTabs">
-    <button class="dtab active" role="tab" aria-selected="true"  data-tab="identity"  id="dtab-identity">
-      <span class="dtab-icon">🌱</span> Career Identity
-    </button>
-    <button class="dtab" role="tab" aria-selected="false" data-tab="explore"   id="dtab-explore">
-      <span class="dtab-icon">🕸️</span> Explore Paths
-      <span class="dtab-badge" id="exploreBadge" hidden>0</span>
-    </button>
-    <button class="dtab" role="tab" aria-selected="false" data-tab="action"    id="dtab-action">
-      <span class="dtab-icon">⚡</span> Take Action
-    </button>
-    <button class="dtab" role="tab" aria-selected="false" data-tab="chat"      id="dtab-chat">
-      <span class="dtab-icon">💬</span> Free Chat
-    </button>
-    <button class="dtab" role="tab" aria-selected="false" data-tab="pinned"    id="dtab-pinned">
-      <span class="dtab-icon">📌</span> Pinned
-      <span class="dtab-badge" id="pinnedBadge" hidden>0</span>
-    </button>
-  </nav>
+  <div class="dreamer-tabs-bar">
+    <nav class="dreamer-tabs" role="tablist" aria-label="Dreamer sections" id="dreamerTabs">
+      <button class="dtab active" role="tab" aria-selected="true"  data-tab="identity"  id="dtab-identity">
+        <iconify-icon icon="lucide:sprout" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Career Identity
+      </button>
+      <button class="dtab" role="tab" aria-selected="false" data-tab="explore"   id="dtab-explore">
+        <iconify-icon icon="lucide:compass" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Explore Paths
+        <span class="dtab-badge" id="exploreBadge" hidden>0</span>
+      </button>
+      <button class="dtab" role="tab" aria-selected="false" data-tab="action"    id="dtab-action">
+        <span class="dtab-icon"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon></span> Take Action
+      </button>
+      <button class="dtab" role="tab" aria-selected="false" data-tab="chat"      id="dtab-chat">
+        <iconify-icon icon="lucide:message-circle" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Free Chat
+      </button>
+      <button class="dtab" role="tab" aria-selected="false" data-tab="pinned"    id="dtab-pinned">
+        <iconify-icon icon="lucide:pin" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Pinned
+        <span class="dtab-badge" id="pinnedBadge" hidden>0</span>
+      </button>
+    </nav>
+  </div>
 
   <!-- ═══ PANEL: CAREER IDENTITY ═══ -->
   <section class="dpanel active" id="panel-identity" role="tabpanel" aria-labelledby="dtab-identity">
@@ -117,21 +119,21 @@
           </div>
           <div class="identity-pillars" id="identityPillars">
             <div class="pillar" id="pillar-growth">
-              <span class="pillar-icon">🌱</span>
+              <span class="pillar-icon"><iconify-icon icon="lucide:sprout" width="14" height="14" style="vertical-align:-2px"></iconify-icon></span>
               <div class="pillar-body">
                 <p class="pillar-label">Growth</p>
                 <p class="pillar-val" id="pillar-growth-val">Answer step 1</p>
               </div>
             </div>
             <div class="pillar" id="pillar-strengths">
-              <span class="pillar-icon">💪</span>
+              <span class="pillar-icon"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon></span>
               <div class="pillar-body">
                 <p class="pillar-label">Strengths</p>
                 <p class="pillar-val" id="pillar-strengths-val">—</p>
               </div>
             </div>
             <div class="pillar" id="pillar-passions">
-              <span class="pillar-icon">🎯</span>
+              <span class="pillar-icon"><iconify-icon icon="lucide:target" width="14" height="14" style="vertical-align:-2px"></iconify-icon></span>
               <div class="pillar-body">
                 <p class="pillar-label">Passions</p>
                 <p class="pillar-val" id="pillar-passions-val">—</p>
@@ -177,7 +179,7 @@
             <div class="hub-ring"></div>
             <div class="hub-core">
               <p class="hub-label" id="hubLabel">Explore paths based on…</p>
-              <p class="hub-pills" id="hubPills">🌱 &nbsp; 💪</p>
+              <p class="hub-pills" id="hubPills"><iconify-icon icon="lucide:sprout" width="14" height="14" style="vertical-align:-2px"></iconify-icon> &nbsp; <iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon></p>
             </div>
           </div>
           <!-- Hover card (positioned by JS) -->
@@ -185,7 +187,7 @@
             <div class="node-card-head">
               <span class="node-card-dot blue" id="nodeCardDot"></span>
               <strong id="nodeCardTitle">Role</strong>
-              <button class="node-card-pin" id="nodeCardPin" aria-label="Pin this role">📌</button>
+              <button class="node-card-pin" id="nodeCardPin" aria-label="Pin this role"><iconify-icon icon="lucide:pin" width="14" height="14" style="vertical-align:-2px"></iconify-icon></button>
             </div>
             <p class="node-card-salary" id="nodeCardSalary"></p>
             <p class="node-card-why" id="nodeCardWhy"></p>
@@ -200,7 +202,7 @@
       <!-- Right: pinned / details placeholder -->
       <aside class="explore-aside">
         <div class="explore-aside-card">
-          <p class="explore-aside-head">📌 Pinned paths</p>
+          <p class="explore-aside-head"><iconify-icon icon="lucide:pin" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Pinned paths</p>
           <div id="explorePinnedList"><p class="explore-aside-empty">Pin roles from the constellation to compare them here.</p></div>
         </div>
         <div class="explore-aside-card" id="exploreDetailCard" style="display:none">
@@ -225,7 +227,7 @@
       <div class="action-output-wrap" id="actionOutputWrap" style="display:none">
         <div class="action-output-head">
           <strong id="actionOutputTitle">Output</strong>
-          <button class="ghost-pill" id="btnActionClose">✕ Close</button>
+          <button class="ghost-pill" id="btnActionClose"><iconify-icon icon="lucide:x" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Close</button>
         </div>
         <div class="action-output" id="actionOutput"></div>
       </div>
@@ -251,7 +253,7 @@
       <p class="pinned-sub">Roles you've saved for comparison. Set one as your Pathlight target to generate a full roadmap.</p>
       <div class="pinned-grid" id="pinnedGrid">
         <div class="pinned-empty" id="pinnedEmpty">
-          <span class="pinned-empty-icon">📌</span>
+          <span class="pinned-empty-icon"><iconify-icon icon="lucide:pin" width="14" height="14" style="vertical-align:-2px"></iconify-icon></span>
           <p>No roles pinned yet — explore the constellation and pin what excites you.</p>
           <button class="btn primary" id="btnGoExplore">Open constellation →</button>
         </div>
@@ -270,17 +272,17 @@
         <span class="modal-salary" id="modalSalary"></span>
       </div>
       <div class="modal-header-actions">
-        <button class="ghost-pill modal-pin-btn" id="modalPinBtn">📌 Pin</button>
-        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+        <button class="ghost-pill modal-pin-btn" id="modalPinBtn"><iconify-icon icon="lucide:pin" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Pin</button>
+        <button class="modal-close" id="modalClose" aria-label="Close"><iconify-icon icon="lucide:x" width="14" height="14" style="vertical-align:-2px"></iconify-icon></button>
       </div>
     </div>
     <!-- Slide nav -->
     <nav class="modal-slides-nav" role="tablist">
       <button class="mstab active" data-slide="0" role="tab">Overview</button>
-      <button class="mstab" data-slide="1" role="tab">💪 Sweet spots</button>
-      <button class="mstab" data-slide="2" role="tab">📋 Day in the life</button>
+      <button class="mstab" data-slide="1" role="tab"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Sweet spots</button>
+      <button class="mstab" data-slide="2" role="tab"><iconify-icon icon="lucide:clipboard-list" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Day in the life</button>
       <button class="mstab" data-slide="3" role="tab">⬆️ Growth areas</button>
-      <button class="mstab" data-slide="4" role="tab">🎓 Certificates</button>
+      <button class="mstab" data-slide="4" role="tab"><iconify-icon icon="lucide:graduation-cap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Certificates</button>
     </nav>
     <div class="modal-body" id="modalBody"><!-- filled by JS --></div>
     <div class="modal-footer">
@@ -297,16 +299,13 @@
   <div class="modal modal-why">
     <div class="modal-header">
       <h2>Why am I seeing these results?</h2>
-      <button class="modal-close" id="whyClose" aria-label="Close">✕</button>
+      <button class="modal-close" id="whyClose" aria-label="Close"><iconify-icon icon="lucide:x" width="14" height="14" style="vertical-align:-2px"></iconify-icon></button>
     </div>
     <div class="modal-body" id="whyBody"></div>
   </div>
 </div>
 
-<!-- Legacy shim (keeps app.js tabs shim silent) -->
-<div hidden aria-hidden="true">
-  <nav class="tabs" id="tabs"><button class="tab active" data-tab="chat">Converse</button></nav>
-</div>
+<!-- Footer -->
 
 <footer class="site-footer">
   <div class="footer-inner">

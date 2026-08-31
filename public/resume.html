@@ -71,7 +71,7 @@
       font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px
     }
     .paper-wrap{
-      background:#0f172a;border:1px solid #1e293b;border-radius:16px;
+      background:#1a1e26;border:1px solid #2a303c;border-radius:16px;
       padding:20px;overflow:auto;max-height:calc(100vh - 140px)
     }
     .resume-paper{
@@ -96,6 +96,7 @@
     /* legacy hosts hidden but kept for app.js compat */
     #templateGridHost,#filterBarHost{display:none}
   </style>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
 
@@ -128,7 +129,7 @@
 </div>
 
 <div class="resume-banner">
-  <span>🚀 <b>Startup Bundle:</b> Pathlight gap diagnosis + ATS template mirror — paste any resume to reshape weak concepts against your prerequisite map.</span>
+  <span><iconify-icon icon="lucide:rocket" width="14" height="14" style="vertical-align:-2px"></iconify-icon> <b>Startup Bundle:</b> Pathlight gap diagnosis + ATS template mirror — paste any resume to reshape weak concepts against your prerequisite map.</span>
   <span><a href="/path.html">View Path →</a></span>
 </div>
 
@@ -215,7 +216,7 @@
     <div class="preview-toolbar"><span>▦ LIVE PREVIEW</span><span style="text-transform:none;letter-spacing:0">Dashed lines = page breaks (not in PDF)</span></div>
     <div class="paper-wrap"><div id="resumePaper" class="resume-paper"></div></div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn ghost" id="btnLoadML" data-sample-resume="ml">⚡ Load Python/ML sample</button>
+      <button class="btn ghost" id="btnLoadML" data-sample-resume="ml"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Load Python/ML sample</button>
       <button class="btn ghost" id="btnAnalyzeGap" style="border-color:var(--blue);color:var(--blue)">Analyze & reshape weak concepts</button>
       <span id="gapStatus" style="font-size:12px;color:var(--muted);align-self:center"></span>
     </div>
@@ -283,7 +284,7 @@ function esc(s){ const d=document.createElement("div"); d.textContent=s; return 
 function renderPreview(){
   const d=getData();
   const paper=$r("#resumePaper"); if(!paper) return;
-  const contacts=[d.email&&`✉ ${esc(d.email)}`, d.linkedin&&`in ${esc(d.linkedin)}`, d.github&&`⌥ ${esc(d.github)}`, d.website&&`◈ ${esc(d.website)}`, d.phone&&esc(d.phone)].filter(Boolean).join(" &nbsp;|&nbsp; ");
+  const contacts=[d.email&&`<iconify-icon icon="lucide:mail" width="14" height="14" style="vertical-align:-2px"></iconify-icon> ${esc(d.email)}`, d.linkedin&&`in ${esc(d.linkedin)}`, d.github&&`⌥ ${esc(d.github)}`, d.website&&`◈ ${esc(d.website)}`, d.phone&&esc(d.phone)].filter(Boolean).join(" &nbsp;|&nbsp; ");
   const codingLine = d.coding.length ? `<div style="font-size:8px;color:#334155;margin-top:2px">${d.coding.map(c=>esc(c)).join(" &nbsp;|&nbsp; ")}</div>` : "";
   const expHtml = d.exps.filter(e=>e.title||e.company||e.bullets.length).length ? `<h2>WORK EXPERIENCE</h2>` + d.exps.filter(e=>e.title||e.company||e.bullets.length).map(e=>`
     <div style="margin-bottom:7px">
@@ -308,7 +309,22 @@ function renderPreview(){
   const summaryBlock = d.summary ? `<div style="margin:8px 0;color:#334155">${esc(d.summary)}</div>` : "";
   const hasAny = d.name||contacts||codingLine||summaryBlock||eduHtml||skillsBlock||expHtml||projHtml||achieveHtml;
   if(!hasAny){
-    paper.innerHTML = `<div style="height:100%;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-family:'Plus Jakarta Sans',sans-serif;font-size:13.5px;text-align:center">Start typing on the left — your resume will appear here.<br>Fill from your profile to import your Pathlight data.</div>`;
+    paper.innerHTML = `
+      <div style="height:100%;min-height:850px;display:flex;flex-direction:column;justify-content:flex-start;opacity:0.32;pointer-events:none;user-select:none;font-family:'Times New Roman',Times,serif;">
+        <div style="text-align:center;border-bottom:1px solid #111827;padding-bottom:12px;margin-bottom:16px;">
+          <h1 style="font-size:24px;letter-spacing:.16em;margin:0;">YOUR NAME</h1>
+          <div style="font-size:12px;margin-top:4px;">email@example.com · +1 (555) 000-0000 · City, State · linkedin.com/in/username</div>
+        </div>
+        <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #111827;padding-bottom:2px;margin:12px 0 6px;">Education</div>
+        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;"><span>University Name</span><span>2020 — 2024</span></div>
+        <div style="font-size:13px;font-style:italic;">Bachelor of Science in Computer Science</div>
+        <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #111827;padding-bottom:2px;margin:18px 0 6px;">Skills & Technologies</div>
+        <div style="font-size:13px;">Languages: Python, JavaScript, TypeScript, SQL · Frameworks: React, Node.js, Fastify</div>
+        <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #111827;padding-bottom:2px;margin:18px 0 6px;">Experience</div>
+        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;"><span>Software Engineer Intern · Technology Studio</span><span>Jan 2024 — Present</span></div>
+        <div style="margin:4px 0 0 16px;font-size:13px;line-height:1.5;">• Developed core responsive web applications and prerequisite mapping pipelines.<br>• Collaborated across engineering teams to optimize runtime latency and user retention.</div>
+      </div>
+    `;
   } else {
     paper.innerHTML = `
       ${d.name?`<div class="hdr"><h1>${esc(d.name.toUpperCase())}</h1><div class="contacts">${contacts}</div>${codingLine}${d.role?`<div style="font-size:10px;color:#475569;margin-top:2px">${esc(d.role)}</div>`:""}</div>`:""}
@@ -330,7 +346,7 @@ function addExp(data={}){
   const host=$r("#expList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
-    <div class="exp-card-head"><b>Experience</b><button class="mini-btn" type="button">🗑</button></div>
+    <div class="exp-card-head"><b>Experience</b><button class="mini-btn" type="button"><iconify-icon icon="lucide:trash-2" width="12" height="12"></iconify-icon></button></div>
     <div class="fi-row"><div class="fi"><label>Title</label><input data-field="title" value="${esc(data.title||"")}"></div><div class="fi"><label>Company</label><input data-field="company" value="${esc(data.company||"")}"></div></div>
     <div class="fi"><label>Dates</label><input data-field="dates" value="${esc(data.dates||"")}"></div>
     <div class="fi"><label>Bullets (one per line)</label><textarea data-field="bullets" rows="3">${esc((data.bullets||[]).join("\n"))}</textarea></div>`;
@@ -342,7 +358,7 @@ function addEdu(data={}){
   const host=$r("#eduList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
-    <div class="exp-card-head"><b>Education</b><button class="mini-btn" type="button">🗑</button></div>
+    <div class="exp-card-head"><b>Education</b><button class="mini-btn" type="button"><iconify-icon icon="lucide:trash-2" width="12" height="12"></iconify-icon></button></div>
     <div class="fi"><label>School</label><input data-field="school" value="${esc(data.school||"")}"></div>
     <div class="fi"><label>Degree</label><input data-field="degree" value="${esc(data.degree||"")}"></div>
     <div class="fi-row"><div class="fi"><label>GPA / Score</label><input data-field="gpa" value="${esc(data.gpa||"")}"></div><div class="fi"><label>Dates</label><input data-field="dates" value="${esc(data.dates||"")}"></div></div>`;
@@ -354,7 +370,7 @@ function addProj(data={}){
   const host=$r("#projList");
   const el=document.createElement("div"); el.className="exp-card";
   el.innerHTML=`
-    <div class="exp-card-head"><b>Project</b><button class="mini-btn" type="button">🗑</button></div>
+    <div class="exp-card-head"><b>Project</b><button class="mini-btn" type="button"><iconify-icon icon="lucide:trash-2" width="12" height="12"></iconify-icon></button></div>
     <div class="fi"><label>Name</label><input data-field="name" value="${esc(data.name||"")}"></div>
     <div class="fi"><label>Stack</label><input data-field="stack" value="${esc(data.stack||"")}"></div>
     <div class="fi"><label>Description</label><input data-field="desc" value="${esc(data.desc||"")}"></div>`;
@@ -382,7 +398,7 @@ $r("[data-ac] .ac-head").forEach(h=>{
 $r("#addCodingProfile")?.addEventListener("click",()=>{
   const host=$r("#codingProfiles");
   const row=document.createElement("div"); row.className="code-input-row";
-  row.innerHTML=`<input placeholder="leetcode.com/u/..."><button class="mini-btn">🗑</button>`;
+  row.innerHTML=`<input placeholder="leetcode.com/u/..."><button class="mini-btn"><iconify-icon icon="lucide:trash-2" width="12" height="12"></iconify-icon></button>`;
   row.querySelector("button").onclick=()=>{ row.remove(); scheduleRender(); };
   row.querySelector("input").addEventListener("input", scheduleRender);
   host.appendChild(row);
@@ -409,14 +425,14 @@ $r("#btnImport")?.addEventListener("click", async ()=>{
     }
     if(s.path) renderPreview();
     scheduleRender();
-    const btn=$r("#btnImport"); const t=btn.textContent; btn.textContent="✓ Imported"; setTimeout(()=>btn.textContent=t, 1400);
+    const btn=$r("#btnImport"); const t=btn.textContent; btn.textContent="<iconify-icon icon="lucide:check" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Imported"; setTimeout(()=>btn.textContent=t, 1400);
   }catch(e){ alert(e.message); }
 });
 
 $r("#btnSave")?.addEventListener("click",()=>{
   scheduleRender(); // flush
   const btn=$r("#btnSave"); const t=btn.textContent;
-  btn.textContent="✓ Saved";
+  btn.textContent="<iconify-icon icon="lucide:check" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Saved";
   setTimeout(()=>btn.textContent=t, 1400);
 });
 
@@ -432,7 +448,7 @@ $r("#btnAnalyzeGap")?.addEventListener("click", async ()=>{
     const s=await fetch("/api/session/"+sid).then(r=>r.json());
     if(s.profile){ window.LAST_RESULT={profile:s.profile,path:s.path,gapReport:s.gapReport,explanation:s.explanation,audit:s.audit}; try{ window.syncPreview && window.syncPreview(); }catch{} }
     if(st) st.textContent = r.topicHits?.length ? `${r.topicHits.length} topics mapped — see Path/Why` : "No ontology hits — add skills/coursework";
-  }catch(e){ if(st) st.textContent="⚠ "+e.message; }
+  }catch(e){ if(st) st.textContent="<iconify-icon icon="lucide:alert-triangle" width="14" height="14" style="vertical-align:-2px"></iconify-icon> "+e.message; }
   setTimeout(()=>{ const el=$r("#gapStatus"); if(el) el.textContent=""; }, 3600);
 });
 $r("#btnLoadML")?.addEventListener("click",()=>{
@@ -465,7 +481,7 @@ try{
     if(d.soft) $r("#fSoft").value=d.soft;
     if(d.achievements) $r("#fAchieve").value=d.achievements.join("\n");
     if(d.coding?.length){
-      $r("#codingProfiles").innerHTML=d.coding.map(c=>`<div class="code-input-row"><input value="${esc(c)}"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()">🗑</button></div>`).join("");
+      $r("#codingProfiles").innerHTML=d.coding.map(c=>`<div class="code-input-row"><input value="${esc(c)}"><button class="mini-btn" onclick="this.parentElement.remove();scheduleRender()"><iconify-icon icon="lucide:trash-2" width="12" height="12"></iconify-icon></button></div>`).join("");
       $r("#codingProfiles input").forEach(i=> i.addEventListener("input", scheduleRender));
     }
     if(d.exps?.length) d.exps.forEach(addExp);

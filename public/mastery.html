@@ -1,6 +1,144 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mastery — Pathlight</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"><link rel="stylesheet" href="/dreamer.css"><link rel="stylesheet" href="/styles.css"></head><body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark">◎</span><span class="brand-word">Pathlight</span><span class="brand-dot">·</span><span class="brand-sub">Mastery</span></a><nav class="header-nav" aria-label="Primary"><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/path.html">Path</a><a href="/audit.html">Why</a><a href="/mastery.html" aria-current="page">Mastery</a><a href="/resume.html">Resume</a><a class="nav-cta" href="/resume.html">Drop resume →</a></nav><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button></div><div class="mobile-menu" id="mobileMenu" hidden><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/path.html">Path</a><a href="/audit.html">Why</a><a href="/mastery.html">Mastery</a><a href="/resume.html">Resume</a></div></header>
-<section class="section-inner" style="padding:32px 24px 12px"><p class="kicker">BKT + concept graph</p><h2 style="font-family:'Instrument Serif',serif;font-size:32px;margin:8px 0 12px">Mastery — weak concepts live.</h2><p class="subtle">Quizzes reshape after resume upload · Session <code id="sessionId">…</code></p><div style="display:grid;gap:16px;margin-top:16px"><div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><div id="proof-mastery"></div><div id="masteryTable"></div></div><div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><div id="preview-path"></div></div><div id="chatWindow" aria-live="polite" style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--shadow)"></div><div style="display:flex;gap:8px"><textarea id="chatInput" rows="2" placeholder="Ask about a concept…" style="flex:1"></textarea><button id="sendBtn" class="btn primary">Send</button></div></div></section>
-<footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography</span></div><div class="footer-links"><a href="/">Home</a><a href="/dreamer.html">Dreamer</a><a href="/profile.html">Profile</a><a href="/path.html">Path</a><a href="/audit.html">Why</a><a href="/resume.html">Resume</a></div></div></footer>
-<div hidden aria-hidden="true"><nav class="tabs" id="tabs"><button class="tab active" data-tab="chat">Converse</button></nav><section class="panel active" id="panel-chat"></section><div id="dreamerStage" hidden><div id="stageTop"></div><div id="progressDots"></div><div id="stepLabel"></div><h3 id="stageTitle"></h3><p id="stageInstr"></p><div id="stageBody"></div><div id="stageError"></div><button id="btnBack"></button><button id="btnNext"></button></div><div id="gate"></div><button id="gateContinue"></button><canvas id="previewCanvas" width="360" height="260"></canvas><canvas id="dagCanvas" width="640" height="420"></canvas><div id="preview-profile"></div><div id="preview-audit"></div></div>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script><script src="/app.js"></script><script src="/dreamer.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mastery — Pathlight</title>
+  <meta name="description" content="Bayesian Knowledge Tracing (BKT) concept mastery tracking, gap analysis, and weakness detection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>body{font-family:"Plus Jakarta Sans",sans-serif;}</style>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">◎</span>
+      <span class="brand-word">Pathlight</span>
+      <span class="brand-dot">·</span>
+      <span class="brand-sub">Mastery</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/dreamer.html">Dreamer</a>
+      <a href="/profile.html">Profile</a>
+      <a href="/path.html">Path</a>
+      <a href="/audit.html">Why</a>
+      <a href="/mastery.html" aria-current="page">Mastery</a>
+      <a href="/resume.html">Resume</a>
+      <a class="nav-cta" href="/resume.html">Drop resume →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="/dreamer.html">Dreamer</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/path.html">Path</a>
+    <a href="/audit.html">Why</a>
+    <a href="/mastery.html" aria-current="page">Mastery</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/resume.html" class="primary">Drop resume</a>
+  </div>
+</header>
+
+<main class="page-shell">
+  <!-- Intro Banner -->
+  <section class="page-intro">
+    <div class="page-intro-left">
+      <p class="kicker">BKT + Concept Graph</p>
+      <h1 class="page-title">Mastery — <em>weak concepts</em> live.</h1>
+      <p class="page-sub">Bayesian Knowledge Tracing tracks your confidence across topics. Reshaped when you answer quizzes or upload a resume.</p>
+    </div>
+    <div class="page-intro-right" style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="btn-demo" data-load-demo="ml"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> ML Mastery</button>
+        <button class="btn-demo" data-load-demo="fullstack"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Fullstack</button>
+        <button class="btn-demo" data-load-demo="cyber"><iconify-icon icon="lucide:zap" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Cyber</button>
+      </div>
+      <a href="/resume.html" class="btn primary">Upload Resume →</a>
+    </div>
+  </section>
+
+  <!-- 2-Column Content Grid -->
+  <div class="grid-2col">
+    <!-- Left Column: Mastery Scores & Concept Chat -->
+    <div class="grid-stack">
+      <div id="quizContainer"></div>
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">
+            <iconify-icon icon="lucide:bar-chart-3" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Concept Mastery Tracker
+          </h2>
+          <span class="badge badge-green">BKT Bayesian Update</span>
+        </div>
+        <div class="card-body">
+          <div id="proof-mastery"></div>
+        </div>
+      </div>
+
+      <div class="chat-card">
+        <div class="card-head">
+          <h3 class="card-title">
+            <iconify-icon icon="lucide:pen-tool" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Practice & Inquire Concepts
+          </h3>
+          <span class="card-subtitle">Ask questions or test your understanding</span>
+        </div>
+        <div class="chat-window" id="chatWindow" aria-live="polite"></div>
+        <div class="chat-input-bar">
+          <textarea id="chatInput" rows="1" placeholder="e.g. 'Quiz me on async programming in JavaScript'"></textarea>
+          <button id="sendBtn" class="btn primary">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Associated Milestones & Resume Booster -->
+    <div class="grid-stack">
+      <div class="card">
+        <div class="card-head">
+          <h2 class="card-title">
+            <iconify-icon icon="lucide:flag" width="14" height="14" style="vertical-align:-2px"></iconify-icon> Active Path Milestones
+          </h2>
+          <a href="/path.html" class="badge badge-stone" style="cursor:pointer;">View Path →</a>
+        </div>
+        <div class="card-body">
+          <div id="preview-path"></div>
+        </div>
+      </div>
+
+      <div class="card" style="background:linear-gradient(135deg, #F8FAFD 0%, #EDF0F5 100%);">
+        <div class="card-body">
+          <h3 style="margin:0 0 8px;font-size:16px;font-weight:700;">Fast-track your mastery scores</h3>
+          <p style="margin:0 0 16px;font-size:14px;color:var(--muted);line-height:1.6;">Upload your existing resume to detect recognized prerequisite skills and immediately increase your mastery baselines.</p>
+          <a href="/resume.html" class="btn ghost" style="width:100%;">Upload Resume Plaintext →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark">◎</span> Pathlight <span class="muted">· Cartography of Prerequisites</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/dreamer.html">Dreamer</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/path.html">Path</a>
+        <a href="/audit.html">Why</a>
+        <a href="/mastery.html">Mastery</a>
+        <a href="/resume.html">Resume</a>
+      </div>
+    </div>
+    <p class="legal">Bayesian Knowledge Tracing (BKT) dynamically adjusts probability of mastery based on demonstrated evidence.</p>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
