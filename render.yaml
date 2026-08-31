@@ -1,0 +1,27 @@
+# Render Blueprint — one-file deploy for Pathlight
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: pathlight
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /health
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      # optional — wired but not required for deterministic mode:
+      # - key: GEMINI_API_KEY
+      #   sync: false
+      # - key: GEMINI_MODEL
+      #   value: gemini-1.5-flash
+
+# For ephemeral FS note: data/*.json sessions reset on each deploy/restart on free plan.
+# To persist, add a Render Disk mounted at /opt/render/project/src/data (paid plans) and keep lib/store.js as-is.

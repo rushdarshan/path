@@ -1,0 +1,15 @@
+{
+  "name": "pathlight",
+  "version": "1.0.0",
+  "description": "Pathlight — Cartography of Prerequisites — deterministic ontology → profiler → recommender → pathbuilder (Render-ready, zero-dep http)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["learning-path", "ontology", "render", "node"],
+  "license": "MIT"
+}

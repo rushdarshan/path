@@ -304,6 +304,7 @@ s.profile = profileFromConversation({ answers: s.answers || {}, resume: b.resume
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, "http://localhost");
+  if (url.pathname === "/health" || url.pathname === "/healthz") return json(res, 200, { ok: true, ts: new Date().toISOString() });
   if (url.pathname.startsWith("/api/")) return handleApi(req, res, url);
 
   // Static: map / to index.html (SPA) — Dreamer is now a tab inside it. /dreamer.html still served standalone if visited directly.
@@ -323,9 +324,10 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+const HOST = process.env.HOST || "0.0.0.0";
+server.listen(PORT, HOST, () => {
   console.log("");
   console.log(`  Personalized Learning Path Recommender`);
-  console.log(`  → http://localhost:${PORT}`);
+  console.log(`  → http://${HOST}:${PORT} (PORT=${PORT} HOST=${HOST})`);
   console.log("");
 });

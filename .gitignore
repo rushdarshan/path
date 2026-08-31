@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+.env
+.env.local
+.DS_Store
+Thumbs.db
+# Render ephemeral sessions — keep repo data but ignore future local runs if you prefer:
+# data/*.json
+# Uncomment above to stop committing new sessions; keep committed history as seed.
